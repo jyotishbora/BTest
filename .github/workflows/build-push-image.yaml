@@ -28,6 +28,6 @@ jobs:
           password: D6km1MA5T9/yPJquDHPFbOx51tYKtjnH
 
       - run: |
-          echo 'Publishing'
+          'Publishing'
           docker build ./BlucoraAPI -f BlucoraAPI/Dockerfile.webapi -t lab49.azurecr.io/webapi:${{ github.sha }}
           docker push lab49.azurecr.io/webapi:${{ github.sha }}
