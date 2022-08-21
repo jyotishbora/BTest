@@ -1,0 +1,3972 @@
+FormFieldList = ForeignCtry|ForeignPC|ForeignProvince|AttF2848|AnyBoxes|AttSchD1|AttF8858|AttF8332|AttF8283|AttF5713|AttF3468|AttF3115|AttF1098C|Apt|City|Address|SpSSN|SSN|SpLName|SpFName|LName|FName|Exist|Desc|Exit|MobDisQual|Extra3|Extra6|Extra5|Extra4|Extra9|Extra8|Extra7|AttF8885|AttF4136|AttF8864|Edit1|Edit2|
+VERSION 1.0
+Begin MM.Form USF8453PREP
+	Locked	 = True
+	FormName	 = "USF8453Prep"
+	FormHeight	 = 1200
+	FormWidth	 = 620
+	FormListLongDesc	 = "Tax Transmittal for E-File"
+	TabSequence	 = True
+	SignatureField	 = "Desc"
+	FormPennies	 = ROUND_PENNIES
+	FreeToPrint	 = False
+	BeginProperty CreateForm
+		Create	 = Create(USWEFWkSht2.Create8453)
+	EndProperty
+	BeginProperty FormType
+		FormType	 = Normal
+	EndProperty
+	BeginProperty FormListFolder
+		FormListFolder	 = Forms
+	EndProperty
+	BeginProperty FormListNumber
+		FormListNumber	 = 338
+	EndProperty
+	BeginProperty FormListShortDesc
+		FormListShortDesc	 = "Form 8453"
+	EndProperty
+	BeginProperty MaxCopies
+		MaxCopies	 = 1
+	EndProperty
+	BeginProperty NewScript
+		NewScript	 = ""
+	EndProperty
+	BeginProperty ReviewScript
+		ReviewScript	 = ""
+	EndProperty
+	BeginProperty HelpTopic
+		HelpTopic	 = "Form 8453"
+	EndProperty
+	BeginProperty TaxTutor
+		TaxTutor	 = "Submitting Attachments with an E-file Return Using Form 8453"
+	EndProperty
+	Begin MM.TextBox ForeignCtry
+		FieldName	 = "ForeignCtry"
+		DisplayFieldName	 = "ForeignCtry"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 10
+		FieldPennies	 = ""
+		MaxLength	 = "22"
+		SpawnLink	 = False
+		Top	 = 215
+		Left	 = 8
+		Height	 = 17
+		Width	 = 158
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox ForeignPC
+		FieldName	 = "ForeignPC"
+		DisplayFieldName	 = "ForeignPC"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 12
+		FieldPennies	 = ""
+		MaxLength	 = "10"
+		SpawnLink	 = False
+		Top	 = 215
+		Left	 = 344
+		Height	 = 17
+		Width	 = 94
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox ForeignProvince
+		FieldName	 = "ForeignProvince"
+		DisplayFieldName	 = "ForeignProvince"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 11
+		FieldPennies	 = ""
+		MaxLength	 = "22"
+		SpawnLink	 = False
+		Top	 = 215
+		Left	 = 176
+		Height	 = 17
+		Width	 = 158
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.CheckBox AttF2848
+		FieldName	 = "AttF2848"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 2848 "
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 14
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 328
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox AnyBoxes
+		FieldName	 = "AnyBoxes"
+		DisplayFieldName	 = "AnyBoxes"
+		FieldType	 = "Number"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 28
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 976
+		Left	 = 200
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.CheckBox AttSchD1
+		FieldName	 = "AttSchD1"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 8949 "
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 24
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 752
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF8858
+		FieldName	 = "AttF8858"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 8858 "
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 21
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 632
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF8332
+		FieldName	 = "AttF8332"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 8332 "
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 20
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 584
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF8283
+		FieldName	 = "AttF8283"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 8283 "
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 19
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 536
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF5713
+		FieldName	 = "AttF5713"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 5713 "
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 18
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 512
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF3468
+		FieldName	 = "AttF3468"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 3468"
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 16
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 392
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF3115
+		FieldName	 = "AttF3115"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 3115 "
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 15
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 368
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF1098C
+		FieldName	 = "AttF1098C"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 1098-C "
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 13
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 288
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox Apt
+		FieldName	 = "Apt"
+		DisplayFieldName	 = "Apt"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 8
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 151
+		Left	 = 368
+		Height	 = 17
+		Width	 = 70
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox City
+		FieldName	 = "City"
+		DisplayFieldName	 = "City"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 9
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 183
+		Left	 = 8
+		Height	 = 17
+		Width	 = 430
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Address
+		FieldName	 = "Address"
+		DisplayFieldName	 = "Address"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 7
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 151
+		Left	 = 8
+		Height	 = 17
+		Width	 = 350
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox SpSSN
+		FieldName	 = "SpSSN"
+		DisplayFieldName	 = "SpSSN"
+		FieldType	 = "SSN"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 6
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 119
+		Left	 = 448
+		Height	 = 17
+		Width	 = 158
+		Alignment	 = "Center Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox SSN
+		FieldName	 = "SSN"
+		DisplayFieldName	 = "SSN"
+		FieldType	 = "SSN"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 3
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 87
+		Left	 = 448
+		Height	 = 17
+		Width	 = 158
+		Alignment	 = "Center Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox SpLName
+		FieldName	 = "SpLName"
+		DisplayFieldName	 = "SpLName"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 5
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 119
+		Left	 = 232
+		Height	 = 17
+		Width	 = 206
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox SpFName
+		FieldName	 = "SpFName"
+		DisplayFieldName	 = "SpFName"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 4
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 119
+		Left	 = 8
+		Height	 = 17
+		Width	 = 214
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox LName
+		FieldName	 = "LName"
+		DisplayFieldName	 = " LName"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 2
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 87
+		Left	 = 232
+		Height	 = 17
+		Width	 = 206
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox FName
+		FieldName	 = "FName"
+		DisplayFieldName	 = "FName"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 1
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 87
+		Left	 = 8
+		Height	 = 17
+		Width	 = 214
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = True
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Exist
+		FieldName	 = "Exist"
+		DisplayFieldName	 = "Exist"
+		FieldType	 = "Number"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 27
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 956
+		Left	 = 200
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Desc
+		FieldName	 = "Desc"
+		DisplayFieldName	 = "Desc"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 26
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 936
+		Left	 = 200
+		Height	 = 17
+		Width	 = 400
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Exit
+		FieldName	 = "Exit"
+		DisplayFieldName	 = ""
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 25
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 832
+		Left	 = 272
+		Height	 = 57
+		Width	 = 65
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 168
+		X2	 = 168
+		Y1	 = 200
+		Y2	 = 232
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 336
+		X2	 = 336
+		Y1	 = 200
+		Y2	 = 232
+	End
+	Begin MM.Label Label1
+		Caption	 = " Foreign country name"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 8
+		Height	 = 14
+		Width	 = 108
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Foreign postal code"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 344
+		Height	 = 14
+		Width	 = 95
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Foreign province/county"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 176
+		Height	 = 14
+		Width	 = 117
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 440
+		Y1	 = 200
+		Y2	 = 200
+	End
+	Begin MM.Label Label1
+		Caption	 = "effect after 1984 and before 2009) (see instructions)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 608
+		Left	 = 120
+		Height	 = 16
+		Width	 = 296
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "(or certain pages from a divorce decree or separation agreement, that went into"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 596
+		Left	 = 120
+		Height	 = 16
+		Width	 = 454
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Power of Attorney and Declaration of Representative (or POA that states the agent"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 328
+		Left	 = 120
+		Height	 = 16
+		Width	 = 475
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "is granted authority to sign the return)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 344
+		Left	 = 120
+		Height	 = 16
+		Width	 = 217
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 816
+		Y2	 = 816
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 800
+		Y2	 = 800
+	End
+	Begin MM.Label Label1
+		Caption	 = "DO NOT SIGN THIS FORM"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 800
+		Left	 = 206
+		Height	 = 19
+		Width	 = 197
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 12
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "on Form 8949"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 776
+		Left	 = 120
+		Height	 = 16
+		Width	 = 80
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "same information), if you elect not to report your transactions electronically"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 764
+		Left	 = 120
+		Height	 = 16
+		Width	 = 432
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Sales and Other Dispositions of Capital Assets (or a statement with the"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 752
+		Left	 = 120
+		Height	 = 15
+		Width	 = 389
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Information Return of U.S. Persons With Respect to Foreign Disregarded Entities"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 632
+		Left	 = 120
+		Height	 = 16
+		Width	 = 467
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Release/Revocation of Release of Claim to Exemption for Child by Custodial Parent"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 584
+		Left	 = 120
+		Height	 = 16
+		Width	 = 480
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "any qualified appraisal or partnership Form 8283)."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 560
+		Left	 = 120
+		Height	 = 16
+		Width	 = 285
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "is required) or Section B, Donated Property, and any related attachments (including"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 548
+		Left	 = 120
+		Height	 = 16
+		Width	 = 481
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Noncash Charitable Contributions, Section A, (if any statement or qualified appraisal"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 536
+		Left	 = 120
+		Height	 = 16
+		Width	 = 485
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "International Boycott Report"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 512
+		Left	 = 120
+		Height	 = 16
+		Width	 = 161
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "such status has been requested)."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 440
+		Left	 = 120
+		Height	 = 16
+		Width	 = 194
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Officer, together with proof that the building is a certified historic structure (or that"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 428
+		Left	 = 120
+		Height	 = 16
+		Width	 = 467
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "it was received by the Department of the Interior or the State Historic Preservation"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 416
+		Left	 = 120
+		Height	 = 16
+		Width	 = 470
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Certification Application (Part 2-Description of Rehabilitation), with an indication that"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 404
+		Left	 = 120
+		Height	 = 16
+		Width	 = 482
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "attach a copy of the first page of NPS Form 10-168, Historical Preservation"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 392
+		Left	 = 120
+		Height	 = 15
+		Width	 = 403
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Application for Change in Accounting Method"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 368
+		Left	 = 120
+		Height	 = 16
+		Width	 = 260
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "contemporaneous written acknowledgment)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 304
+		Left	 = 120
+		Height	 = 16
+		Width	 = 250
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Contributions of Motor Vehicles, Boats, and Airplanes (or equivalent"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 288
+		Left	 = 120
+		Height	 = 16
+		Width	 = 390
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Check the applicable box(es) to identify the attachments:"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 264
+		Left	 = 0
+		Height	 = 16
+		Width	 = 360
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "of the following forms or supporting documents."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 248
+		Left	 = 143
+		Height	 = 16
+		Width	 = 303
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "File this form only if you are attaching one or more"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 232
+		Left	 = 143
+		Height	 = 16
+		Width	 = 323
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label58
+		Caption	 = "<!YEAR>"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 16
+		Left	 = 520
+		Height	 = 29
+		Width	 = 52
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 18
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 264
+		Y2	 = 264
+	End
+	Begin MM.Label Label21
+		Caption	 = "Apt. no."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 136
+		Left	 = 376
+		Height	 = 14
+		Width	 = 38
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 360
+		X2	 = 360
+		Y1	 = 136
+		Y2	 = 168
+	End
+	Begin MM.Label Label20
+		Caption	 = "City, town or post office, state, and ZIP code"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 168
+		Left	 = 8
+		Height	 = 14
+		Width	 = 216
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label19
+		Caption	 = "Home address (number and street)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 136
+		Left	 = 8
+		Height	 = 14
+		Width	 = 169
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label18
+		Caption	 = "Last name"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 104
+		Left	 = 232
+		Height	 = 14
+		Width	 = 50
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label16
+		Caption	 = "your SSN(s) above."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 164
+		Left	 = 485
+		Height	 = 14
+		Width	 = 96
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label15
+		Caption	 = "You must enter"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 155
+		Left	 = 488
+		Height	 = 14
+		Width	 = 86
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label14
+		Caption	 = "Important!"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 144
+		Left	 = 500
+		Height	 = 15
+		Width	 = 65
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label13
+		Caption	 = "Spouse's social security number"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 104
+		Left	 = 448
+		Height	 = 14
+		Width	 = 157
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label12
+		Caption	 = "Your social security number"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 72
+		Left	 = 448
+		Height	 = 14
+		Width	 = 136
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 136
+		Y2	 = 136
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 104
+		Y2	 = 104
+	End
+	Begin MM.Label Label11
+		Caption	 = "Spouse's first name and initial"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 104
+		Left	 = 8
+		Height	 = 14
+		Width	 = 143
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label10
+		Caption	 = "Last name"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 72
+		Left	 = 232
+		Height	 = 14
+		Width	 = 50
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label9
+		Caption	 = "Your first name and initial"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 72
+		Left	 = 8
+		Height	 = 14
+		Width	 = 122
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 440
+		Y1	 = 168
+		Y2	 = 168
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 440
+		X2	 = 440
+		Y1	 = 72
+		Y2	 = 232
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 224
+		X2	 = 224
+		Y1	 = 72
+		Y2	 = 136
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 232
+		Y2	 = 232
+	End
+	Begin MM.Label Label1
+		Caption	 = "For the year January 1- December 31, <!YEAR>"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 38
+		Left	 = 208
+		Height	 = 14
+		Width	 = 211
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label6
+		Caption	 = "8453"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 0
+		Left	 = 40
+		Height	 = 32
+		Width	 = 60
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 20
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 488
+		X2	 = 608
+		Y1	 = 16
+		Y2	 = 16
+	End
+	Begin MM.Label Label5
+		Caption	 = "for an IRS"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 18
+		Left	 = 232
+		Height	 = 19
+		Width	 = 75
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 12
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label4
+		Caption	 = "e-file"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 18
+		Left	 = 309
+		Height	 = 18
+		Width	 = 36
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 12
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = True
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "  Return"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 18
+		Left	 = 341
+		Height	 = 19
+		Width	 = 60
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 12
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label3
+		Caption	 = "Internal Revenue Service"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 40
+		Left	 = 0
+		Height	 = 14
+		Width	 = 121
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 488
+		X2	 = 488
+		Y1	 = 0
+		Y2	 = 72
+	End
+	Begin MM.Line Line13
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 144
+		X2	 = 144
+		Y1	 = 0
+		Y2	 = 72
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 72
+		Y2	 = 72
+	End
+	Begin MM.Line Bottom
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = True
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 928
+		Y2	 = 928
+	End
+	Begin MM.Label Label1
+		Caption	 = "Form"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 12
+		Left	 = 0
+		Height	 = 14
+		Width	 = 24
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "OMB No. 1545-0074"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 0
+		Left	 = 504
+		Height	 = 14
+		Width	 = 97
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "U.S. Individual Income Tax Transmittal"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 2
+		Left	 = 172
+		Height	 = 19
+		Width	 = 290
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 12
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Department of the Treasury"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 28
+		Left	 = 0
+		Height	 = 14
+		Width	 = 133
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label7
+		Caption	 = "Go to <i>www.irs.gov/Form8453</i> for the latest information."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 52
+		Left	 = 168
+		Height	 = 14
+		Width	 = 296
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox MobDisQual
+		FieldName	 = "MobDisQual"
+		DisplayFieldName	 = "MobDisQual"
+		FieldType	 = "Number"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 29
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 996
+		Left	 = 200
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra3
+		FieldName	 = "Extra3"
+		DisplayFieldName	 = "Extra3"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 30
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1100
+		Left	 = 56
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra6
+		FieldName	 = "Extra6"
+		DisplayFieldName	 = "Extra6"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 31
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1100
+		Left	 = 288
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra5
+		FieldName	 = "Extra5"
+		DisplayFieldName	 = "Extra5"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 32
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1076
+		Left	 = 288
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra4
+		FieldName	 = "Extra4"
+		DisplayFieldName	 = "Extra4"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 33
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1052
+		Left	 = 288
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra9
+		FieldName	 = "Extra9"
+		DisplayFieldName	 = "Extra9"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 34
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1100
+		Left	 = 520
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra8
+		FieldName	 = "Extra8"
+		DisplayFieldName	 = "Extra8"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 35
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1076
+		Left	 = 520
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra7
+		FieldName	 = "Extra7"
+		DisplayFieldName	 = "Extra7"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 36
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1052
+		Left	 = 520
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.Label Label22
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1076
+		Left	 = 8
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label23
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1100
+		Left	 = 8
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label24
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1100
+		Left	 = 240
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label25
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1052
+		Left	 = 240
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label26
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1076
+		Left	 = 240
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label27
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1100
+		Left	 = 472
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label28
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1052
+		Left	 = 472
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label29
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1076
+		Left	 = 472
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label30
+		Caption	 = "EMPTY FIELDS"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1028
+		Left	 = 0
+		Height	 = 16
+		Width	 = 94
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label31
+		Caption	 = "EMPTY"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 1052
+		Left	 = 8
+		Height	 = 16
+		Width	 = 45
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Print condition"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 976
+		Left	 = 8
+		Height	 = 16
+		Width	 = 83
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Exist"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 956
+		Left	 = 8
+		Height	 = 16
+		Width	 = 30
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label2
+		Caption	 = "Description"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 936
+		Left	 = 8
+		Height	 = 16
+		Width	 = 65
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label17
+		Caption	 = "Disqualification for Express App"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 996
+		Left	 = 8
+		Height	 = 15
+		Width	 = 174
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF8885
+		FieldName	 = "AttF8885"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 8885"
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 23
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 728
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label32
+		Caption	 = "Health Coverage Tax Credit, and all required attachments."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 728
+		Left	 = 120
+		Height	 = 16
+		Width	 = 333
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label8
+		Caption	 = "(FDEs) and Foreign Branches (FBs)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 648
+		Left	 = 120
+		Height	 = 15
+		Width	 = 197
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label33
+		Caption	 = "attach the Certificate for Biodiesel and, if applicable, Statement of Biodiesel Reseller"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 462
+		Left	 = 120
+		Height	 = 16
+		Width	 = 486
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label34
+		Caption	 = "or a certificate from the provider identifying the product as renewable diesel, and, if"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 474
+		Left	 = 120
+		Height	 = 16
+		Width	 = 473
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label35
+		Caption	 = "applicable, a statement from the reseller."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 486
+		Left	 = 120
+		Height	 = 16
+		Width	 = 236
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label36
+		Caption	 = "attach the Certificate for Biodiesel and, if applicable, Statement of Biodiesel Reseller"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 675
+		Left	 = 120
+		Height	 = 16
+		Width	 = 486
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label37
+		Caption	 = "or a certificate from the provider identifying the product as renewable diesel and, if"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 687
+		Left	 = 120
+		Height	 = 16
+		Width	 = 469
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label38
+		Caption	 = "applicable, a statement from the reseller"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 699
+		Left	 = 120
+		Height	 = 16
+		Width	 = 232
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF4136
+		FieldName	 = "AttF4136"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 4136"
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 17
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 462
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox AttF8864
+		FieldName	 = "AttF8864"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "Form 8864"
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 22
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 675
+		Left	 = 8
+		Height	 = 16
+		Width	 = 112
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox Edit1
+		FieldName	 = "Edit1"
+		DisplayFieldName	 = "Edit1"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 37
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1056
+		Left	 = 56
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Edit2
+		FieldName	 = "Edit2"
+		DisplayFieldName	 = "Edit2"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 38
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 1080
+		Left	 = 56
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+EndForm
+
+Private Sub Address_Calculation()
+    ReturnVal = GetString(USWBasicInfo.Street)
+End Sub
+
+Private Sub AnyBoxes_Calculation()
+    If GetBool(USF8453Prep.AttF1098C) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF2848) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF3115) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF3468) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF4136) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF5713) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF8283) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF8332) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF8858) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF8864) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttF8885) = True Then
+        ReturnVal = 1
+    ElseIf GetBool(USF8453Prep.AttSchD1) = True Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub Apt_Calculation()
+    ReturnVal = GetString(USWBasicInfo.Apt)
+End Sub
+
+Private Sub AttF1098C_Calculation()
+    If GetNumber(USF8283.F1098CNeed) > 0 Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub AttF3115_Calculation()
+    If GetNumber(USF3115.Use8453) > 0 Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub AttF3468_Calculation()
+    If GetBool(USF3468.AppBox) = True Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub AttF8283_Calculation()
+    If GetNumber(USWSchAPrint.AppNeed) <> 0 Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+Private Sub AttF8332_Calculation()
+    If GetNumber(USWBasicInfo.L6cNotWith) > 0 Then
+        ReturnVal = 1
+    ElseIf GetNumber(USF8332.Print8332) > 0 Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub AttF8885_Calculation()
+    If GetNumber(USF8885.Cred1040) > 0 Then
+        ReturnVal = 1
+    ElseIf GetNumber(USF8885Spouse.Cred1040) > 0 Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub AttSchD1_Calculation()
+    If GetNumber(USW8949AttachSummary.Form8453) > 0 Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub City_Calculation()
+    ReturnVal = GetString(USWBasicInfo.CityCombNoFC)
+End Sub
+
+Private Sub Desc_Calculation()
+    ReturnVal = GetString(USWBasicInfo.CombNames)
+End Sub
+
+Private Sub Exist_Calculation()
+    ReturnVal = 1
+End Sub
+
+Private Sub AttF8864_Calculation()
+    If GetBool(USF8864.AttCert) = True Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub FName_Calculation()
+    ReturnVal = GetString(USWBasicInfo.TPFnI)
+End Sub
+
+Private Sub ForeignCtry_Calculation()
+    ReturnVal = GetString(USWBasicInfo.ForCountry)
+End Sub
+
+Private Sub ForeignPC_Calculation()
+    If (GetString(USWBasicInfo.ForCountry) <> "") Then
+        ReturnVal = GetString(USWBasicInfo.ForeignPC)
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub ForeignProvince_Calculation()
+    If (GetString(USWBasicInfo.ForCountry) <> "") Then
+        ReturnVal = GetString(USWBasicInfo.ForeignProvince)
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub LName_Calculation()
+    ReturnVal = GetString(USWBasicInfo.LastName)
+End Sub
+
+Private Sub MobDisQual_Calculation()
+    If GetBool(USF8453Prep.AnyBoxes) = True Then
+        ReturnVal = 1
+    Else
+        ReturnVal = 0
+    End If
+End Sub
+
+Private Sub SpFName_Calculation()
+    If FS() = 2 And GetBool(USWResidency.F1040NR) = False Then
+        ReturnVal = GetString(USWBasicInfo.SPFnI)
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub SpLName_Calculation()
+    If FS() = 2 And GetBool(USWResidency.F1040NR) = False Then
+        ReturnVal = GetString(USWBasicInfo.SpouseLast)
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub SpSSN_Calculation()
+    If FS() = 2 And GetBool(USWResidency.F1040NR) = False Then
+        ReturnVal = GetString(USWBasicInfo.SpouseSSN)
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub SSN_Calculation()
+    ReturnVal = GetString(USWBasicInfo.SSN)
+End Sub

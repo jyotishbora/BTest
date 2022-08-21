@@ -1,0 +1,31 @@
+name: Build a Docker image and Push it to ACR
+
+on:
+  push:
+    branches: 
+      - 'jyotish/**'
+  pull_request:
+    branches: 
+      - 'main'
+
+  workflow_dispatch:
+
+jobs:
+  deploy-to-acr:
+    name: 'deploy-to-acr'
+    runs-on: ubuntu-latest
+    env:
+      acrname: lab49
+    steps:
+      - uses: actions/checkout@v2
+      
+      - uses: azure/docker-login@v1
+        with:
+          login-server: lab49.azurecr.io
+          username: lab49
+          password: D6km1MA5T9/yPJquDHPFbOx51tYKtjnH
+
+      - run: |
+        
+          docker build -t lab49.azurecr.io/webapi:${{ github.sha }} .
+          docker push lab49.azurecr.io/webapi:${{ github.sha }}

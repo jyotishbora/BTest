@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug NoLine|Win32">
+      <Configuration>Debug NoLine</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug NoLine|x64">
+      <Configuration>Debug NoLine</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B90A6EA5-500C-413C-8E4C-9392CFD1B4E3}</ProjectGuid>
+    <RootNamespace>statecalcdll</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <WindowsTargetPlatformVersion>
+    </WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseDLLRuntime>true</UseDLLRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseDLLRuntime>true</UseDLLRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseDLLRuntime>true</UseDLLRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>[targetname]</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>[targetname]</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>[targetname]</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>[targetname]</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>[targetname]</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>[targetname]</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/$(TargetName).tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;print;.;../TaxCodeShared/JsonCpp/include;../TaxCodeShared/tinyxml2-ex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;__EFILE;__XMLEFILE;WIN32;_WINDOWS;STATECALCDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug_CalcDLL/statecalcdll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug_CalcDLL/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug_CalcDLL/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_CalcDLL/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>Debug/$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\Debug/$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\Debug/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>../TaxCodeShared/JsonCpp/build/;../TaxCodeShared/Lib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lib_jsond.lib;tinyxml2d.lib;zint.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/$(TargetName).tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;print;.;../TaxCodeShared/JsonCpp/include;../TaxCodeShared/tinyxml2-ex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;__EFILE;__XMLEFILE;WIN32;_WINDOWS;STATECALCDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\x64\Debug_CalcDLL/statecalcdll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\x64\Debug_CalcDLL/</AssemblerListingLocation>
+      <ObjectFileName>.\x64\Debug_CalcDLL/</ObjectFileName>
+      <ProgramDataBaseFileName>.\x64\Debug_CalcDLL/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/favor:INTEL64 %(AdditionalOptions)</AdditionalOptions>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>x64/Debug/$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\x64\Debug/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\x64\Debug/$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\x64\Debug/$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>../TaxCodeShared/JsonCpp/build/x64;../TaxCodeShared/Lib/x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lib_json_dllruntimed.lib;tinyxml2_dllruntimed.lib;zint.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/$(TargetName).tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;print;.;../TaxCodeShared/JsonCpp/include;../TaxCodeShared/tinyxml2-ex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;__EFILE;__XMLEFILE;WIN32;_WINDOWS;STATECALCDLL;__NOLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release_CalcDLL/statecalcdll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release_CalcDLL/</AssemblerListingLocation>
+      <ObjectFileName>.\Release_CalcDLL/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_CalcDLL/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Release/$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\Release/$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\Release/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>../TaxCodeShared/JsonCpp/build/;../TaxCodeShared/Lib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lib_json.lib;tinyxml2.lib;zint.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Release/$(TargetName).tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;print;.;../TaxCodeShared/JsonCpp/include;../TaxCodeShared/tinyxml2-ex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;__EFILE;__XMLEFILE;WIN32;_WINDOWS;STATECALCDLL;__NOLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\x64\Release_CalcDLL/statecalcdll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\x64\Release_CalcDLL/</AssemblerListingLocation>
+      <ObjectFileName>.\x64\Release_CalcDLL/</ObjectFileName>
+      <ProgramDataBaseFileName>.\x64\Release_CalcDLL/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/favor:INTEL64 %(AdditionalOptions)</AdditionalOptions>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\x64\Release/$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\x64\Release/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\x64\Release/$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\x64\Release/$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>../TaxCodeShared/JsonCpp/build/x64;../TaxCodeShared/Lib/x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lib_json_dllruntime.lib;tinyxml2_dllruntime.lib;zint.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/$(TargetName).tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;print;.;../TaxCodeShared/JsonCpp/include;../TaxCodeShared/tinyxml2-ex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;__EFILE;__XMLEFILE;WIN32;_WINDOWS;STATECALCDLL;__NOLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug_CalcDLL/statecalcdll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug_CalcDLL/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug_CalcDLL/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_CalcDLL/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Debug/$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug_CalcDLL/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\Debug_CalcDLL/$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\Debug_CalcDLL/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>../TaxCodeShared/JsonCpp/build/;../TaxCodeShared/Lib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lib_jsond.lib;tinyxml2d.lib;zint.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug_CalcDLL/$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/$(TargetName).tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;print;.;../TaxCodeShared/JsonCpp/include;../TaxCodeShared/tinyxml2-ex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;__EFILE;__XMLEFILE;WIN32;_WINDOWS;STATECALCDLL;__NOLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\x64\Debug_CalcDLL/statecalcdll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\x64\Debug_CalcDLL/</AssemblerListingLocation>
+      <ObjectFileName>.\x64\Debug_CalcDLL/</ObjectFileName>
+      <ProgramDataBaseFileName>.\x64\Debug_CalcDLL/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/favor:INTEL64 %(AdditionalOptions)</AdditionalOptions>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../TaxCodeShared/Include;calc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\x64\Debug/$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\x64\Debug_CalcDLL/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\x64\Debug_CalcDLL/$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\x64\Debug_CalcDLL/$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>../TaxCodeShared/JsonCpp/build/x64;../TaxCodeShared/Lib/x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lib_json_dllruntimed.lib;tinyxml2_dllruntimed.lib;zint.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug_CalcDLL/$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\TaxCodeShared\Include\CALCDEFS.H" />
+    <ClInclude Include="..\TaxCodeShared\Include\CalcProductFlags.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\CalcStaticDataTypes.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\CreateXmlReturnParams.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\disabledFeaturesCore.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\DllDataBuffer.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\featuresTypes.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\IAppObj.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\Misc_CommonCurrency.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\OhioRita.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\PrintDataManager.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\tinyxml2.h" />
+    <ClInclude Include="AutoAttachments.h" />
+    <ClInclude Include="calcdllrc.h" />
+    <ClInclude Include="Calcfld.h" />
+    <ClInclude Include="Calcform.h" />
+    <ClInclude Include="Calcfunc.h" />
+    <ClInclude Include="Calcmgr.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\CommonConst.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\ICALCFLD.H" />
+    <ClInclude Include="..\TaxCodeShared\Include\ICALCFRM.H" />
+    <ClInclude Include="..\TaxCodeShared\Include\icalcmgr.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\IPRNTITM.H" />
+    <ClInclude Include="..\TaxCodeShared\Include\IPRNTJOB.H" />
+    <ClInclude Include="..\TaxCodeShared\Include\iprntmgr.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\prntdefs.h" />
+    <ClInclude Include="CalcResource.h" />
+    <ClInclude Include="CalcSerializeUtils.h" />
+    <ClInclude Include="CalcStaticData.h" />
+    <ClInclude Include="CalcVariant.h" />
+    <ClInclude Include="PrintRALApp.h" />
+    <ClInclude Include="PrintTaxForm.h" />
+    <ClInclude Include="PrintXmlReturn.h" />
+    <ClInclude Include="PrntEFile.h" />
+    <ClInclude Include="Prntform.h" />
+    <ClInclude Include="prntHTML.h" />
+    <ClInclude Include="Prntitem.h" />
+    <ClInclude Include="Prntjob.h" />
+    <ClInclude Include="prntmgr.h" />
+    <ClInclude Include="prntXML.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\sha1.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\StringUtils.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\TaxConst.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\TAXDATE.H" />
+    <ClInclude Include="print\TAXPRINT.H" />
+    <ClInclude Include="..\TaxCodeShared\Include\Taxstr.h" />
+    <ClInclude Include="VersionNo.h" />
+    <ClInclude Include="..\TaxCodeShared\Include\xstring.h" />
+    <ClInclude Include="ZintCppWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\TaxCodeShared\Source\CalcStaticDataTypes.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\CreateXmlReturnParams.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\disabledFeaturesCore.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\DllDataBuffer.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\featuresTypes.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\Misc_CommonCurrency.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\OhioRita.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\PrintDataManager.cpp" />
+    <ClCompile Include="AutoAttachments.cpp" />
+    <ClCompile Include="Calcdll.cpp" />
+    <ClCompile Include="Calcfld.cpp" />
+    <ClCompile Include="Calcform.cpp" />
+    <ClCompile Include="Calcfunc.cpp" />
+    <ClCompile Include="Calcmgr.cpp" />
+    <ClCompile Include="CalcResource.cpp" />
+    <ClCompile Include="CalcSerializeUtils.cpp" />
+    <ClCompile Include="CalcStaticData.cpp" />
+    <ClCompile Include="CalcVariant.cpp" />
+    <ClCompile Include="Contract_CalcDll.cpp" />
+    <ClCompile Include="Contract_CalcTestHelpers.cpp" />
+    <ClCompile Include="Contract_PrintDll.cpp" />
+    <ClCompile Include="Contract_TaxField.cpp" />
+    <ClCompile Include="Contract_TaxForm.cpp" />
+    <ClCompile Include="Contract_TaxFormManager.cpp" />
+    <ClCompile Include="Contract_TaxPrintItem.cpp" />
+    <ClCompile Include="Contract_TaxPrintJob.cpp" />
+    <ClCompile Include="Contract_TaxPrintManager.cpp" />
+    <ClCompile Include="PrintRALApp.cpp" />
+    <ClCompile Include="PrintTaxForm.cpp" />
+    <ClCompile Include="PrintXmlReturn.cpp" />
+    <ClCompile Include="PrntEFile.cpp" />
+    <ClCompile Include="Prntform.cpp" />
+    <ClCompile Include="prntHTML.cpp" />
+    <ClCompile Include="Prntitem.cpp" />
+    <ClCompile Include="Prntjob.cpp" />
+    <ClCompile Include="prntmgr.cpp" />
+    <ClCompile Include="prntXML.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\sha1.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug NoLine|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\TaxCodeShared\Source\Taxdate.cpp" />
+    <ClCompile Include="print\TAXPRINT.CPP" />
+    <ClCompile Include="..\TaxCodeShared\Source\Taxstr.cpp" />
+    <ClCompile Include="..\TaxCodeShared\Source\xstring.cpp" />
+    <ClCompile Include="ZintCppWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="calcdll.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="calcdll.rc2" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\TaxAct.CalcDll.Contract.1.9.0.6\build\native\TaxAct.CalcDll.Contract.targets" Condition="Exists('packages\TaxAct.CalcDll.Contract.1.9.0.6\build\native\TaxAct.CalcDll.Contract.targets')" />
+    <Import Project="packages\TaxAct.CalcDll.CppWrapper.1.9.0.7\build\native\TaxAct.CalcDll.CppWrapper.targets" Condition="Exists('packages\TaxAct.CalcDll.CppWrapper.1.9.0.7\build\native\TaxAct.CalcDll.CppWrapper.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\TaxAct.CalcDll.Contract.1.9.0.6\build\native\TaxAct.CalcDll.Contract.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\TaxAct.CalcDll.Contract.1.9.0.6\build\native\TaxAct.CalcDll.Contract.targets'))" />
+    <Error Condition="!Exists('packages\TaxAct.CalcDll.CppWrapper.1.9.0.7\build\native\TaxAct.CalcDll.CppWrapper.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\TaxAct.CalcDll.CppWrapper.1.9.0.7\build\native\TaxAct.CalcDll.CppWrapper.targets'))" />
+  </Target>
+</Project>

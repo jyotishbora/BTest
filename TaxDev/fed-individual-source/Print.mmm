@@ -1,0 +1,6787 @@
+
+Public Sub PrintPlanningReturn()
+    CustomPrintSub = True
+' call subroutines here for preview version
+    Call Print1040MainPreview
+    Call PrintPreEst
+    Call PrintPreEstNR
+End Sub
+
+Public Sub PrintSummaryForm()
+    CustomPrintSub = True
+' call subroutines here for interview summary form(s)
+    Call Print1040Main
+End Sub
+
+Public Sub PrintReturn()
+' call subroutines here for final version
+    Call PrintW7
+    Call PrintW7COA
+    Call PrintEst
+    Call PrintEFEst
+    Call PrintEstNR
+    Call PrintEFEstNR
+    Call PRINT1040V
+    Call Print1040V965
+    Call Print1040XPrep
+    Call Print1040Main
+    '04 - Form 4852
+    Call Print4852
+    '06 - Form 2210
+    Call Print2210
+    Call Print2210P2
+    Call Print2210P3
+    ' 06a - Form 2210-F
+    Call Print2210F
+    '07 - Sch A
+    Call PrintSchA
+    Call PrintSchAStdDed
+    '08 - Sch B
+    Call PrintSchB
+    '09 - Sch C
+    Call PrintSchC
+    Call PrintSchCST
+    '12 - Sch D
+    Call PrintSchD
+    '12A - Form 8949
+    'Call Print8949STNC
+    'Call Print8949STA
+    'Call Print8949STB
+    'Call Print8949STC
+    'Call Print8949LTNC
+    'Call Print8949LTA
+    'Call Print8949LTB
+    'Call Print8949LTC
+    '13 - Sch E, Page 1
+    Call PrintSchEP1
+    '13 - Sch E, Page 2
+    Call PrintSchEP2
+    '14 - Sch F
+    Call PrintSchF
+    '16 - Sch R
+    Call PrintSchR
+    '17 - Sch SE
+    Call PrintSchSE1
+    Call PrintSchSESp1
+    '19 - Form 1116
+    Call Print1116
+    Call Print1116SchBCOForBranch
+    Call Print1116SchBCOPass
+    Call Print1116SchBCOGen
+    Call Print1116SchBCORes
+    Call Print1116SchBCOLump
+    '20 - Schedule J
+    Call PrintSchJ
+    '21 - Form 2441
+    Call Print2441
+    Call Print2441p2
+    '22 - Form 3800
+    Call Print3800
+    '23 - Form 4136
+    Call Print4136
+    '24 - Form 4137
+    Call Print4137
+    Call Print4137SP
+    '26 - Form 4684
+    Call Print4684
+    '27 - Form 4797
+    Call Print4797
+    Call Print4797p2
+    '28 - Form 4972
+    Call Print4972
+    Call Print4972Spouse
+    '29 - Form 5329
+    Call Print5329
+    Call Print5329Sp
+    '31 - Form 6198
+    Call Print6198
+    '32 - Form 6251
+    Call Print6251
+    Call Print6251p2
+    '19 - Form 1116AMT - The AMT 1116 is to follow the 6251 in the print order
+    Call Print1116AMT
+    Call Print1116SchBCOForBranchAMT
+    Call Print1116SchBCOPassAMT
+    Call Print1116SchBCOGenAMT
+    Call Print1116SchBCOResAMT
+    Call Print1116SchBCOLumpAMT
+    '33 - Form 8615
+    Call Print8615
+    '34 - Form 2555
+    Call Print2555
+    '36 - Form 8609
+    '36a - Schedule A (Form 8609)
+    Call Print8609A
+    '36a - Schedule A (Form 8609)
+    '36b - Form 8586
+    Call Print8586
+    '37 - Form 4835
+    Call Print4835
+    '38 - Form 8839
+    Call Print8839
+    Call Print8839Copy2
+    '39 - Form 8853
+    Call Print8853
+    Call PrintW8853Tp
+    Call PrintW8853Sp
+    Call Print88532Tp
+    Call Print88532Sp
+    Call Print88532WTp
+    Call Print88532WSp
+    '40 - Form 8814
+    Call Print8814
+    '43 - Schedule EIC
+    Call PrintSchEic
+    '43A - Form 8862
+    Call Print8862
+    '44 - Sch H
+    Call PrintSchH
+    Call PrintSchHp2
+    '47 - Form 8812
+    Call Print8812
+    '48 - Form 8606
+    Call Print8606
+    Call Print8606Sp
+    '50 - Form 8863
+    Call Print8863
+    '51 - Form 4952
+    Call Print4952
+    '53 - Form 8889
+    Call Print8889
+    Call Print8889Sp
+    '54 - Form 8880
+    Call Print8880
+    '55 - Form 8995
+    Call Print8995
+    '55A - Form 8995A
+    Call Print8995A
+    '56 - Form 8888
+    Call Print8888
+    '58 - Form 5405
+    'Call Print5405
+    Call Print5405P2
+    'Call Print5405P21
+    'Call Print5405P22
+    '60 - Form 8917
+    'Call Print8917
+    '61 - Form 8919
+    Call Print8919
+    Call Print8919Sp
+    '63 - Form 8958
+    Call Print8958
+    Call Print8958W
+    Call Print8958I
+    Call Print8958D
+    '64 - Form 8828
+    Call Print8828
+    '65 - Form 8941
+    Call Print8941
+    '68 - Form 8910
+    Call Print8910
+    '69 - Form 8621
+    Call Print8621
+    '70 - Form 8867
+    Call Print8867
+    Call Print8867Add
+    '71 - Form 8959
+    Call Print8959
+    '72 - Form 8960
+    Call Print8960
+    '73 - Form 8962
+    Call Print8962
+    '74 - Form 8801
+    Call Print8801
+    Call Print8801p2
+    Call Print8801p3
+    Call Print8801p4
+    '75 - Form 8965
+    'Call Print8965
+    '77 - Form 5884
+    Call Print5884
+    '77A - Form 5884A
+    Call Print5884A
+    '77A - Schedule LEP
+    Call PrintSchLEP
+    '77B - Form 5884B - Removed for 2012 - 8/29/2012 TR
+    'Call Print5884B
+    'Call Print5884BPg2
+    'Call Print5884BPg3
+    '79 - Form 6252
+    Call Print6252
+    '81 - Form 6765
+    Call Print6765
+    '82 - Form 6781
+    Call Print6781
+    '83 - Form 6478
+    Call Print6478
+    '85 - Form 8689
+    Call Print8689
+    '86 - Form 8826
+    Call Print8826
+    '87 - Form 1310
+    Call Print1310
+    '88 - Form 8582
+    Call Print8582
+    Call Print85822
+    Call Print85823
+    '89 - Form 8582CR
+    Call Print8582CR
+    '94 - Form 982
+    Call Print982
+    '95 - Form 8835
+    Call Print8835
+    '95 - Form 9465
+    Call Print9465
+    '98 - Form 8846
+    Call Print8846
+    '99 - Form 8844
+    Call Print8844
+    '103 - Form 8820
+    Call Print8820
+    '104 - Form 8379
+    Call Print8379
+    'Call Print8379Old
+    '109 - Form 8824
+    Call Print8824
+    '113 - Form 8845
+    Call Print8845
+    '114 - Form 2120
+    Call Print2120
+    '115 - Form 8332
+    Call Print8332
+    '121 - Form 5471
+    Call Print5471
+    '123 - Form 8990
+    Call Print8990
+    Call Print8990p3
+    Call Print8990A
+    Call Print8990B
+    '125 - Form 8936
+    Call Print8936
+    '127 - Form 8874
+    Call Print8874
+    '129 - Form 2106
+    Call Print2106
+    '130 - Form 8881
+    Call Print8881
+    '131 - Form 8882
+    Call Print8882
+    '134 - Form 8885
+    Call Print8885
+    Call Print8885Sp
+    Call Print8886
+    '138 - Form 8396
+    Call Print8396
+    '141 - Form 8864
+    Call Print8864
+    '142 - Form 8896
+    Call Print8896
+    '144 - Form 8900
+    Call Print8900
+    '150 - Form 8906
+    Call Print8906
+    '151 - Form 8911
+    Call Print8911
+    '153 - Form 8908
+    Call Print8908
+    '155 - Form 8283
+    Call Print8283
+    '158 - Form 5695
+    Call Print5695
+    '161 - Form 8932
+    Call Print8932
+    '165 - Form 8933
+    Call Print8933
+    'No Sequence Number - 8833
+    Call Print8833
+    '167 - Form 8815
+    Call Print8815
+    '168 - Form 5074
+    Call Print5074
+    '169 - Form 8594
+    Call Print8594
+    Call Print8594p2
+    '170 - Form 3903
+    Call Print3903
+    '173 - Form 8948
+    Call Print8948
+    '174 - Form 3468
+    Call Print3468
+    '176 - Form 8829
+    Call Print8829
+    '179 - Form 4562 Summary
+    Call Print4562Summary
+    '179 - Form 4562
+    Call Print4562
+    '461 - Form 461
+    Call Print461
+    '563 - Form 4563
+    Call Print4563
+    '915 - Form 8915
+    Call Print8915C
+    Call Print8915CSp
+    Call Print8915D
+    Call Print8915DSp
+    Call Print8915F
+    Call Print8915FSp
+    '938 - Form 8938
+    Call Print8938
+    '997 - Form 8997
+    Call Print8997
+    'no sequence number
+    Call Print3115
+    Call Print8923
+    Call Print965A
+    
+    '********* Attachments ********
+    '01 - 1045- carryforward election
+    Call Print1045AStatement
+    '01 - 1040 Add Dep
+    Call PrintOneAddDep
+    '01 - 1040 Other Income
+    Call PrintOtherInc
+    '01 - 1040 Alimony Paid Adjustment
+    Call PrintAlimPd
+    '01 - 1040 Other Taxes
+    Call PrintOtherTax
+    '06 - 2210 Penalty Calc
+    Call PrintWPenalty
+    '07 - Sch A Mort Int Att
+    Call PrintMortWS
+    '07 - Sch A Line 20 Att
+    'Call PrintALn20WS
+    '07 - Sch A Line 22 Att
+    'Call PrintALn22WS
+    '07 - Sch A Line 28 Att
+    'Call PrintALn28WS
+    '08 - Sch B Int Att
+    Call PrintBPInt
+    '08 - Sch B Div Att
+    Call PrintBPDiv
+    '08 - Nominee Capital Gain Att
+    Call PrintNomCapGainStatement
+    '08 - TDF Foreign Country Overflow
+    Call PrintTDFCtry
+    '09 - SchC Statement
+    Call PrintSchCStmt
+    '12 - Bad Debt Statement
+    Call PrintBadDebtStmt
+    '13 - EP1 Other Expenses Att
+    Call PrintSchEP1OthExp
+    '13 - EP2 att
+    Call PrintPartSumm
+    '13 - EP2 Att
+    Call PrintSCorpSumm
+    '13 - EP2 Att
+    Call PrintEstSumm
+    '13 - EP2 REMIC
+    Call PrintRemic
+    '14 - F Farm Statement
+    Call PrintFarmStmt
+    '17 - SchSE Explanation
+    Call PrintTPClergyExp
+    '17 - SchSpouseSE Explanation
+    Call PrintSPClergyExp
+    '17 - USWClergyWkshts
+    Call PrintClergyWkshts
+    '19 - Form 1116
+    Call Print1116DetailPr_P1
+    Call Print1116DetailPr_P2
+    '21 - 2441 Att
+    Call Print2441AddInfo
+    Call Print2441AddInfo2
+    Call Print2441Prior
+    Call Print2441DueDil
+    '27a - Form 4136 Statement
+    Call Print4136Statement
+    '27 - 4797 Part I att
+    Call Print4797PI
+    '27 - 4797 Part II att
+    Call Print4797PII
+    '19 - Form 1116 - AMT Detail worksheets in the same order as the 6251
+    Call Print1116DetailAMTPr_P1
+    Call Print1116DetailAMTPr_P2
+    '33 - 8586 PassThru Entities att
+    Call Print8586PassThru
+    '55 - Form 8995
+    Call Print8995Attach
+    '67 - Form 4562 sec 179 summary
+    Call PrintSummary179
+    '67 - form 4562 Real Property
+    'Call Print4562CYReal
+    '67 - form 4562 Amortization
+    Call Print4562Amort
+    'Form 4562 StartUp and Organ Exp
+    Call PrintSummaryAmort
+    'Elect no 30% Bonus Depr Statement
+    Call PrintNo30BonusDepr
+    'Elect no 40% Bonus Depr Statement
+    Call PrintNo40BonusDepr
+    'Elect no 50% Bonus Depr Statement
+    Call PrintNo50BonusDepr
+    'Elect no 100% Bonus Depr Statement
+    Call PrintNo100BonusDepr
+    'Elect to expense real property with 179 Statement
+    Call PrintReal179
+    '69 - Form 8621 Statement
+    Call Print8621Statement
+    '70 - Form 8621 Statement
+    Call Print8621Statement2
+    '71 - Form 8621 Statement
+    Call Print8621Statement3
+    '72 - Form 8621 Statement
+    Call Print8621Statement4
+    '72 - Form 8621 Statement
+    Call Print8621Statement5
+    '79 - Form 6252 Line 29e Statement
+    Call Print6252Statement
+    '79 - Form 8824 Line 11 Statement
+    Call PrintUSF8824Statement
+    '82 - Form 6781 Part I
+    Call Print6781PI
+    '82 - Form 6781 Part I B
+    Call Print6781PIB
+    '82 - Form 6781 Part II Sec A
+    Call Print6781PIISecA
+    '82 - Form 6781 Part II Sec B
+    Call Print6781PIISecB
+    '82 - Form 6781 Part III
+    Call Print6781PIII
+    '82 - Form 6781 Statement
+    Call Print6781Statement
+    '88 - Form 8582 Worksheet 1 through 7
+    Call Print8582Wks1
+    Call Print8582Wks1to5
+    'Call Print8582Wks6
+    Call Print8582Wks7
+    '90 - Schedule K-1 PTP Worksheet
+    Call PrintPartK1PTPWksht
+    '135 - Form 8615, Line 5 Worksheet
+    'Call Print8615Ln5
+    '135 - Form 8615, Line 9 Worksheet
+    'Call Print8615Ln9
+    '135 - Form 8615, Line 15 Worksheet
+    'Call Print8615Ln15
+    '136 - Form 8814, CGD Worksheet
+    'Call Print8814CGD
+    'Call Print 8606Inherited
+    Call Print8606Inherited
+    'Call Print 8606InheritedSp
+    Call Print8606InheritedSp
+    'Call Print W8606
+    Call PrintW8606
+    'Call Print W8606Sp
+    Call PrintW8606Sp
+    'Call Print Form 3115 Attachments
+    Call Print3115Attach1
+    Call Print3115Attach2
+    Call Print3115Attach3
+    Call Print3115Attach4
+    Call Print3115Attach5
+    Call Print3115Attach6
+    Call Print3115Attach7
+    Call Print3115Attach8
+    Call Print3115Attach9
+    Call Print3115Attach10
+    Call Print3115Attach11
+    'Statements Worksheet
+    Call PrintWStatements1
+    Call PrintWStatements2
+    Call PrintWStatements3
+    'EF Notes
+    Call PrintEFNotes
+    Call Print2MonthExt
+    'Tangible property regulations elections
+    Call PrintSchCElec
+    Call PrintSchCStatElec
+    Call PrintSchEElec
+    Call PrintSchFElec
+    Call PrintSch4835Elec
+    
+    'TD F 90-22.1
+    'Call PrintTDF90221
+End Sub
+
+Public Sub Print1040SSReturn()
+    CustomPrintSub = True
+    Call PRINT1040V
+    Call Print1040SS
+    Call Print1040SSF
+    Call Print1040SSC
+    Call Print1040SSSESp
+    Call Print4137
+    Call Print4137SP
+    Call Print8862
+    Call Print8919
+    Call Print8919Sp
+    Call PrintSchH
+    Call PrintSchHp2
+    Call Print8888
+    Call Print8867
+    Call Print8867Add
+    Call Print8959
+    Call PrintSchLEP
+    Call Print8885
+    Call Print8886
+    Call Print8885Sp
+    Call PrintAddDepWS1040SS
+    Call PrintAddOthDepWS1040SS
+    Call Print1040SSFStmt
+    Call Print1040SSCStmt
+End Sub
+
+Public Sub Print1040NRReturn()
+' call subroutines here for final version
+    CustomPrintSub = True
+    Call PrintEst
+    Call PrintEFEst
+    Call PrintEstNR
+    Call PrintEFEstNR
+    Call PRINT1040V
+    Call Print1040XPrep
+    Call Print1040Main
+    Call PrintANR
+    Call PrintANRStdDed
+    Call PrintNECNR
+    Call PrintOINR
+    '04 - Form 4852
+    Call Print4852
+    '06 - Form 2210
+    Call Print2210
+    Call Print2210P2
+    Call Print2210P3
+    ' 06a - Form 2210-F
+    Call Print2210F
+    '09 - Sch C
+    Call PrintSchC
+    Call PrintSchCST
+    '12 - Sch D
+    Call PrintSchD
+    '12A - Form 8949
+    'Call Print8949STNC
+    'Call Print8949STA
+    'Call Print8949STB
+    'Call Print8949STC
+    'Call Print8949LTNC
+    'Call Print8949LTA
+    'Call Print8949LTB
+    'Call Print8949LTC
+    '13 - Sch E, Page 1
+    Call PrintSchEP1
+    '13 - Sch E, Page 2
+    Call PrintSchEP2
+    '14 - Sch F
+    Call PrintSchF
+    '17 - Sch SE
+    Call PrintSchSE1
+    '19 - Form 1116
+    Call Print1116
+    Call Print1116SchBCOForBranch
+    Call Print1116SchBCOPass
+    Call Print1116SchBCOGen
+    Call Print1116SchBCORes
+    Call Print1116SchBCOLump
+    '20 - Schedule J
+    Call PrintSchJ
+    '21 - Form 2441
+    Call Print2441
+    Call Print2441p2
+    '22 - Form 3800
+    Call Print3800
+    '23 - Form 4136
+    Call Print4136
+    '24 - Form 4137
+    Call Print4137
+    '26 - Form 4684
+    Call Print4684
+    '27 - Form 4797
+    Call Print4797
+    Call Print4797p2
+    '28 - Form 4972
+    Call Print4972
+    '29 - Form 5329
+    Call Print5329
+    '31 - Form 6198
+    Call Print6198
+    '32 - Form 6251
+    Call Print6251
+    Call Print6251p2
+    '19 - Form 1116AMT - The AMT 1116 is to follow the 6251 in the print order
+    Call Print1116AMT
+    Call Print1116SchBCOForBranchAMT
+    Call Print1116SchBCOPassAMT
+    Call Print1116SchBCOGenAMT
+    Call Print1116SchBCOResAMT
+    Call Print1116SchBCOLumpAMT
+    '33 - Form 8615
+    Call Print8615
+    '36 - Form 8609
+    '36a - Schedule A (Form 8609)
+    Call Print8609A
+    '36a - Schedule A (Form 8609)
+    '36b - Form 8586
+    Call Print8586
+    '37 - Form 4835
+    Call Print4835
+    '38 - Form 8839
+    Call Print8839
+    Call Print8839Copy2
+    '39 - Form 8853
+    Call Print8853
+    Call PrintW8853Tp
+    Call Print88532Tp
+    Call Print88532WTp
+    '40 - Form 8814
+    Call Print8814
+    '43A - Form 8862
+    Call Print8862
+    '44 - Sch H
+    Call PrintSchH
+    Call PrintSchHp2
+    '47 - Form 8812
+    Call Print8812
+    '48 - Form 8606
+    Call Print8606
+    '53 - Form 8889
+    Call Print8889
+    '54 - Form 8880
+    Call Print8880
+    '55 - Form 8995
+    Call Print8995
+    '55A - Form 8995A
+    Call Print8995A
+    '56 - Form 8888
+    Call Print8888
+    '58 - Form 5405
+    'Call Print5405
+    Call Print5405P2
+    'Call Print5405P21
+    'Call Print5405P22
+    '61 - Form 8919
+    Call Print8919
+    '63 - Form 8958
+    Call Print8958
+    Call Print8958W
+    Call Print8958I
+    Call Print8958D
+    '64 - Form 8828
+    Call Print8828
+    '65 - Form 8941
+    Call Print8941
+    '68 - Form 8910
+    Call Print8910
+    '70 - Form 8867
+    Call Print8867
+    Call Print8867Add
+    '71 - Form 8959
+    Call Print8959
+    '73 - Form 8962
+    Call Print8962
+    '74 - Form 8801
+    Call Print8801
+    Call Print8801p2
+    Call Print8801p3
+    Call Print8801p4
+    '77 - Form 5884
+    Call Print5884
+    '77A - Form 5884A
+    Call Print5884A
+    '77A - Schedule LEP
+    Call PrintSchLEP
+    '77B - Form 5884B - Removed for 2012 - 8/29/2012 TR
+    'Call Print5884B
+    'Call Print5884BPg2
+    'Call Print5884BPg3
+    '79 - Form 6252
+    Call Print6252
+    '81 - Form 6765
+    Call Print6765
+    '82 - Form 6781
+    Call Print6781
+    '83 - Form 6478
+    Call Print6478
+    '86 - Form 8826
+    Call Print8826
+    '87 - Form 1310
+    Call Print1310
+    '88 - Form 8582
+    Call Print8582
+    Call Print85822
+    Call Print85823
+    '89 - Form 8582CR
+    Call Print8582CR
+    '94 - Form 982
+    Call Print982
+    '95 - Form 8835
+    Call Print8835
+    '95 - Form 9465
+    Call Print9465
+    '98 - Form 8846
+    Call Print8846
+    '99 - Form 8844
+    Call Print8844
+    '101 - Form 8840
+    Call Print8840
+    '102 - Form 8843
+    Call Print8843
+    '103 - Form 8820
+    Call Print8820
+    '109 - Form 8824
+    Call Print8824
+    '113 - Form 8845
+    Call Print8845
+    '115 - Form 8332
+    Call Print8332
+    '121 - Form 5471
+    Call Print5471
+    '123 - Form 8990
+    Call Print8990
+    Call Print8990p3
+    Call Print8990A
+    Call Print8990B
+    '125 - Form 8936
+    Call Print8936
+    '127 - Form 8874
+    Call Print8874
+    '129 - Form 2106
+    Call Print2106
+    '130 - Form 8881
+    Call Print8881
+    '131 - Form 8882
+    Call Print8882
+    '134 - Form 8885
+    Call Print8885
+    Call Print8885Sp
+    Call Print8886
+    '138 - Form 8396
+    Call Print8396
+    '141 - Form 8864
+    Call Print8864
+    '142 - Form 8896
+    Call Print8896
+    '144 - Form 8900
+    Call Print8900
+    '150 - Form 8906
+    Call Print8906
+    '151 - Form 8911
+    Call Print8911
+    '153 - Form 8908
+    Call Print8908
+    '155 - Form 8283
+    Call Print8283
+    '158 - Form 5695
+    Call Print5695
+    '161 - Form 8932
+    Call Print8932
+    '165 - Form 8933
+    Call Print8933
+    'No Sequence Number - 8833
+    Call Print8833
+    '167 - Form 8815
+    Call Print8815
+    '169 - Form 8594
+    Call Print8594
+    Call Print8594p2
+    '170 - Form 3903
+    Call Print3903
+    '173 - Form 8948
+    Call Print8948
+    '174 - Form 3468
+    Call Print3468
+    '176 - Form 8829
+    Call Print8829
+    '179 - Form 4562 Summary
+    Call Print4562Summary
+    '179 - Form 4562
+    Call Print4562
+    '915 - Form 8915
+    Call Print8915C
+    Call Print8915CSp
+    Call Print8915D
+    Call Print8915DSp
+    Call Print8915F
+    Call Print8915FSp
+    '938 - Form 8938
+    Call Print8938
+    '997 - Form 8997
+    Call Print8997
+    'no attachment number
+    Call Print3115
+    Call Print8923
+    Call Print965A
+    
+    '********* Attachments ********
+    '01 - 1045- carryforward election
+    Call Print1045AStatement
+    '01 - 1040 Add Dep
+    Call PrintOneAddDep
+    '01 - 1040 Other Income
+    Call PrintOtherIncNR
+    '01 - 1040 Other Taxes
+    Call PrintOtherTax
+    '01 - Trans Tax line 58
+    Call PrintTransTax
+    '01 - 1040NR Schedule OI Stmt
+    Call PrintSchOIStmt
+    '01 - 1040NR Exclude Up to 10 Days of Presence Stmt
+    Call Print1040NRExclStmt
+    '01 - 1040NR Residency Termination Date Stmt
+    Call Print1040NRTermStmt
+    '01 - 1040NR Revocation of Nonresident Spouse Stmt
+    Call Print1040NRRevStmt
+    '01 - 1040NR Canada Treaty Article XXV Stmt
+    Call Print1040NRXXVStmt
+    '06 - 2210 Penalty Calc
+    Call PrintWPenalty
+    '07 - Sch A Line 20 Att
+    'Call PrintALn20WS
+    '07 - Sch A Line 22 Att
+    'Call PrintALn22WS
+    '07 - Sch A Line 28 Att
+    'Call PrintALn28WS
+    '08 - Nominee Capital Gain Att
+    Call PrintNomCapGainStatement
+    '08 - TDF Foreign Country Overflow
+    Call PrintTDFCtry
+    '09 - SchC Statement
+    Call PrintSchCStmt
+    '12 - Bad Debt Statement
+    Call PrintBadDebtStmt
+    '13 - EP1 Other Expenses Att
+    Call PrintSchEP1OthExp
+    '13 - EP2 att
+    Call PrintPartSumm
+    '13 - EP2 Att
+    Call PrintSCorpSumm
+    '13 - EP2 Att
+    Call PrintEstSumm
+    '13 - EP2 REMIC
+    Call PrintRemic
+    '14 - F Farm Statement
+    Call PrintFarmStmt
+    '17 - SchSE Explanation
+    Call PrintTPClergyExp
+    '17 - USWClergyWkshts
+    Call PrintClergyWkshts
+    '19 - Form 1116
+    Call Print1116DetailPr_P1
+    Call Print1116DetailPr_P2
+    '21 - 2441 Att
+    Call Print2441AddInfo
+    Call Print2441AddInfo2
+    Call Print2441Prior
+    Call Print2441DueDil
+    '27a - Form 4136 Statement
+    Call Print4136Statement
+    '27 - 4797 Part I att
+    Call Print4797PI
+    '27 - 4797 Part II att
+    Call Print4797PII
+    '19 - Form 1116 - AMT Detail worksheets in the same order as the 6251
+    Call Print1116DetailAMTPr_P1
+    Call Print1116DetailAMTPr_P2
+    '33 - 8586 PassThru Entities att
+    Call Print8586PassThru
+    '55 - Form 8995
+    Call Print8995Attach
+    '67 - Form 4562 sec 179 summary
+    Call PrintSummary179
+    '67 - form 4562 Real Property
+    'Call Print4562CYReal
+    '67 - form 4562 Amortization
+    Call Print4562Amort
+    'Form 4562 StartUp and Organ Exp
+    Call PrintSummaryAmort
+    'Elect no 40% Bonus Depr Statement
+    Call PrintNo40BonusDepr
+    'Elect no 50% Bonus Depr Statement
+    Call PrintNo50BonusDepr
+    'Elect no 100% Bonus Depr Statement
+    Call PrintNo100BonusDepr
+    'Elect to expense real property with 179 Statement
+    Call PrintReal179
+    '79 - Form 6252 Line 29e Statement
+    Call Print6252Statement
+    '82 - Form 6781 Part I
+    Call Print6781PI
+    '82 - Form 6781 Part I B
+    Call Print6781PIB
+    '82 - Form 6781 Part II Sec A
+    Call Print6781PIISecA
+    '82 - Form 6781 Part II Sec B
+    Call Print6781PIISecB
+    '82 - Form 6781 Part III
+    Call Print6781PIII
+    '82 - Form 6781 Statement
+    Call Print6781Statement
+    '88 - Form 8582 Worksheet 1 through 7
+    Call Print8582Wks1
+    Call Print8582Wks1to5
+    'Call Print8582Wks6
+    Call Print8582Wks7
+    '90 - Schedule K-1 PTP Worksheet
+    Call PrintPartK1PTPWksht
+    '135 - Form 8615, Line 5 Worksheet
+    'Call Print8615Ln5
+    '135 - Form 8615, Line 9 Worksheet
+    'Call Print8615Ln9
+    '135 - Form 8615, Line 15 Worksheet
+    'Call Print8615Ln15
+    '136 - Form 8814, CGD Worksheet
+    'Call Print8814CGD
+    'Call Print 8606Inherited
+    Call Print8606Inherited
+    'Call Print W8606
+    Call PrintW8606
+    'Call Print Form 3115 Attachments
+    Call Print3115Attach1
+    Call Print3115Attach2
+    Call Print3115Attach3
+    Call Print3115Attach4
+    Call Print3115Attach5
+    Call Print3115Attach6
+    Call Print3115Attach7
+    Call Print3115Attach8
+    Call Print3115Attach9
+    Call Print3115Attach10
+    Call Print3115Attach11
+    'Statements Worksheet
+    Call PrintWStatements1
+    Call PrintWStatements2
+    Call PrintWStatements3
+    'EF Notes
+    Call PrintEFNotes
+    'Tangible property regulations statements
+    Call PrintSchCElec
+    Call PrintSchCStatElec
+    Call PrintSchEElec
+    Call PrintSchFElec
+    Call PrintSch4835Elec
+    
+    'TD F 90-22.1
+    'Call PrintTDF90221
+End Sub
+
+Public Sub Print1040XReturn()
+'Used for 1040X e-file
+    CustomPrintSub = True
+    Call Print1040XEF
+End Sub
+
+Public Sub PrintEFileForms()
+    CustomPrintSub = True
+    Call PrintEF8453
+End Sub
+
+Public Sub PrintEFileAuthorization()
+    CustomPrintSub = True
+    Call PrintPrepSigAuth
+End Sub
+
+Public Sub PrintForm_USWPRIORYR()
+    Call PrintPYComp
+End Sub
+Public Sub PrintForm_USWJtVsSep()
+    Call PrintJtVsSep
+End Sub
+Public Sub PrintForm_USWPREPBINV()
+    Call PrintPrepInvoice
+End Sub
+Public Sub PrintForm_USWPREPBYFORM()
+    Call PrintPrepByForm
+End Sub
+
+Public Sub PrintForm_USWPREPCLTR()
+    Call PrintPrepClientLetter
+End Sub
+
+Public Sub PrintForm_USF8867()
+    Call Print8867
+End Sub
+
+Public Sub PrintForm_USF8867Add()
+    Call Print8867Add
+End Sub
+
+Public Sub PrintForm_USF8594()
+    Call Print8594
+    Call Print8594p2
+End Sub
+
+Public Sub PrintForm_USWTaxCalc()
+    Call PrintTaxCalc
+End Sub
+Public Sub PrintForm_USWPreEst()
+    Call PrintPreEst
+End Sub
+Public Sub PrintForm_USWEst()
+    Call PrintEst
+End Sub
+Public Sub PrintForm_USWPreEstNR()
+    Call PrintPreEstNR
+End Sub
+Public Sub PrintForm_USWEstNR()
+    Call PrintEstNR
+End Sub
+
+Public Sub PrintForm_USDW4()
+    Call PrintW4
+End Sub
+Public Sub PrintForm_USWFAFSAIntro()
+    Call PrintUSWFAFSA
+End Sub
+Public Sub PrintForm_USWPrepSumm()
+    Call PrintPrepW2Summ
+End Sub
+Public Sub PrintForm_USWPrepCarry()
+    Call PrintPrepCarry
+End Sub
+Public Sub PrintForm_USWPrepCovLtr()
+    Call PrintPrepCovLtr
+End Sub
+
+Public Sub PrintForm_USF1040X()
+    Call Print1040X
+End Sub
+Public Sub PrintForm_USF1045()
+    Call PrintHTML("federal instructions/USF1045FilingInst.htm")
+    Call Print1045
+    Call Print1045Add
+    Call Print1045A
+    Call Print1045B
+    Call Print1045Detail
+End Sub
+
+Public Sub PrintForm_USF1045Add()
+    Call Print1045Add
+End Sub
+Public Sub PrintForm_USF1045A()
+    Call Print1045A
+End Sub
+Public Sub PrintForm_USF1045B()
+    Call Print1045B
+End Sub
+Public Sub PrintForm_USW1045Detail()
+    Call Print1045Detail
+End Sub
+Public Sub PrintForm_USWBasicInfo()
+    Call Print_BasicInfoWksht
+    Call Print_BasicInfoWksht2
+    Call Print_BasicInfoWksht3
+    'Call Print1040Main
+End Sub
+Public Sub PrintForm_USF1040()
+    Call Print1040Main
+End Sub
+
+Public Sub PrintForm_USF1040SS()
+    Call Print1040Main
+End Sub
+
+Public Sub PrintForm_USW1040SSC()
+    Call Print1040SSC
+End Sub
+
+Public Sub PrintForm_USW1040SSF()
+    Call Print1040SSF
+End Sub
+
+Public Sub PrintForm_USW1040SSSE()
+    Call Print1040SSSE
+End Sub
+
+Public Sub PrintForm_USW1040SSSESp()
+    Call Print1040SSSESp
+End Sub
+
+Public Sub PrintForm_USF1040NR()
+    Call Print1040Main
+End Sub
+
+Public Sub PrintForm_USSchANR()
+    Call PrintANRForm
+End Sub
+
+Public Sub PrintForm_USSchNEC()
+    Call PrintNECNR
+End Sub
+
+Public Sub PrintForm_USSchOI()
+    Call PrintOINR
+End Sub
+
+Public Sub PrintForm_USF1040V()
+    Call PRINT1040V
+End Sub
+
+Public Sub PrintForm_USWSSB()
+    Call PrintTaxSSB1
+End Sub
+
+Public Sub PrintForm_USWSSBLumpDetail()
+    Call PrintTaxSSB2
+End Sub
+
+Public Sub PrintForm_USWSSBLump()
+    Call PrintTaxSSB4
+End Sub
+
+Public Sub PrintForm_USWOthInc()
+    Call PrintOtherInc
+End Sub
+
+Public Sub PrintForm_USWOthIncNR()
+    Call PrintOtherIncNR
+End Sub
+
+Public Sub PrintForm_USWOthTax()
+    Call PrintOtherTax
+End Sub
+
+Public Sub PrintForm_USWOthAdj()
+    Call PrintOtherAdj
+End Sub
+
+Public Sub PrintForm_USWOthAdjNR()
+    Call PrintOtherAdjNR
+End Sub
+
+Public Sub PrintForm_USWAlimPd()
+    Call PrintAlimPd
+End Sub
+
+Public Sub PrintForm_USWIRATrad()
+    Call PrintIRATrad
+End Sub
+
+Public Sub PrintForm_USWSSBIRAMAGI()
+    Call PrintSSBIRAMAGI
+End Sub
+
+Public Sub PrintForm_USWSSBIRADed()
+    Call PrintSSBIRADed
+End Sub
+
+Public Sub PrintForm_USWSSBIRATaxSSB()
+    Call PrintSSBIRATaxSSB
+End Sub
+
+Public Sub PrintForm_USSchA()
+    Call PrintSchA
+End Sub
+
+Public Sub PrintForm_USWSchAPrint()
+    Call PrintSchAWks
+End Sub
+
+Public Sub PrintForm_USWMortStmt()
+    Call PrintMortWS
+End Sub
+
+Public Sub PrintForm_USSchAI()
+    Call Print2210AI
+End Sub
+
+Public Sub PrintForm_USSchB()
+    Call PrintSchB2
+End Sub
+
+Public Sub PrintForm_USWBPInt()
+    Call PrintBPInt
+End Sub
+
+Public Sub PrintForm_USWBPDiv()
+    Call PrintBPDiv
+End Sub
+
+Public Sub PrintForm_USSchC()
+    Call PrintSchCForm
+End Sub
+
+Public Sub PrintForm_USSchCStEmp()
+    Call PrintSchCST
+End Sub
+
+Public Sub PrintForm_USSchD()
+    Call PrintSchD
+End Sub
+
+Public Sub PrintForm_USWCapLoss()
+    Call Print_USWCapLoss
+End Sub
+
+Public Sub PrintForm_USSchEP1()
+    Call PrintSchE
+    Call PrintSchEP1OthExp
+End Sub
+
+Public Sub PrintForm_USSchEP1K1()
+    Call PrintSchE
+    Call PrintSchEP1OthExp
+End Sub
+
+Public Sub PrintForm_USSchEP2()
+    Call PrintSchEP2
+End Sub
+
+Public Sub PrintForm_USWPartK1Summ()
+    Call Print_PartSumm
+End Sub
+
+Public Sub PrintForm_USWScorpSumm()
+    Call Print_SCorpSumm
+End Sub
+
+Public Sub PrintForm_USWEstK1Summ()
+    Call Print_EstSumm
+End Sub
+
+Public Sub PrintForm_USWREMICSumm()
+    Call Print_ERemicCont
+End Sub
+
+Public Sub PrintForm_USWPartK1PTP()
+    Call Print_PartK1PTPWksht
+End Sub
+
+Public Sub PrintForm_USSchEIC()
+    Call PrintSchEic
+End Sub
+
+Public Sub PrintForm_USSchF()
+    Call PrintSchF
+End Sub
+
+Public Sub PrintForm_USSchH()
+    Call PrintSchH
+    Call PrintSchHp2
+End Sub
+
+Public Sub PrintForm_USSchJ()
+    Call PrintSchJ
+End Sub
+
+Public Sub PrintForm_USSchLEP()
+    Call PrintSchLEP
+End Sub
+
+Public Sub PrintForm_USSchR()
+    Call PrintSchR
+End Sub
+
+Public Sub PrintForm_USWFarmStmt()
+    Call PrintFarmStmt
+End Sub
+
+Public Sub PrintForm_USSchSE()
+    Call PrintSchSE1
+    Call PrintTPClergyExp
+End Sub
+
+Public Sub PrintForm_USSchSESpouse()
+    Call PrintSchSESp1
+    Call PrintSPClergyExp
+End Sub
+
+Public Sub PrintForm_USWClergyWkshts()
+    Call PrintClergyWkshts
+End Sub
+
+Public Sub PrintForm_USF1116()
+    Call Print1116FRM
+End Sub
+
+Public Sub PrintForm_USF1116AMT()
+    Call Print1116AMTFRM
+End Sub
+
+Public Sub PrintForm_USF1127()
+    Call Print1127
+End Sub
+
+Public Sub PrintForm_USF1310()
+    Call Print_13101
+End Sub
+
+Public Sub PrintForm_USFW7()
+    Call PrintW7
+End Sub
+
+Public Sub PrintForm_USFW7COA()
+    Call PrintW7COA
+End Sub
+
+Public Sub PrintForm_USFW4P()
+    Call PrintW4P
+End Sub
+
+Public Sub PrintForm_USFW4R()
+    Call PrintW4R
+End Sub
+
+Public Sub PrintForm_USF14039()
+    Call Print14039
+End Sub
+
+Public Sub PrintForm_USF2106()
+    Call Print2106
+End Sub
+Public Sub PrintForm_USW2106Veh()
+    Call Print2106x
+End Sub
+Public Sub PrintForm_USF2120()
+    Call Print2120
+End Sub
+Public Sub PrintForm_USF2210()
+    Call Print2210
+    Call Print2210P2
+    Call Print2210P3
+End Sub
+
+Public Sub PrintForm_USF2210F()
+    Call Print2210F
+End Sub
+
+Public Sub PrintForm_USF2441()
+    Call Print2441
+    Call Print2441p2
+    Call Print2441AddInfo
+    Call Print2441AddInfo2
+    Call Print2441Prior
+    Call Print2441DueDil
+End Sub
+Public Sub PrintForm_USW2441AddInfo()
+    Call Print2441AddInfo
+    Call Print2441AddInfo2
+End Sub
+Public Sub PrintForm_USW2441Prior()
+    Call Print2441Prior
+End Sub
+Public Sub PrintForm_USF2848()
+    Call Print2848
+End Sub
+Public Sub PrintForm_USF2555()
+    Call Print2555
+End Sub
+Public Sub PrintForm_USF3115()
+    Call PrintHTML("federal instructions/USF3115FilingInst.htm")
+    Call Print3115
+End Sub
+Public Sub PrintForm_USW3115Attach()
+    Call Print3115Attach1
+    Call Print3115Attach2
+    Call Print3115Attach3
+    Call Print3115Attach4
+    Call Print3115Attach5
+    Call Print3115Attach6
+    Call Print3115Attach7
+    Call Print3115Attach8
+    Call Print3115Attach9
+    Call Print3115Attach10
+    Call Print3115Attach11
+End Sub
+Public Sub PrintForm_USF3468()
+    Call Print3468
+End Sub
+Public Sub PrintForm_USF3800()
+    Call Print3800
+End Sub
+Public Sub PrintForm_USW3800C()
+    Call Print3800C
+End Sub
+Public Sub PrintForm_USW3800D()
+    Call Print3800D
+End Sub
+Public Sub PrintForm_USW3800G()
+    Call Print3800G
+End Sub
+'Public Sub PrintForm_USW3800H()
+'    Call Print3800H
+'End Sub
+
+Public Sub PrintForm_USW3800CStmt()
+    Call Print3800CStmt
+End Sub
+
+Public Sub PrintForm_USF3903()
+    Call Print3903
+End Sub
+
+Public Sub PrintForm_USF4136()
+    Call Print4136
+    Call Print4136Statement
+End Sub
+
+Public Sub PrintForm_USF4137()
+    Call Print4137
+End Sub
+
+Public Sub PrintForm_USF4137Spouse()
+    Call Print4137SP
+End Sub
+
+Public Sub PrintForm_USF4506()
+    Call Print4506
+End Sub
+
+Public Sub PrintForm_USF4562()
+    Call Print_45621
+    Call Print4562p2
+    Call Print4562P2M50
+    Call Print4562P2L50
+    Call Print4562P2Miles
+    Call Print4562P2MilesP2
+    Call PrintSummary179
+End Sub
+    
+Public Sub PrintForm_USW4562P2()
+    Call Print4562P2M50
+End Sub
+    
+Public Sub PrintForm_USW4562P2L50()
+    Call Print4562P2L50
+End Sub
+    
+Public Sub PrintForm_USW4562P2Miles()
+    Call Print4562P2Miles
+    Call Print4562P2MilesP2
+End Sub
+
+Public Sub PrintForm_USW4562Am()
+    Call Print4562Amort
+End Sub
+
+Public Sub PrintForm_USWSummaryAmort()
+    Call PrintSummaryAmort
+End Sub
+
+Public Sub PrintForm_USF4563()
+    Call Print4563
+End Sub
+    
+Public Sub PrintForm_USWSummary179()
+    Call PrintSummary179
+End Sub
+    
+Public Sub PrintForm_USF4684()
+    Call Print4684
+End Sub
+
+Public Sub PrintForm_USF4684A()
+    Call Print4684A
+End Sub
+
+Public Sub PrintForm_USF4684AChild()
+    Call Print4684
+End Sub
+
+Public Sub PrintForm_USF4684B()
+    Call Print4684B
+    Call Print4684C
+End Sub
+
+Public Sub PrintForm_USF4684BChild()
+    Call Print4684
+End Sub
+
+Public Sub PrintForm_USF4684D()
+    Call Print4684D
+End Sub
+
+Public Sub PrintForm_USF4797()
+    Call Print4797
+    Call Print4797p2
+End Sub
+
+Public Sub PrintForm_USW4797PI()
+    Call Print4797PI
+End Sub
+
+Public Sub PrintForm_USW4797PII()
+    Call Print4797PII
+End Sub
+
+Public Sub PrintForm_USF4797P2()
+    Call Print4797
+    Call Print4797p2
+End Sub
+    
+Public Sub PrintForm_USF4835()
+    Call Print4835
+End Sub
+
+Public Sub PrintForm_USF4852()
+    Call Print4852
+End Sub
+
+Public Sub PrintForm_USF461()
+    Call Print461
+End Sub
+    
+Public Sub PrintForm_USF4868()
+    Call Print4868
+End Sub
+    
+Public Sub PrintForm_USF4952()
+    Call Print4952
+End Sub
+  
+Public Sub PrintForm_USF4972()
+    Call Print4972
+End Sub
+  
+Public Sub PrintForm_USF4972Spouse()
+    Call Print4972Spouse
+End Sub
+  
+Public Sub PrintForm_USF5074()
+    Call Print5074
+End Sub
+  
+Public Sub PrintForm_USF5329()
+    Call Print5329Form
+End Sub
+
+Public Sub PrintForm_USF5405P2()
+    Call Print5405P2Exist
+End Sub
+
+Public Sub PrintForm_USW5405P2NF()
+    Call Print5405P2WS
+End Sub
+
+Public Sub PrintForm_USF5471()
+    Call PrintForm5471
+End Sub
+
+'not working - enhancement created 3.4.22
+Public Sub PrintForm_USF5471P2()
+    Call Print5471P2
+End Sub
+
+Public Sub PrintForm_USW5471SchE()
+    Call Print5471SchE
+End Sub
+
+Public Sub PrintForm_USW5471SchG1()
+    Call Print5471SchG1
+End Sub
+
+Public Sub PrintForm_USW5471SchH()
+    Call Print5471SchH
+End Sub
+
+Public Sub PrintForm_USW5471SchI()
+    Call Print5471SchI
+End Sub
+
+Public Sub PrintForm_USW5471SchI1()
+    Call Print5471SchI1
+End Sub
+
+Public Sub PrintForm_USW5471SchJ()
+    Call Print5471SchJ
+End Sub
+
+Public Sub PrintForm_USW5471SchM()
+    Call Print5471SchM
+End Sub
+
+Public Sub PrintForm_USW5471SchO()
+    Call Print5471SchO
+End Sub
+
+Public Sub PrintForm_USW5471SchP()
+    Call Print5471SchP
+End Sub
+
+Public Sub PrintForm_USW5471SchQ()
+    Call Print5471SchQ
+End Sub
+
+Public Sub PrintForm_USW5471SchR()
+    Call Print5471SchR
+End Sub
+
+Public Sub PrintForm_USF5695()
+    Call Print5695
+End Sub
+
+Public Sub PrintForm_USW5695PtI()
+    Call Print5695
+End Sub
+
+Public Sub PrintForm_USF5884()
+    Call Print5884
+End Sub
+
+Public Sub PrintForm_USF5884A()
+    Call Print5884A
+End Sub
+
+'Public Sub PrintForm_usf5884b()
+'    Call Print5884B
+'    Call Print5884BPg2
+'    Call Print5884BPg3
+'End Sub
+Public Sub PrintForm_USF5329Spouse()
+    Call Print5329SPForm
+End Sub
+Public Sub PrintForm_USF6198()
+    Call Print6198
+End Sub
+    
+Public Sub PrintForm_USF6251()
+    Call Print6251
+    Call Print6251p2
+End Sub
+Public Sub PrintForm_USW6251Exemption()
+    Call Print6251Exempt
+End Sub
+Public Sub PrintForm_USW6251Foreign()
+    Call Print6251For
+End Sub
+Public Sub PrintForm_USF6252()
+    Call Print6252
+End Sub
+Public Sub PrintForm_USF6478()
+    Call Print6478
+End Sub
+Public Sub PrintForm_USF6765()
+    Call Print6765
+End Sub
+Public Sub PrintForm_USF6781()
+    Call Print6781
+    Call Print6781PI
+    Call Print6781PIB
+    Call Print6781PIISecA
+    Call Print6781PIISecB
+    Call Print6781PIII
+    Call Print6781Statement
+End Sub
+Public Sub PrintForm_USW6781PI()
+    Call Print6781PI
+End Sub
+Public Sub PrintForm_USW6781PIB()
+    Call Print6781PIB
+End Sub
+Public Sub PrintForm_USW6781PIISecA()
+    Call Print6781PIISecA
+End Sub
+Public Sub PrintForm_USW6781PIISecB()
+    Call Print6781PIISecB
+End Sub
+Public Sub PrintForm_USW6781PIII()
+    Call Print6781PIII
+End Sub
+Public Sub PrintForm_USW6781Stmt()
+    Call Print6781Statement
+End Sub
+
+Public Sub PrintForm_USF8689()
+    Call Print8689
+End Sub
+    
+Public Sub PrintForm_USF8283()
+    Call Print8283
+End Sub
+
+Public Sub PrintForm_USF8332()
+    Call Print8332
+End Sub
+
+Public Sub PrintForm_USF8379()
+    Call Print8379
+    'Call Print8379Old
+End Sub
+
+Public Sub PrintForm_USF8396()
+    Call Print8396
+End Sub
+
+Public Sub PrintForm_USF8453Prep()
+    Call PRINT8453_EF
+End Sub
+
+Public Sub PrintForm_USF8582()
+    Call Print8582
+    Call Print85822
+    Call Print85823
+End Sub
+
+Public Sub PrintForm_USF8582CR()
+    Call Print8582CR
+End Sub
+
+Public Sub PrintForm_USW8582Wks7()
+    Call Print8582Wks7
+End Sub
+    
+Public Sub PrintForm_USF8606()
+    Call Print8606Form
+End Sub
+  
+Public Sub PrintForm_USF8606Spouse()
+    Call Print8606SPForm
+End Sub
+
+Public Sub PrintForm_USW8606()
+    Call PrintW8606Form
+End Sub
+
+Public Sub PrintForm_USW8606Spouse()
+    Call PrintW8606SpForm
+End Sub
+
+Public Sub PrintForm_USF8586()
+    Call Print8586
+End Sub
+Public Sub PrintForm_USW8586PassThru()
+    Call Print8586PassThru
+End Sub
+Public Sub PrintForm_USF8609()
+    Call Print8609
+End Sub
+
+Public Sub PrintForm_USF8615()
+    Call Print8615
+End Sub
+
+Public Sub PrintForm_USF8621()
+    Call Print8621
+End Sub
+
+Public Sub PrintForm_USW8621Stmt()
+    Call Print8621Statement
+    Call Print8621Statement2
+    Call Print8621Statement3
+    Call Print8621Statement4
+    Call Print8621Statement5
+End Sub
+
+Public Sub PrintForm_USF8812()
+    Call Print8812
+End Sub
+Public Sub PrintForm_USW8812CTC()
+    Call Print8812WksCTC
+End Sub
+Public Sub PrintForm_USWCTCL9()
+    Call PrintCTCL9
+End Sub
+Public Sub PrintForm_USW8812AddMCare()
+    Call Print8812Wks
+End Sub
+Public Sub PrintForm_USF8801()
+    Call Print8801
+    Call Print8801p2
+    Call Print8801p3
+    Call Print8801p4
+End Sub
+Public Sub PrintForm_USW8801Foreign()
+    Call Print8801Foreign
+End Sub
+    
+Public Sub PrintForm_USF8814()
+    Call Print8814
+End Sub
+
+Public Sub PrintForm_USF8815()
+    Call Print8815
+End Sub
+
+Public Sub PrintForm_USF8888()
+    Call Print8888
+End Sub
+
+Public Sub PrintForm_USF8820()
+    Call Print8820
+End Sub
+
+Public Sub PrintForm_USF8821()
+    Call Print8821
+End Sub
+
+Public Sub PrintForm_USF8822()
+    Call Print8822
+End Sub
+Public Sub PrintForm_USF8824()
+    Call Print8824
+    Call PrintUSF8824Statement
+End Sub
+
+Public Sub PrintForm_USF8826()
+    Call Print8826
+End Sub
+
+Public Sub PrintForm_USF8829()
+    Call Print8829
+End Sub
+
+Public Sub PrintForm_USF8833()
+    Call Print8833
+End Sub
+
+Public Sub PrintForm_USF8835()
+    Call Print8835
+End Sub
+
+Public Sub PrintForm_USF8839()
+    Call Print8839PrintForm
+End Sub
+
+Public Sub PrintForm_USF8840()
+    Call Print8840
+End Sub
+
+Public Sub PrintForm_USF8843()
+    Call Print8843
+End Sub
+
+Public Sub PrintForm_USF8844()
+    Call Print8844
+End Sub
+
+Public Sub PrintForm_USF8845()
+    Call Print8845
+End Sub
+
+Public Sub PrintForm_USF8846()
+    Call Print8846
+End Sub
+
+Public Sub PrintForm_USF8853()
+    Call Print8853
+    Call PrintW8853Tp
+    Call PrintW8853Sp
+    Call Print88532Tp
+    Call Print88532Sp
+    Call Print88532WTp
+    Call Print88532WSp
+End Sub
+
+Public Sub PrintForm_USW8853()
+    Call Print8853
+    Call PrintW8853Tp
+    Call PrintW8853Sp
+    Call Print88532Tp
+    Call Print88532Sp
+    Call Print88532WTp
+    Call Print88532WSp
+End Sub
+
+Public Sub PrintForm_USW8853spouse()
+    Call Print8853
+    Call PrintW8853Tp
+    Call PrintW8853Sp
+    Call Print88532Tp
+    Call Print88532Sp
+    Call Print88532WTp
+    Call Print88532WSp
+End Sub
+
+Public Sub PrintForm_USF8857()
+    Call Print8857
+End Sub
+
+Public Sub PrintForm_USF8862()
+    Call Print8862
+End Sub
+
+Public Sub PrintForm_USF8863()
+    Call Print8863
+End Sub
+
+Public Sub PrintForm_USF8863P2()
+    Call Print8863
+End Sub
+
+Public Sub PrintForm_USF8864()
+    Call Print8864
+End Sub
+
+Public Sub PrintForm_USF8874()
+    Call Print8874
+End Sub
+
+Public Sub PrintForm_USF8885()
+    Call Print8885Form
+End Sub
+
+Public Sub PrintForm_USW8885()
+    Call Print8885Worksheet
+End Sub
+  
+Public Sub PrintForm_USF8885Spouse()
+    Call Print8885SpForm
+End Sub
+
+Public Sub PrintForm_USW8885Spouse()
+    Call Print8885SpWorksheet
+End Sub
+
+Public Sub PrintForm_USF8886()
+    Call Print8886
+End Sub
+
+Public Sub PrintForm_USF8878()
+    Call PrintPrep4868SigAuth
+End Sub
+
+Public Sub PrintForm_USF8879()
+    Call PrintPrepSigAuth
+End Sub
+
+Public Sub PrintForm_USF8880()
+    Call Print8880
+End Sub
+
+Public Sub PrintForm_USF8995()
+    Call Print8995
+    Call Print8995Attach
+End Sub
+
+Public Sub PrintForm_USF8995A()
+    Call Print8995A
+End Sub
+
+Public Sub PrintForm_USF8995ASchA()
+    Call Print8995ASchA
+End Sub
+
+Public Sub PrintForm_USF8995ASchC()
+    Call Print8995ASchC
+End Sub
+
+Public Sub PrintForm_USF8995ASchD()
+    Call Print8995ASchD
+End Sub
+
+Public Sub PrintForm_USF8881()
+    Call Print8881
+End Sub
+
+Public Sub PrintForm_USF8882()
+    Call Print8882
+End Sub
+
+Public Sub PrintForm_USWAllocation()
+    Call Print8958
+    Call Print8958W
+    Call Print8958I
+    Call Print8958D
+End Sub
+
+Public Sub PrintForm_USWAllocation2()
+    Call Print8958W
+    Call Print8958I
+    Call Print8958D
+End Sub
+
+Public Sub PrintForm_USF8889()
+    Call Print8889Form
+End Sub
+
+Public Sub PrintForm_USF8889Spouse()
+    Call Print8889SPForm
+End Sub
+
+Public Sub PrintForm_USF8896()
+    Call Print8896
+End Sub
+
+Public Sub PrintForm_USF8900()
+    Call Print8900
+End Sub
+
+Public Sub PrintForm_USF8906()
+    Call Print8906
+End Sub
+
+Public Sub PrintForm_USF8908()
+    Call Print8908
+End Sub
+
+Public Sub PrintForm_USF8910()
+    Call Print8910
+End Sub
+
+Public Sub PrintForm_USF8911()
+    Call Print8911
+End Sub
+
+Public Sub PrintForm_USF8915C()
+    Call Print8915C
+End Sub
+
+Public Sub PrintForm_USF8915CSpouse()
+    Call Print8915CSp
+End Sub
+
+Public Sub PrintForm_USF8915D()
+    Call Print8915D
+End Sub
+
+Public Sub PrintForm_USF8915DSpouse()
+    Call Print8915DSp
+End Sub
+
+Public Sub PrintForm_USF8915F()
+    Call Print8915F
+End Sub
+
+Public Sub PrintForm_USF8915FSpouse()
+    Call Print8915FSp
+End Sub
+
+Public Sub PrintForm_USF8828()
+    Call Print8828
+End Sub
+Public Sub PrintForm_USF8919()
+    Call Print8919
+End Sub
+Public Sub PrintForm_USW8919()
+    Call Print8919Wks
+End Sub
+Public Sub PrintForm_USF8919Spouse()
+    Call Print8919Sp
+End Sub
+
+Public Sub PrintForm_USF8923()
+    Call Print8923
+End Sub
+
+Public Sub PrintForm_USF8932()
+    Call Print8932
+End Sub
+
+Public Sub PrintForm_USF8933()
+    Call Print8933
+End Sub
+Public Sub PrintForm_USF8990()
+    Call Print8990
+    Call Print8990p3
+    Call Print8990A
+    Call Print8990B
+End Sub
+Public Sub PrintForm_USF8990A()
+    Call Print8990p3
+    Call Print8990A
+End Sub
+Public Sub PrintForm_USF8990B()
+    Call Print8990p3
+    Call Print8990B
+End Sub
+Public Sub PrintForm_USF8936()
+    Call Print8936
+End Sub
+Public Sub PrintForm_usf8941()
+    Call Print8941
+End Sub
+Public Sub PrintForm_USF8944()
+    Call Print8944
+End Sub
+Public Sub PrintForm_USF8948()
+    Call Print8948
+End Sub
+Public Sub PrintForm_USF8938()
+    Call Print8938
+End Sub
+
+Public Sub PrintForm_USF8960()
+    Call Print8960
+End Sub
+
+Public Sub PrintForm_USW8960GainLossWS()
+    Call Print8960WS
+End Sub
+
+Public Sub PrintForm_USF8962()
+    Call Print8962
+End Sub
+
+Public Sub PrintForm_USF8997()
+    Call Print8997
+End Sub
+
+Public Sub PrintForm_USF9325()
+    Call Print9325
+End Sub
+
+Public Sub PrintForm_USF9465()
+    Call Print9465
+End Sub
+
+Public Sub PrintForm_USF965A()
+    Call Print965A
+End Sub
+
+Public Sub PrintForm_USF982()
+    Call Print982
+End Sub
+
+Public Sub PrintForm_USF8949()
+    Call Print8949
+End Sub
+
+Public Sub PrintForm_USF8959()
+    Call Print8959
+End Sub
+
+Public Sub PrintForm_USWAddDep()
+    Call PrintOneAddDep
+End Sub
+
+Public Sub PrintForm_USWRALApp()
+    Call PrintRALApp
+End Sub
+
+Public Sub PrintForm_USWEIC()
+    Call PrintEICWS
+    Call PrintEICWS2
+End Sub
+
+Public Sub PrintForm_USWEICInvestInc()
+    Call PrintEICInvInc
+End Sub
+
+Public Sub PrintForm_USWPenalty()
+    Call PrintWPenalty
+End Sub
+
+Public Sub PrintForm_USWStatements()
+    Call PrintWStatements1
+    Call PrintWStatements2
+    Call PrintWStatements3
+End Sub
+
+Public Sub PrintForm_USWOthCred()
+    Call PrintUSWOthCred
+End Sub
+Public Sub PrintForm_USW1116Detail()
+    Call Print1116Detail_P1
+    Call Print1116Detail_P2
+End Sub
+Public Sub PrintForm_USW1116DetailAMT()
+    Call Print1116DetailAMT_P1
+    Call Print1116DetailAMT_P2
+End Sub
+Public Sub PrintForm_USW1116DCalc()
+    Call Print1116DCalc
+End Sub
+Public Sub PrintForm_USW1116DCalcAMT()
+    Call Print1116DCalcAMT
+End Sub
+Public Sub PrintForm_USW1116GrossIncAll()
+    Call Print1116GrossInc
+End Sub
+Public Sub PrintForm_USW1116SchBCOForBranch()
+    Call Print1116SchBCOForBranch
+    Call Print1116SchBCOForBranchAMT
+End Sub
+Public Sub PrintForm_USW1116SchBCOPass()
+    Call Print1116SchBCOPass
+    Call Print1116SchBCOPassAMT
+End Sub
+Public Sub PrintForm_USW1116SchBCOGen()
+    Call Print1116SchBCOGen
+    Call Print1116SchBCOGenAMT
+End Sub
+Public Sub PrintForm_USW1116SchBCORes()
+    Call Print1116SchBCORes
+    Call Print1116SchBCOResAMT
+End Sub
+Public Sub PrintForm_USW1116SchBCOLump()
+    Call Print1116SchBCOLump
+    Call Print1116SchBCOLumpAMT
+End Sub
+Public Sub PrintForm_USZAR1000()
+    TriggerForm = USZAR1000
+    TriggerField = USZAR1000.Print
+End Sub
+
+Public Sub PrintJtVsSep()
+    Call PrintHTML("federal instructions/JtVsSep.htm")
+End Sub
+Public Sub PrintPYComp()
+    Call PrintHTML("federal instructions/PYComp.htm")
+End Sub
+Public Sub PrintTaxCalc()
+   TriggerForm = USWTaxCalc
+   Call Print_TaxCalc1
+   Call Print_TaxCalc2
+End Sub
+Public Sub PrintPrepInvoice()
+    Call PrintHTML("federal instructions/prepinvoice.htm")
+    Call PrintPrepByForm
+End Sub
+Public Sub PrintPrepClientLetter()
+    Call PrintHTML("federal instructions/prepletter.htm")
+End Sub
+Public Sub PrintPrepByForm()
+    TriggerForm = USWPrepByForm
+    TriggerField = USWPrepByForm.CBF
+    Call PrintHTML("federal instructions/chargebyform.htm")
+End Sub
+Public Sub PrintForm_USWPrepOrg()
+    Call PrintOrg1
+    Call PrintOrg2
+    Call PrintOrg4
+    Call PrintOrg7
+    Call PrintOrg8
+    Call PrintOrg9
+    Call PrintOrg10
+    Call PrintOrg11
+    Call PrintOrg12
+    Call PrintOrgCredits
+End Sub
+
+Public Sub PrintUSWEFWKSHT()
+    TriggerForm = USWEFWksht
+    
+    Call Print8453
+    Call PrintPrepSigAuth
+End Sub
+
+Public Sub PrintPrep4868SigAuth()
+    TriggerForm = USF8878
+    TriggerField = USF8878.Pr8878
+    Call Print_8878
+End Sub
+
+Public Sub PrintPrepSigAuth()
+    TriggerForm = USF8879
+    TriggerField = USF8879.Pr8879
+    Call Print_8879
+    End Sub
+    
+Public Sub Print8867()
+    TriggerForm = USF8867
+    TriggerField = USF8867.PrintMe
+    Call Print_88671
+    Call Print_88672
+End Sub
+
+Public Sub Print8867Add()
+    TriggerForm = USF8867Add
+    TriggerField = USF8867Add.PrintMe
+    Call Print_8867Add1
+    Call Print_8867Add2
+End Sub
+
+Public Sub PrintPrepW2Summ()
+    TriggerForm = USWPrepSumm
+    TriggerField = USWPrepSumm.PrSumm
+    Call Print_PrepW2Summ
+End Sub
+Public Sub PrintPrepCarry()
+    TriggerForm = USWPrepCarry
+    TriggerField = USWPrepCarry.PrSumm
+    Call Print_PrepCarry1
+    Call Print_PrepCarry2
+End Sub
+Public Sub PrintPrepCovLtr()
+    TriggerForm = USWPrepCovLtr
+    Call PrintPrepCovLtrEnv
+    Call PrintPrepCovLtrNLCO
+    Call PrintPrepCovLtrStd
+End Sub
+Public Sub PrintPrepCovLtrEnv()
+    TriggerForm = USWPrepCovLtr
+    TriggerField = USWPrepCovLtr.PrepCovLEnv
+    Call Print_PrepCovLtrEnv
+End Sub
+Public Sub PrintPrepCovLtrNLCO()
+    TriggerForm = USWPrepCovLtr
+    TriggerField = USWPrepCovLtr.PrepCovLNLCO
+    Call Print_PrepCovLtrNLCO
+End Sub
+Public Sub PrintPrepCovLtrStd()
+    TriggerForm = USWPrepCovLtr
+    TriggerField = USWPrepCovLtr.PrepCovLStd
+    Call Print_PrepCovLtrStd
+End Sub
+
+Public Sub Print8880()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8880
+    TriggerField = USF8880.Print
+    Call Print_8880
+End Sub
+
+Public Sub Print8995()
+    TriggerForm = USF8995
+    TriggerField = USF8995.Print
+    Call Print_8995
+End Sub
+
+Public Sub Print8995Attach()
+    TriggerForm = USF8995Print
+    Call Print_8995Attach
+End Sub
+
+Public Sub Print8995A()
+    TriggerForm = USF8995A
+    TriggerField = USF8995A.Print
+    Call Print8995ACopies
+    Call Print8995ASchA
+    Call Print8995ASchC
+    Call Print8995ASchD
+End Sub
+
+Public Sub Print8995ASchA()
+    TriggerForm = USF8995ASchA
+    TriggerField = USF8995ASchA.Print
+    Call Print8995ASchACopies
+End Sub
+
+Public Sub Print8995ASchC()
+    TriggerForm = USF8995ASchC
+    TriggerField = USF8995ASchC.Print
+    Call Print8995ASchCCopies
+End Sub
+
+Public Sub Print8995ASchD()
+    TriggerForm = USF8995ASchD
+    TriggerField = USF8995ASchD.Print
+    Call Print8995ASchDCopies
+End Sub
+
+Public Sub Print8995ACopies()
+    TriggerForm = USF8995APrint
+    Call Print_8995APage1
+    Call Print_8995APage2
+End Sub
+
+Public Sub Print8995ASchACopies()
+    TriggerForm = USF8995ASchAPrint
+    Call Print_8995ASchA
+End Sub
+
+Public Sub Print8995ASchCCopies()
+    TriggerForm = USF8995ASchCPrint
+    Call Print_8995ASchC
+End Sub
+
+Public Sub Print8995ASchDCopies()
+    TriggerForm = USF8995ASchDPrint
+    Call Print_8995ASchD
+End Sub
+
+Public Sub Print8881()
+    TriggerForm = USF8881
+    TriggerField = USF8881.Print
+    Call Print_8881
+End Sub
+
+Public Sub Print8882()
+    TriggerForm = USF8882
+    TriggerField = USF8882.Print
+    Call Print_8882
+End Sub
+
+Public Sub Print8958()
+    TriggerForm = USWAllocation
+    TriggerField = USWAllocation.EFTrigger
+    Call Print_89581
+    Call Print_89582
+End Sub
+
+Public Sub Print8958W()
+    TriggerForm = USWAllocation2
+    TriggerField = USWAllocation2.PrintWages
+    Call Print_8958W
+End Sub
+
+Public Sub Print8958I()
+    TriggerForm = USWAllocation2
+    TriggerField = USWAllocation2.PrintInt
+    Call Print_8958I
+End Sub
+
+Public Sub Print8958D()
+    TriggerForm = USWAllocation2
+    TriggerField = USWAllocation2.PrintDiv
+    Call Print_8958D
+End Sub
+
+Public Sub Print8959()
+    TriggerForm = USF8959
+    TriggerField = USF8959.Print
+    Call Print_8959
+End Sub
+Public Sub PrintPreEst()
+    TriggerForm = USWPreEst
+    TriggerField = USWPreEst.Print
+    Call Print_1040PreESWC
+    Call Print_1040PreESC2
+End Sub
+Public Sub PrintEst()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USWEst
+    TriggerField = USWEst.PrUSWEst
+    Call Print_1040ESWC
+    Call Print_1040ESC1
+    Call Print_1040ESC2
+End Sub
+Public Sub PrintEFEst()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USWEst
+    TriggerField = USWEst.PrEFEst
+    Call Print_1040ESWC
+End Sub
+Public Sub PrintPreEstNR()
+    TriggerForm = USWPreEstNR
+    TriggerField = USWPreEstNR.PrUSWEst
+    Call Print_1040PreESNRWC
+    Call Print_1040PreESNRC2
+End Sub
+Public Sub PrintEstNR()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USWEstNR
+    TriggerField = USWEstNR.PrUSWEst
+    Call Print_1040ESNRWC
+    Call Print_1040ESNRC1
+    Call Print_1040ESNRC2
+End Sub
+Public Sub PrintEFEstNR()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USWEstNR
+    TriggerField = USWEstNR.PrEFEst
+    Call Print_1040ESNRWC
+End Sub
+Public Sub Print1040MainPreview()
+    TriggerForm = USF1040
+    Call Print1040
+    Call Print1040SS
+    Call Print1040NR
+End Sub
+
+Public Sub Print1040Main()
+    TriggerForm = USF1040
+    Call Print1040
+    Call Print1040SR
+    Call Print1040SS
+    Call Print1040NR
+End Sub
+
+Public Sub Print1040()
+    TriggerForm = USF1040
+    TriggerField = USF1040.Print1040
+    Call Print_10401
+    Call Print_10402
+    Call PrintSchedule1
+    Call PrintSchedule2
+    Call PrintSchedule3
+End Sub
+
+Public Sub Print1040SR()
+    TriggerForm = USF1040
+    TriggerField = USF1040.Print1040SR
+    Call Print_1040SR1
+    Call Print_1040SR2
+    Call Print_1040SR3
+    Call Print_1040SR4
+    Call PrintSchedule1
+    Call PrintSchedule2
+    Call PrintSchedule3
+End Sub
+
+
+Public Sub PrintSchedule1()
+    TriggerForm = USF1040
+    TriggerField = USF1040.PrintSch1
+    Call Print_1040Sch1_1
+    Call Print_1040Sch1_2
+End Sub
+
+Public Sub PrintSchedule2()
+    TriggerForm = USF1040
+    TriggerField = USF1040.PrintSch2
+    Call Print_1040Sch2_1
+    Call Print_1040Sch2_2
+End Sub
+
+Public Sub PrintSchedule3()
+    TriggerForm = USF1040
+    TriggerField = USF1040.PrintSch3
+    Call Print_1040Sch3_1
+    Call Print_1040Sch3_2
+End Sub
+
+Public Sub Print1040SS()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1040SS
+    TriggerField = USF1040SS.Print1040SS
+    Call Print_1040SS1
+    Call Print1040SS2
+End Sub
+Public Sub Print1040SS2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1040SS
+    TriggerField = USF1040SS.Print1040SS2
+    Call Print_1040SS2
+    Call Print_1040SS3
+    Call Print_1040SS4
+End Sub
+Public Sub Print1040SSF()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW1040SSF
+    TriggerField = USW1040SSF.PrintRest
+    Call Print_1040SSF1
+    Call Print1040SSFPg2
+End Sub
+Public Sub Print1040SSFPg2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW1040SSF
+    TriggerCopy = CurrentCopy
+    TriggerField = USW1040SSF.PrintRest2
+    Call Print_1040SSF2
+End Sub
+Public Sub Print1040SSC()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW1040SSC
+    TriggerField = USW1040SSC.PrintRest
+    Call Print_1040SSC1
+End Sub
+Public Sub Print1040SSSE()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW1040SSSE
+    TriggerField = USW1040SSSE.PrintSE
+    Call Print_1040SS4
+End Sub
+Public Sub Print1040SSSESp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW1040SSSESp
+    TriggerField = USW1040SSSESp.PrintSESp
+    Call Print_1040SSSESp
+End Sub
+Public Sub Print1040SSFStmt()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW1040SSF
+    TriggerField = USW1040SSF.PrintStmt
+    Call Print_1040SSFStmt
+End Sub
+Public Sub Print1040SSCStmt()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW1040SSC
+    TriggerField = USW1040SSC.PrintStmt
+    Call Print_1040SSCStmt
+End Sub
+Public Sub Print1040NR()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1040NR
+    TriggerField = USF1040NR.Print1040
+    Call Print_1040NR1
+    Call Print_1040NR2
+    Call PrintSchedule1
+    Call PrintSchedule2
+    Call PrintSchedule3
+End Sub
+
+Public Sub PrintANRForm()
+    Call PrintANR
+    Call PrintANRStdDed
+End Sub
+Public Sub PrintANR()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USSchANR
+    TriggerField = USSchANR.PrSchA
+    Call Print_ANR
+    Call PrintSchAWks
+End Sub
+Public Sub PrintANRStdDed()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USSchANR
+    TriggerField = USSchANR.PrSchADis
+    Call Print_ANRStdDed
+End Sub
+Public Sub PrintNECNR()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USSchNEC
+    TriggerField = USSchNEC.Print
+    Call Print_NECNR
+End Sub
+Public Sub PrintOINR()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USSchOI
+    TriggerField = USSchOI.Print
+    Call Print_OINR
+End Sub
+Public Sub PrintTransTax()
+    TriggerForm = USWTransTax
+    TriggerField = USWTransTax.Print
+    Call PrintVBForm
+End Sub
+
+Public Sub Print1040XEF()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1040X
+    'Call Print_1040XInstr
+    Call Print_1040X1
+    Call Print_1040X2
+    Call Print1040XDep
+End Sub
+
+Public Sub Print1040XPrep()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1040X
+    TriggerField = USF1040X.Print
+    'Call Print_1040XInstr
+    Call Print_1040X1
+    Call Print_1040X2
+    Call Print1040XDep
+End Sub
+
+Public Sub Print1040X()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1040X
+    Call Print_1040XInstr
+    Call Print_1040X1
+    Call Print_1040X2
+    Call Print1040XDep
+End Sub
+Public Sub Print1040XDep()
+    TriggerForm = USF1040X
+    TriggerField = USF1040X.PrintDep
+    Call Print_1040XDep
+End Sub
+Public Sub Print1045()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1045
+    TriggerField = USF1045.Print1045
+    Call Print_10451
+    Call Print_10452
+End Sub
+Public Sub Print1045Add()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1045Add
+    TriggerField = USF1045Add.Print1045Add
+    Call Print_1045Add
+    Call Print_1045Add2
+End Sub
+Public Sub Print1045A()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1045A
+    TriggerField = USF1045A.Print1045A
+    Call Print_1045A
+End Sub
+Public Sub Print1045B()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1045B
+    TriggerField = USF1045B.Print1045B
+    Call Print_1045B
+    Call Print_1045B2
+End Sub
+Public Sub Print1045Detail()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW1045Detail
+    TriggerField = USW1045Detail.Print1045Detail
+    Call Print_1045Detail
+    Call Print_1045Detail2
+End Sub
+Public Sub PrintUSF1045FilingInst()
+    Call PrintHTML("federal instructions/USF1045FilingInst.htm")
+End Sub
+Public Sub Print1116()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1116
+    TriggerField = USF1116.Print
+    Call Print_11161
+    Call Print1116_P2
+End Sub
+Public Sub Print1116FRM()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1116
+    TriggerField = USF1116.Print
+    Call Print_11161
+    Call Print_11162
+    Call Print1116Detail_P1
+    Call Print1116Detail_P2
+End Sub
+Public Sub Print1116_P2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1116
+    TriggerCopy = CurrentCopy
+    TriggerField = USF1116.PrintPg2
+    Call Print_11162
+End Sub
+Public Sub Print1116DetailPr_P1()
+    TriggerForm = USW1116Detail
+    TriggerField = USW1116Detail.Print
+    Call Print_1116Detail1
+End Sub
+Public Sub Print1116DetailPr_P2()
+    TriggerForm = USW1116Detail
+    TriggerField = USW1116Detail.Print2
+    Call Print_1116Detail2
+End Sub
+Public Sub Print1116Detail_P1()
+    TriggerForm = USW1116Detail
+    TriggerCopy = ChildCopies
+    'TriggerCopy = CurrentCopy
+    TriggerField = USW1116Detail.Print
+    Call Print1116Detail1_P1P
+End Sub
+Public Sub Print1116Detail1_P1P()
+    TriggerForm = USW1116Detail
+    'TriggerCopy = ChildCopies
+    TriggerCopy = CurrentCopy
+    TriggerField = USW1116Detail.Print
+    Call Print_1116Detail1
+End Sub
+Public Sub Print1116Detail_P2()
+    TriggerForm = USW1116Detail
+    TriggerCopy = ChildCopies
+    'TriggerCopy = CurrentCopy
+    TriggerField = USW1116Detail.Print2
+    Call Print1116Detail_P2P
+End Sub
+Public Sub Print1116Detail_P2P()
+    TriggerForm = USW1116Detail
+    'TriggerCopy = ChildCopies
+    TriggerCopy = CurrentCopy
+    TriggerField = USW1116Detail.Print2
+    Call Print_1116Detail2
+End Sub
+Public Sub Print1116GrossInc()
+    TriggerForm = USW1116GrossIncAll
+    'TriggerCopy = ChildCopies
+    'TriggerCopy = CurrentCopy
+    'TriggerField = USW1116Detail.Print2
+    Call Print_1116GrossInc
+End Sub
+Public Sub Print1116SchBCOForBranch()
+    TriggerForm = USW1116SchBCOForBranch
+    TriggerField = USW1116SchBCOForBranch.Print
+    Call Print_1116SchBCOForBranch_1
+    Call Print_1116SchBCOForBranch_2
+End Sub
+Public Sub Print1116SchBCOPass()
+    TriggerForm = USW1116SchBCOPass
+    TriggerField = USW1116SchBCOPass.Print
+    Call Print_1116SchBCOPass_1
+    Call Print_1116SchBCOPass_2
+End Sub
+Public Sub Print1116SchBCOGen()
+    TriggerForm = USW1116SchBCOGen
+    TriggerField = USW1116SchBCOGen.Print
+    Call Print_1116SchBCOGen_1
+    Call Print_1116SchBCOGen_2
+End Sub
+Public Sub Print1116SchBCORes()
+    TriggerForm = USW1116SchBCORes
+    TriggerField = USW1116SchBCORes.Print
+    Call Print_1116SchBCORes_1
+    Call Print_1116SchBCORes_2
+End Sub
+Public Sub Print1116SchBCOLump()
+    TriggerForm = USW1116SchBCOLump
+    TriggerField = USW1116SchBCOLump.Print
+    Call Print_1116SchBCOLump_1
+    Call Print_1116SchBCOLump_2
+End Sub
+Public Sub Print1116SchBCOForBranchAMT()
+    TriggerForm = USW1116SchBCOForBranch
+    TriggerField = USW1116SchBCOForBranch.PrintAMT
+    Call Print_1116SchBCOForBranchAMT_1
+    Call Print_1116SchBCOForBranchAMT_2
+End Sub
+Public Sub Print1116SchBCOPassAMT()
+    TriggerForm = USW1116SchBCOPass
+    TriggerField = USW1116SchBCOPass.PrintAMT
+    Call Print_1116SchBCOPassAMT_1
+    Call Print_1116SchBCOPassAMT_2
+End Sub
+Public Sub Print1116SchBCOGenAMT()
+    TriggerForm = USW1116SchBCOGen
+    TriggerField = USW1116SchBCOGen.PrintAMT
+    Call Print_1116SchBCOGenAMT_1
+    Call Print_1116SchBCOGenAMT_2
+End Sub
+Public Sub Print1116SchBCOResAMT()
+    TriggerForm = USW1116SchBCORes
+    TriggerField = USW1116SchBCORes.PrintAMT
+    Call Print_1116SchBCOResAMT_1
+    Call Print_1116SchBCOResAMT_2
+End Sub
+Public Sub Print1116SchBCOLumpAMT()
+    TriggerForm = USW1116SchBCOLump
+    TriggerField = USW1116SchBCOLump.PrintAMT
+    Call Print_1116SchBCOLumpAMT_1
+    Call Print_1116SchBCOLumpAMT_2
+End Sub
+Public Sub Print1116AMT()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1116AMT
+    TriggerField = USF1116AMT.Print
+    Call Print_1116AMT1
+    Call Print1116AMT_P2
+End Sub
+Public Sub Print1116AMTFRM()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1116AMT
+    TriggerField = USF1116AMT.Print
+    Call Print_1116AMT1
+    Call Print_1116AMT2
+    Call Print1116DetailAMT_P1
+    Call Print1116DetailAMT_P2
+End Sub
+Public Sub Print1116AMT_P2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1116AMT
+    TriggerCopy = CurrentCopy
+    TriggerField = USF1116AMT.PrintPg2
+    Call Print_1116AMT2
+End Sub
+Public Sub Print1116DetailAMTPr_P1()
+    TriggerForm = USW1116DetailAMT
+    TriggerField = USW1116DetailAMT.Print
+    Call Print_1116DetailAMT1
+End Sub
+Public Sub Print1116DetailAMTPr_P2()
+    TriggerForm = USW1116DetailAMT
+    TriggerField = USW1116DetailAMT.Print2
+    Call Print_1116DetailAMT2
+End Sub
+Public Sub Print1116DetailAMT_P1()
+    TriggerForm = USW1116DetailAMT
+    TriggerCopy = ChildCopies
+    'TriggerCopy = CurrentCopy
+    TriggerField = USW1116DetailAMT.Print
+    Call Print1116Detail1AMT_P1P
+End Sub
+Public Sub Print1116Detail1AMT_P1P()
+    TriggerForm = USW1116DetailAMT
+    'TriggerCopy = ChildCopies
+    TriggerCopy = CurrentCopy
+    TriggerField = USW1116DetailAMT.Print
+    Call Print_1116DetailAMT1
+End Sub
+Public Sub Print1116DetailAMT_P2()
+    TriggerForm = USW1116DetailAMT
+    TriggerCopy = ChildCopies
+    'TriggerCopy = CurrentCopy
+    TriggerField = USW1116DetailAMT.Print2
+    Call Print1116DetailAMT_P2P
+End Sub
+Public Sub Print1116DetailAMT_P2P()
+    TriggerForm = USW1116DetailAMT
+    'TriggerCopy = ChildCopies
+    TriggerCopy = CurrentCopy
+    TriggerField = USW1116DetailAMT.Print2
+    Call Print_1116DetailAMT2
+End Sub
+
+Public Sub Print1127()
+    TriggerForm = USF1127
+    TriggerField = USF1127.Print
+    Call Print_1127
+End Sub
+
+Public Sub Print1310()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF1310
+    TriggerField = USF1310.Print
+    Call Print_13101
+End Sub
+
+Public Sub PrintW7()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USFW7
+    TriggerField = USFW7.Print
+    Call Print_W7
+    Call PrintW7Stmt
+End Sub
+
+Public Sub PrintW7Stmt()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USFW7
+    TriggerField = USFW7.PrintStmt
+    TriggerCopy = CurrentCopy
+    Call Print_W7Stmt
+End Sub
+
+Public Sub PrintW7COA()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USFW7COA
+    TriggerField = USFW7COA.Print
+    Call Print_W7COA
+End Sub
+
+Public Sub PrintW4P()
+    TriggerForm = USFW4P
+    TriggerField = USFW4P.Exist
+    Call Print_USFW4P
+    Call Print_USFW4Pwks
+End Sub
+
+Public Sub PrintW4R()
+    TriggerForm = USFW4R
+    TriggerField = USFW4R.Exist
+    Call Print_USFW4R
+End Sub
+
+Public Sub Print14039()
+    TriggerForm = USF14039
+    TriggerField = USF14039.PrintMe
+    Call Print_14039
+    Call Print_14039P2
+End Sub
+
+Public Sub Print2106()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2106
+    TriggerField = USF2106.Print
+    Call Print_21061
+    Call Print2106p2I
+    Call Print2106p2II
+    Call PrintF4562Home2106
+End Sub
+
+Public Sub Print2106x()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2106
+    TriggerField = USF2106.PrintP2
+    Call Print_21061
+    Call Print2106p2I
+    Call Print2106p2II
+End Sub
+
+Public Sub Print2106p2I()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2106
+    TriggerCopy = CurrentCopy
+    TriggerField = USF2106.PPage2I
+    Call Print_21062I
+End Sub
+
+Public Sub Print2106p2II()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2106
+    TriggerCopy = CurrentCopy
+    TriggerField = USF2106.PPage2II
+    Call Print_21062II
+End Sub
+
+Public Sub PrintF4562Home2106()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW2106
+    TriggerCopy = ChildCopies
+    TriggerField = USW2106.F4562Home
+    Call Print_4562Home2106
+End Sub
+
+Public Sub Print2120()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USF2120
+    TriggerField = USF2120.Print
+    Call Print_21201
+End Sub
+Public Sub Print2441()
+    TriggerForm = USF2441
+    TriggerField = USF2441.f2441
+    Call Print_24411
+End Sub
+Public Sub Print2441p2()
+    TriggerForm = USF2441
+    TriggerField = USF2441.PrintPage2
+    Call Print_24412
+End Sub
+Public Sub Print2441DueDil()
+    TriggerForm = USW2441AddInfo
+    TriggerField = USW2441AddInfo.PrintDueDil
+    Call Print_2441DueDil
+End Sub
+
+Public Sub Print8594()
+    TriggerForm = USF8594
+    TriggerField = USF8594.Print
+    Call Print_8594
+End Sub
+
+Public Sub Print8594p2()
+    TriggerForm = USF8594
+    TriggerField = USF8594.PrintPg2
+    Call Print_8594p2
+End Sub
+
+Public Sub Print2555()
+    TriggerForm = USF2555
+    TriggerField = USF2555.PrintMe
+    Call Print_25551
+    Call Print_25552
+    Call Print_25553
+    Call Print2555Attachment
+End Sub
+
+Public Sub Print2555Attachment()
+    TriggerForm = USF2555
+    TriggerCopy = CurrentCopy
+    TriggerField = USF2555.PrintAttach
+    Call Print_2555Attachment
+End Sub
+
+Public Sub Print2848()
+    TriggerForm = USF2848
+    Call Print_28481
+    Call Print_28482
+End Sub
+
+Public Sub Print3115()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF3115
+    TriggerField = USF3115.Print
+    Call Print_31151
+    Call Print_31152
+    Call Print_31153
+    Call Print_31154
+    Call Print_31155
+    Call Print_31156
+    Call Print_31157
+    Call Print_31158
+End Sub
+
+Public Sub Print3115Attach1()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print
+    Call Print_3115Attach1
+End Sub
+Public Sub Print3115Attach2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print2
+    Call Print_3115Attach2
+End Sub
+Public Sub Print3115Attach3()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print3
+    Call Print_3115Attach3
+End Sub
+Public Sub Print3115Attach4()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print4
+    Call Print_3115Attach4
+End Sub
+Public Sub Print3115Attach5()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print5
+    Call Print_3115Attach5
+End Sub
+Public Sub Print3115Attach6()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print6
+    Call Print_3115Attach6
+End Sub
+Public Sub Print3115Attach7()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print7
+    Call Print_3115Attach7
+End Sub
+Public Sub Print3115Attach8()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print8
+    Call Print_3115Attach8
+End Sub
+Public Sub Print3115Attach9()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print9
+    Call Print_3115Attach9
+End Sub
+Public Sub Print3115Attach10()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print10
+    Call Print_3115Attach10
+End Sub
+Public Sub Print3115Attach11()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW3115Attach
+    TriggerField = USW3115Attach.Print11
+    Call Print_3115Attach11
+End Sub
+Public Sub Print3468()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF3468
+    TriggerField = USF3468.Print
+    Call Print_34681
+    Call Print_34682
+    Call Print_34683
+End Sub
+Public Sub Print3800()
+    TriggerForm = USF3800
+    TriggerField = USF3800.Print
+    Call Print_38001
+    Call Print_3800P2
+    Call Print3800I
+    Call Print3800A
+    Call Print3800B
+    Call Print3800C
+    Call Print3800D
+   ' Call Print3800E
+   ' Call Print3800F
+    Call Print3800G
+   ' Call Print3800H
+   Call Print3800CStmt
+End Sub
+
+Public Sub Print3800CStmt()
+    TriggerForm = USW3800CStmt
+    TriggerField = USW3800CStmt.Print
+    Call Print_USW3800CStmt
+End Sub
+
+Public Sub Print3800I()
+    TriggerForm = USF3800
+    TriggerField = USF3800.EFTrigger
+    Call Print_3800P3
+End Sub
+Public Sub Print3800A()
+    TriggerForm = USW3800A
+    Call Print_3800A
+End Sub
+Public Sub Print3800B()
+    TriggerForm = USW3800B
+    Call Print_3800B
+End Sub
+Public Sub Print3800C()
+    TriggerForm = USW3800C
+    TriggerField = USW3800C.EFTrigger
+    Call Print_3800C
+End Sub
+Public Sub Print3800D()
+    TriggerForm = USW3800D
+    TriggerField = USW3800D.EFTrigger
+    Call Print_3800D
+End Sub
+'Public Sub Print3800E()
+'    TriggerForm = USW3800E
+'    Call Print_3800E
+'End Sub
+'Public Sub Print3800F()
+'   TriggerForm = USW3800F
+'    Call Print_3800F
+'End Sub
+
+Public Sub Print3800G()
+    TriggerForm = USW3800G
+    TriggerField = USW3800G.EFTrigger
+    Call Print_3800G
+End Sub
+'Public Sub Print3800H()
+'    TriggerForm = USW3800H
+'    TriggerField = USW3800H.EFTrigger
+'    Call Print_3800H
+'End Sub
+Public Sub Print3903()
+    TriggerForm = USF3903
+    TriggerField = USF3903.PrF3903
+    Call Print_39031
+End Sub
+
+Public Sub Print4136()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF4136
+    TriggerField = USF4136.TotalCredit
+    Call Print_41361
+    Call Print_41362
+    Call Print_41363
+    Call Print_41364
+End Sub
+
+Public Sub Print4136Statement()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF4136
+    TriggerField = USF4136.PrintStmt
+    Call Print_4136Stmt
+End Sub
+
+Public Sub Print4137()
+    TriggerForm = USF4137
+    TriggerField = USF4137.Pr4137
+    Call Print_4137
+    Call Print4137Wkst
+    Call Print4137Wkst2
+    Call Print4137Wkst3
+End Sub
+Public Sub Print4137SP()
+    TriggerForm = USF4137Spouse
+    TriggerField = USF4137Spouse.Pr4137
+    Call Print_4137SP
+    Call Print4137SpWkst
+    Call Print4137SpWkst2
+    Call Print4137SpWkst3
+End Sub
+Public Sub Print4137Wkst()
+    TriggerForm = USF4137
+    TriggerField = USF4137.Pr4137wkst1
+    Call Print_4137Wkst
+End Sub
+Public Sub Print4137Wkst2()
+    TriggerForm = USF4137
+    TriggerField = USF4137.Pr4137Wkst2
+    Call Print_4137Wkst2
+End Sub
+Public Sub Print4137Wkst3()
+    TriggerForm = USF4137
+    TriggerField = USF4137.Pr4137Wkst3
+    Call Print_4137Wkst3
+End Sub
+Public Sub Print4137SpWkst()
+    TriggerForm = USF4137Spouse
+    TriggerField = USF4137Spouse.Pr4137wkst1
+    Call Print_4137SpWkst
+End Sub
+Public Sub Print4137SpWkst2()
+    TriggerForm = USF4137Spouse
+    TriggerField = USF4137Spouse.Pr4137wkst2
+    Call Print_4137SpWkst2
+End Sub
+Public Sub Print4137SpWkst3()
+    TriggerForm = USF4137Spouse
+    TriggerField = USF4137Spouse.Pr4137wkst3
+    Call Print_4137SpWkst3
+End Sub
+Public Sub Print4506()
+    TriggerForm = USF4506
+    TriggerField = USF4506.Exist
+    Call Print_4506
+End Sub
+Public Sub Print4562Summary()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USWSummary179
+    TriggerField = USWSummary179.PrintHere
+    Call Print_4562SUMMARY
+End Sub
+
+Public Sub Print4562()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF4562
+    TriggerField = USF4562.Page1
+    Call Print_45621
+    Call Print4562p2
+    Call Print4562P2M50
+    Call Print4562P2L50
+    Call Print4562P2Miles
+    Call Print4562P2MilesP2
+End Sub
+
+Public Sub Print4562p2()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF4562
+    TriggerCopy = CurrentCopy
+    TriggerField = USF4562.Page2
+    Call Print_45622
+End Sub
+
+Public Sub Print4562P2M50()
+'    TriggerForm = USWTaxpayer
+ '   TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW4562P2
+    TriggerCopy = ChildCopies
+    TriggerField = USW4562P2.Print2B
+    Call Print_45622M50
+End Sub
+
+Public Sub Print4562P2L50()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW4562P2L50
+    TriggerCopy = ChildCopies
+    TriggerField = USW4562P2L50.Print2B
+    Call Print_45622L50
+End Sub
+
+Public Sub Print4562P2Miles()
+'    TriggerForm = USWTaxpayer
+ '   TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW4562P2Miles
+    TriggerCopy = ChildCopies
+    TriggerField = USW4562P2Miles.PrintMe
+    Call Print_45622Miles
+End Sub
+
+Public Sub Print4562P2MilesP2()
+'    TriggerForm = USWTaxpayer
+ '   TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW4562P2Miles
+    TriggerCopy = ChildCopies
+    TriggerField = USW4562P2Miles.PrintP2
+    Call Print_45622MilesPg2
+End Sub
+
+Public Sub Print4563()
+    TriggerForm = USF4563
+    TriggerField = USF4563.Print
+    Call Print_4563
+End Sub
+
+Public Sub Print461()
+    TriggerForm = USF461
+    TriggerField = USF461.Print
+    Call Print_461
+End Sub
+
+Public Sub Print4684()
+    TriggerForm = USF4684
+    TriggerField = USF4684.Pr4684
+    Call Print_46841
+    Call Print_46842
+    Call Print_46843
+    Call Print_46844
+    Call Print4684ASub
+    Call Print4684BSub
+    Call Print4684BStmt
+    Call Print4684C
+    Call Print4684D
+End Sub
+
+Public Sub Print4684ASub()
+    TriggerForm = USF4684A
+    Call Print4684A
+    Call Print4684AChild
+    Call Print4684AStmt
+End Sub
+
+Public Sub Print4684A()
+    TriggerForm = USF4684A
+    TriggerCopy = CurrentCopy
+    TriggerField = USF4684A.Pr4684A
+    Call Print_4684A
+End Sub
+
+Public Sub Print4684AChild()
+    TriggerForm = USF4684AChild
+    TriggerCopy = ChildCopies
+    Call Print_4684AChild
+End Sub
+
+Public Sub Print4684AStmt()
+    TriggerForm = USF4684A
+    TriggerCopy = CurrentCopy
+    TriggerField = USF4684A.PrintSH
+    Call Print_4684AStmt
+End Sub
+
+Public Sub Print4684BSub()
+    TriggerForm = USF4684B
+    Call Print4684B
+    Call Print4684BChild
+End Sub
+
+Public Sub Print4684B()
+    TriggerForm = USF4684B
+    TriggerCopy = CurrentCopy
+    TriggerField = USF4684B.Pr4684B
+    Call Print_4684B
+End Sub
+
+Public Sub Print4684BChild()
+    TriggerForm = USF4684BChild
+    TriggerCopy = ChildCopies
+    Call Print_4684BChild
+End Sub
+
+Public Sub Print4684BStmt()
+    TriggerForm = USF4684
+    TriggerField = USF4684.Pr4684Pg2Att
+    Call Print_4684BStmt
+End Sub
+
+Public Sub Print4684C()
+    TriggerForm = USF4684B
+    TriggerField = USF4684B.Pr4684C
+    Call Print_46843
+End Sub
+
+Public Sub Print4684D()
+    TriggerForm = USF4684D
+    TriggerField = USF4684D.Pr4684D
+    Call Print_46844
+End Sub
+
+Public Sub Print4797()
+    TriggerForm = USF4797
+    TriggerField = USF4797.Print
+    Call Print_747971
+End Sub
+
+Public Sub Print4797p2()
+    TriggerForm = USF4797P2
+    TriggerField = USF4797P2.print
+    Call Print_747972
+End Sub
+
+Public Sub Print4835()
+    TriggerForm = USF4835
+    TriggerField = USF4835.Text2
+    Call Print_48351
+End Sub
+
+Public Sub Print4852()
+    TriggerForm = USF4852
+    TriggerField = USF4852.Print
+    Call Print_4852
+End Sub
+
+Public Sub Print4868()
+    TriggerForm = USF4868
+    Call Print_48681
+End Sub
+
+Public Sub Print4952()
+    TriggerForm = USF4952
+    TriggerField = USF4952.Pr4952
+    Call Print_49521
+End Sub
+
+Public Sub Print4972()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF4972
+    TriggerField = USF4972.Print
+    Call Print_4972
+End Sub
+
+Public Sub Print4972Spouse()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF4972Spouse
+    TriggerField = USF4972Spouse.Print
+    Call Print_4972Spouse
+End Sub
+
+Public Sub Print5074()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5074
+    TriggerField = USF5074.Print
+    Call Print_5074
+End Sub
+
+Public Sub Print5329()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5329
+    TriggerField = USF5329.Desc
+    Call Print_53291
+    Call Print53292
+End Sub
+
+Public Sub Print53292()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5329
+    TriggerField = USF5329.EF5329P2
+    Call Print_53292
+End Sub
+
+Public Sub Print5329Sp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5329Spouse
+    TriggerField = USF5329Spouse.Desc
+    Call Print_5329Sp1
+    Call Print5329Sp2
+End Sub
+
+Public Sub Print5329Sp2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5329Spouse
+    TriggerField = USF5329Spouse.EF5329P2
+    Call Print_5329Sp2
+End Sub
+
+Public Sub Print5329Form()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5329
+    Call Print_53291
+    Call Print_53292
+End Sub
+
+Public Sub Print5329SPForm()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5329Spouse
+    Call Print_5329Sp1
+    Call Print_5329Sp2
+End Sub
+
+Public Sub Print5405P2Exist()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    'TriggerForm = USF5405P2
+    'TriggerField = USF5405P2.PrintP2
+    Call Print5405P21Exist
+    Call Print5405P22Exist
+End Sub
+Public Sub Print5405P21Exist()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5405P2
+    TriggerCopy = 1
+    TriggerField = USF5405P2.Exist
+    Call Print_5405P21
+End Sub
+Public Sub Print5405P22Exist()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5405P2
+    TriggerCopy = 2
+    TriggerField = USF5405P2.Exist
+    Call Print_5405P22
+End Sub
+
+Public Sub Print5405P2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    'TriggerForm = USF5405P2
+    'TriggerField = USF5405P2.PrintP2
+    Call Print5405P21
+    Call Print5405P22
+End Sub
+
+Public Sub Print5405P21()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5405P2
+    TriggerField = USF5405P2.PrintP2
+    Call Print_5405P21
+End Sub
+
+Public Sub Print5405P22()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF5405P2
+    TriggerField = USF5405P2.PrintP22
+    Call Print_5405P22
+End Sub
+
+Public Sub Print5405P2WS()
+    TriggerForm = USW5405P2NF
+    Call Print_5405P2NF
+End Sub
+
+Public Sub Print5471()
+    TriggerForm = USF5471
+    TriggerField = USF5471.PrintMe
+    
+    Call PrintCurrent5471
+End Sub
+
+Public Sub PrintCurrent5471()
+    TriggerForm = USF5471
+    TriggerCopy = CurrentCopy
+    TriggerField = USF5471.PrintMe
+    
+    Call PrintForm5471
+    Call Print5471P2
+    Call Print5471SchE
+    Call Print5471SchG1
+    Call Print5471SchH
+    Call Print5471SchI
+    Call Print5471SchI1
+    Call Print5471SchJ
+    Call Print5471SchM
+    Call Print5471SchO
+    Call Print5471SchP
+    Call Print5471SchQ
+    Call Print5471SchR
+End Sub
+
+Public Sub PrintForm5471()
+    TriggerForm = USF5471
+    TriggerCopy = CurrentCopy
+    TriggerField = USF5471.PrintMe
+    Call Print_5471_1
+    Call Print_5471_2
+    Call Print_5471_3
+End Sub
+    
+Public Sub Print5471P2()
+    TriggerForm = USF5471P2
+    TriggerCopy = ChildCopies
+    TriggerField = USF5471P2.PrintMe2
+    Call Print_5471_4
+    Call Print_5471_5
+    Call Print_5471_Attachment
+End Sub
+
+Public Sub Print5471SchE()
+    'TriggerForm = USWEFQual
+    'TriggerField = USWEFQual.NoFormTrigger
+
+    TriggerForm = USW5471SchE
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchE.PrintMe
+    Call Print_5471_SchE_1
+    Call Print_5471_SchE_2
+    Call Print_5471_SchE_3
+End Sub
+
+Public Sub Print5471SchG1()
+    'TriggerForm = USWEFQual
+    'TriggerField = USWEFQual.NoFormTrigger
+
+    TriggerForm = USW5471SchG1
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchG1.Print
+    Call Print_5471_SchG1
+End Sub
+
+Public Sub Print5471SchH()
+    'TriggerForm = USWEFQual
+    'TriggerField = USWEFQual.NoFormTrigger
+
+    TriggerForm = USW5471SchH
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchH.TrigSchHStm
+    Call Print_5471_SchH
+End Sub
+
+Public Sub Print5471SchI()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USW5471SchI
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchI.PrintMe
+    Call Print_5471_6
+End Sub
+
+Public Sub Print5471SchI1()
+    'TriggerForm = USWEFQual
+    'TriggerField = USWEFQual.NoFormTrigger
+
+    TriggerForm = USW5471SchI1
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchI1.PrintSchI1
+    Call Print_5471_SchI1
+End Sub
+
+Public Sub Print5471SchJ()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USW5471SchJ
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchJ.PrintMe
+    Call Print_5471_SchJ_1
+    Call Print_5471_SchJ_2
+    Call Print_5471_SchJ_3
+End Sub
+
+Public Sub Print5471SchM()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USW5471SchM
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchM.PrintMe
+    Call Print_5471_SchM
+    Call Print_5471_SchM_2
+End Sub
+
+Public Sub Print5471SchO()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USW5471SchO
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchO.PrintMe
+    Call Print_5471_SchO_1
+    Call Print_5471_SchO_2
+End Sub
+
+Public Sub Print5471SchP()
+    'TriggerForm = USWEFQual
+    'TriggerField = USWEFQual.NoFormTrigger
+
+    TriggerForm = USW5471SchP
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchP.PrintMe
+    Call Print_5471_SchP_1
+    Call Print_5471_SchP_2
+    Call Print_5471_SchP_3
+    Call Print_5471_SchP_4
+    
+End Sub
+
+Public Sub Print5471SchQ()
+
+    TriggerForm = USW5471SchQ
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchQ.PrintMe
+    Call Print_5471_SchQ_1
+    Call Print_5471_SchQ_2
+    Call Print_5471_SchQ_3
+    Call Print_5471_SchQ_4
+End Sub
+
+Public Sub Print5471SchR()
+
+    TriggerForm = USW5471SchR
+    TriggerCopy = ChildCopies
+    TriggerField = USW5471SchR.PrintMe
+    Call Print_5471_SchR_1
+End Sub
+
+Public Sub Print5695()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF5695
+    TriggerField = USF5695.Print5695
+    Call Print_56951
+    Call Print_56952
+    Call Print56952
+End Sub
+
+Public Sub Print56952()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF5695
+    TriggerField = USF5695.PrintCopy2
+    Call Print_569521
+End Sub
+
+Public Sub Print5884()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF5884
+    TriggerField = USF5884.Print
+    Call Print_58841
+End Sub
+
+Public Sub Print5884A()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF5884A
+    TriggerField = USF5884A.Print
+    Call Print_5884A
+End Sub
+
+'Public Sub Print5884B()
+'    TriggerForm = USF5884B
+'    TriggerField = USF5884B.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+'    Call Print_5884B1
+'End Sub
+'Public Sub Print5884BPg2()
+'    TriggerForm = USF5884B
+'    TriggerField = USF5884B.PrintPg2
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+'    Call Print_5884B2
+'End Sub
+'Public Sub Print5884BPg3()
+'    TriggerForm = USF5884B
+'    TriggerField = USF5884B.PrintPg3
+'    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+'    Call Print_5884B3
+'End Sub
+Public Sub Print6198()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USF6198
+    TriggerField = USF6198.PrF6198
+    Call Print_61981
+End Sub
+Public Sub Print6251()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USF6251
+    TriggerField = USF6251.Print
+    Call Print_62511
+End Sub
+Public Sub Print6251p2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USF6251
+    TriggerField = USF6251.PrintP2
+    Call Print_62512
+End Sub
+Public Sub Print6252()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF6252
+    TriggerField = USF6252.Print
+    Call Print_USF6252
+End Sub
+Public Sub Print6478()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF6478
+    TriggerField = USF6478.Print
+    Call Print_6478
+End Sub
+Public Sub Print6765()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF6765
+    TriggerField = USF6765.Print
+    Call Print_67651
+    Call Print_67652
+End Sub
+Public Sub Print6781()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF6781
+    TriggerField = USF6781.Pr6781
+    Call Print_67811
+End Sub
+
+Public Sub Print8689()
+    'TriggerForm = USWTaxpayer
+   ' TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8689
+    TriggerField = USF8689.Print
+    Call Print_86891
+End Sub
+
+Public Sub Print8283()
+    TriggerForm = USF8283
+    TriggerField = USF8283.PrF8283
+    Call Print_82831
+    Call Print_82832
+    Call Print8283Wks2
+    Call Print8283Wks3
+    Call Print8283Wks4
+    Call Print8283Wks5
+End Sub
+
+Public Sub Print8283Wks2()
+    TriggerForm = USF8283
+    TriggerCopy = CurrentCopy
+    TriggerField = USF8283.Print2
+    Call Print_8283Wks2
+End Sub
+
+Public Sub Print8283Wks3()
+    TriggerForm = USF8283
+    TriggerCopy = CurrentCopy
+    TriggerField = USF8283.Print3
+    Call Print_8283Wks3
+End Sub
+
+Public Sub Print8283Wks4()
+    TriggerForm = USF8283
+    TriggerCopy = CurrentCopy
+    TriggerField = USF8283.Print4
+    Call Print_8283Wks4
+End Sub
+
+Public Sub Print8283Wks5()
+    TriggerForm = USF8283
+    TriggerCopy = CurrentCopy
+    TriggerField = USF8283.Print5
+    Call Print_8283Wks5
+End Sub
+
+Public Sub Print8332()
+    TriggerForm = USF8332
+    TriggerField = USF8332.Print8332
+    Call Print_83321
+End Sub
+
+Public Sub Print8379()
+    TriggerForm = USF8379
+    TriggerField = USF8379.Print8379
+    Call Print_83791
+    Call Print_8379Pg2
+    Call Print_83792
+End Sub
+
+Public Sub Print83792()
+    TriggerForm = USF8379
+    TriggerField = USF8379.PrintPage2
+    Call Print_83792
+End Sub
+
+
+Public Sub Print8396()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8396
+    TriggerField = USF8396.Print
+    Call Print_83961
+End Sub
+
+Public Sub Print8582()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210    
+   TriggerForm = USF8582
+   TriggerField = USF8582.Print8582
+   Call Print_85821
+End Sub
+
+Public Sub Print85822()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210    
+    TriggerForm = USF8582
+    TriggerField = USF8582.Print8582p2
+    Call Print_85822
+End Sub
+
+Public Sub Print85823()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210    
+    TriggerForm = USF8582 
+    TriggerField = USF8582.Print8582p3
+    Call Print_85823
+End Sub
+
+Public Sub Print8582CR()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210
+   TriggerForm = USF8582CR
+   TriggerField = USF8582CR.Print8582CR
+    Call Print_8582CR1
+    Call Print_8582CR2
+End Sub
+
+Public Sub Print8586()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8586
+    TriggerField = USF8586.Print8586
+    Call Print_85861
+End Sub
+
+Public Sub Print8609()
+    TriggerForm = USF8609
+    TriggerField = USF8609.PrintMe
+    Call Print_86091
+    Call Print_8609A1
+End Sub
+
+Public Sub Print8609A()
+    TriggerForm = USF8609
+    TriggerField = USF8609.PrintMe8609A
+    'Call Print_86091
+    Call Print_8609A1
+End Sub
+
+Public Sub Print8606()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8606
+    TriggerField = USF8606.EF8606P1
+    Call Print_86061
+    Call Print86062
+End Sub
+
+Public Sub Print86062()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8606
+    TriggerField = USF8606.EF8606P2
+    Call Print_86062
+End Sub
+
+Public Sub Print8606Sp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8606spouse
+    TriggerField = USF8606spouse.EF8606P1
+    Call Print_86061SP
+    Call Print86062Sp
+End Sub
+
+Public Sub Print86062Sp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8606Spouse
+    TriggerField = USF8606spouse.EF8606P2
+    Call Print_86062SP
+End Sub
+
+Public Sub Print8606Form()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8606
+    Call Print_86061
+    Call Print_86062
+    Call Print_RothRoll
+End Sub
+
+Public Sub Print8606SPForm()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8606spouse
+    Call Print_86061SP
+    Call Print_86062SP
+    Call Print_RothRollSp
+End Sub
+
+Public Sub PrintW8606Form()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USW8606
+    Call Print_8606Inherited
+End Sub
+
+Public Sub PrintW8606SpForm()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USW8606Spouse
+    Call Print_8606InheritedSp
+End Sub
+
+Public Sub Print8615()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USF8615
+    TriggerField = USF8615.Pr8615
+    Call Print_86151
+End Sub
+Public Sub Print8621()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USF8621
+    TriggerField = USF8621.Print
+    Call Print_86211
+    Call Print_86212
+    Call Print_86213
+    Call Print_86214
+End Sub
+
+Public Sub Print8621Statement()
+    TriggerForm = USW8621Stmt
+    TriggerField = USW8621Stmt.Print
+    Call Print_8621Statement
+End Sub
+
+Public Sub Print8621Statement2()
+    TriggerForm = USW8621Stmt
+    TriggerField = USW8621Stmt.PrintPg2
+    Call Print_8621Statement2
+End Sub
+
+Public Sub Print8621Statement3()
+    TriggerForm = USW8621Stmt
+    TriggerField = USW8621Stmt.PrintPg3
+    Call Print_8621Statement3
+End Sub
+
+Public Sub Print8621Statement4()
+    TriggerForm = USW8621Stmt
+    TriggerField = USW8621Stmt.PrintPg4
+    Call Print_8621Statement4
+End Sub
+
+Public Sub Print8621Statement5()
+    TriggerForm = USW8621Stmt
+    TriggerField = USW8621Stmt.PrintPg5
+    Call Print_8621Statement5
+End Sub
+
+Public Sub Print8801()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8801
+    TriggerField = USF8801.Print
+    Call Print_88011
+End Sub
+Public Sub Print8801p2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8801
+    TriggerField = USF8801.Print
+    Call Print_88012
+End Sub
+Public Sub Print8801p3()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8801
+    TriggerField = USF8801.PrintP2
+    Call Print_88013
+End Sub
+Public Sub Print8801p4()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8801
+    TriggerField = USF8801.PrintP2
+    Call Print_88014
+End Sub
+Public Sub Print8801Foreign()
+    TriggerForm = USW8801Foreign
+    TriggerField = USW8801Foreign.ForEIExcl
+    Call Print_8801Foreign
+End Sub
+Public Sub Print8812()
+    TriggerForm = USF8812
+    TriggerField = USF8812.Print
+    Call Print_88121
+    Call Print_88122
+    Call Print_88123
+End Sub
+Public Sub Print8812WksCTC()
+    TriggerForm = USW8812CTC
+    Call Print_8812WksCTC
+End Sub
+Public Sub PrintCTCL9()
+    TriggerForm = USWCTCL9
+    Call Print_8812CredLimA
+    Call Print_8812CredLimB
+End Sub
+Public Sub Print8812Wks()
+    TriggerForm = USW8812AddMCare
+    Call Print_8812Wks
+End Sub
+Public Sub Print8814()
+    TriggerForm = USF8814
+    TriggerField = USF8814.PrF8814
+    Call Print_488141
+
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+End Sub
+
+Public Sub Print8815()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8815
+    TriggerField = USF8815.Pr8815
+    Call Print_688151
+End Sub
+
+Public Sub Print8820()
+    TriggerForm = USF8820
+    TriggerField = USF8820.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_88201
+    Call Print_88202
+End Sub
+
+Public Sub Print8821()
+    TriggerForm = USF8821
+    Call Print_8821
+End Sub
+
+Public Sub Print8822()
+    TriggerForm = USF8822
+    Call Print_88221
+End Sub
+Public Sub Print8888()
+    TriggerForm = USF8888
+    TriggerField = USF8888.Print
+    Call Print_8888
+End Sub
+
+Public Sub Print8824()
+    TriggerForm = USF8824
+    TriggerField = USF8824.Print
+    Call Print_USF8824_1
+    Call Print_USF8824_2
+End Sub
+
+Public Sub PrintUSF8824Statement()
+    TriggerForm = USF8824
+    TriggerField = USF8824.IRS
+    Call Print_USF8824Statement
+End Sub
+
+Public Sub Print8826()
+    TriggerForm = USF8826
+    TriggerField = USF8826.Print
+    Call Print_88261
+End Sub
+Public Sub Print8829()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8829
+    TriggerField = USF8829.PrF8829
+    Call Print_88291
+    Call PrintF4562Home
+    Call PrintSpecial
+End Sub
+
+Public Sub PrintF4562Home()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8829
+    TriggerCopy = CurrentCopy
+    TriggerField = USF8829.F4562Home
+    Call Print_88292
+End Sub
+
+Public Sub PrintSpecial()
+    TriggerForm = USF8829
+    TriggerCopy = CurrentCopy
+    TriggerField = USF8829.Special
+    Call Print_Special
+End Sub
+
+Public Sub Print8835()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8835
+    TriggerField = USF8835.Print
+    Call Print_88351
+End Sub
+
+Public Sub Print8839PrintForm()
+    TriggerForm = USF8839
+    TriggerField = USF8839.Print8839
+    Call Print_88391
+    Call Print8839P2
+    Call Print8839Copy2
+End Sub
+
+Public Sub Print8839()
+    TriggerForm = USF8839
+    TriggerField = USF8839.Print8839
+    Call Print_88391
+    Call Print8839P2
+End Sub
+
+Public Sub Print8839P2()
+    TriggerForm = USF8839
+    TriggerField = USF8839.Print8839P2
+    Call Print_88392
+End Sub
+
+Public Sub Print8839Copy2()
+    TriggerForm = USF8839
+    TriggerField = USF8839.PrintCopy2
+    Call Print_88391Copy2
+    Call Print8839P2Copy2
+End Sub
+
+Public Sub Print8839P2Copy2()
+    TriggerForm = USF8839
+    TriggerField = USF8839.PrintCopy2P2
+    Call Print_88392Copy2
+End Sub
+
+Public Sub Print8840()
+    TriggerForm = USF8840
+    TriggerField = USF8840.Print
+    Call Print_8840_1
+    Call Print_8840_2
+End Sub
+
+Public Sub Print8843()
+    TriggerForm = USF8843
+    TriggerField = USF8843.Print
+    Call Print_8843_1
+    Call Print_8843_2
+End Sub
+
+Public Sub Print8844()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8844
+    TriggerField = USF8844.Print
+    Call Print_8844
+End Sub
+
+Public Sub Print8845()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8845
+    TriggerField = USF8845.Print
+    Call Print_88451
+End Sub
+
+Public Sub Print8846()
+    TriggerForm = USF8846
+    TriggerField = USF8846.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_8846
+End Sub
+
+Public Sub Print8853()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8853
+    TriggerField = USF8853.Prn8853
+    Call Print_88531
+End Sub
+
+Public Sub PrintW8853Tp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USW8853
+    TriggerField = USW8853.Prn8853Tp
+    Call Print_88531Tp
+End Sub
+
+Public Sub PrintW8853Sp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USW8853spouse
+    TriggerField = USW8853spouse.Prn8853Sp
+    Call Print_88531Sp
+End Sub
+
+Public Sub Print88532Tp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USW8853
+    TriggerField = USW8853.PrnLTCTp
+    Call Print_88532Tp
+End Sub
+
+Public Sub Print88532Sp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USW8853spouse
+    TriggerField = USW8853spouse.PrnLTCSp
+    Call Print_88532Sp
+End Sub
+
+Public Sub Print88532WTp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USW8853
+    TriggerField = USW8853.DoMPStmt
+    Call Print_88532WTp
+End Sub
+
+Public Sub Print88532WSp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USW8853spouse
+    TriggerField = USW8853spouse.DoMPStmt
+    Call Print_88532WSp
+End Sub
+
+Public Sub Print8857()
+    TriggerForm = USF8857
+    TriggerField = USF8857.Exist
+    Call Print_88571
+    Call Print_88572
+    Call Print_88573
+    Call Print_88574
+    Call Print_88575
+    Call Print_88576
+End Sub
+
+Public Sub Print8862()
+    TriggerForm = USF8862
+    TriggerField = USF8862.Print
+    Call Print_88621
+    Call Print_88622
+    Call Print_88623
+    Call Print_88624
+    Call Print8862CTC1
+    Call Print8862CTC2
+    Call Print8862CTC3
+    Call Print8862AOC1
+End Sub
+
+Public Sub Print8862CTC1()
+    TriggerForm = USF8862
+    TriggerField = USF8862.PrintCTC1
+    Call Print_8862CTC1
+End Sub
+
+Public Sub Print8862CTC2()
+    TriggerForm = USF8862
+    TriggerField = USF8862.PrintCTC2
+    Call Print_8862CTC2
+End Sub
+
+Public Sub Print8862CTC3()
+    TriggerForm = USF8862
+    TriggerField = USF8862.PrintCTC3
+    Call Print_8862CTC3
+End Sub
+
+Public Sub Print8862AOC1()
+    TriggerForm = USF8862
+    TriggerField = USF8862.PrintAOC1
+    Call Print_8862AOC1
+End Sub
+
+Public Sub Print8863()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8863
+    TriggerField = USF8863.PrintMe
+    Call Print_88631
+    Call Print8863P2
+End Sub
+
+Public Sub Print8863P2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8863P2
+    TriggerField = USF8863P2.PrintMe
+    Call Print_88632
+    Call Print8863P2C2
+End Sub
+
+Public Sub Print8863P2C2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8863P2
+    TriggerCopy = CurrentCopy
+    TriggerField = USF8863P2.PrintMe2
+    Call Print_88632C2
+End Sub
+
+Public Sub Print8864()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8864
+    TriggerField = USF8864.Print
+    Call Print_8864
+    Call Print8864Wksht
+End Sub
+Public Sub Print8864Wksht()
+    TriggerForm = USF8864
+    TriggerField = USF8864.PrintWks
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_8864Wks
+End Sub
+
+Public Sub Print8874()
+    TriggerForm = USF8874
+    TriggerField = USF8874.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_88741
+    Call Print8874Over
+End Sub
+
+Public Sub Print8874Over()
+    TriggerForm = USF8874
+    TriggerField = USF8874.PrOver
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_88742
+End Sub
+Public Sub Print8885Form()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8885
+    Call Print_8885
+    Call Print_W8885
+End Sub
+
+Public Sub Print8885Worksheet()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USW8885
+    Call Print_W8885
+End Sub
+
+Public Sub Print8885SpForm()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF8885Spouse
+    Call Print_8885Sp
+    Call Print_W8885Sp
+End Sub
+
+Public Sub Print8885SpWorksheet()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USW8885Spouse
+    Call Print_W8885Sp
+End Sub
+
+Public Sub Print8885()
+    TriggerForm = USF8885
+    TriggerField = USF8885.Print
+    Call Print_8885
+    Call PrintW8885
+End Sub
+
+Public Sub Print8885Sp()
+    TriggerForm = USF8885Spouse
+    TriggerField = USF8885Spouse.Print
+    Call Print_8885Sp
+    Call PrintW8885Sp
+End Sub
+
+Public Sub PrintW8885()
+    TriggerForm = USW8885
+    TriggerField = USW8885.Print
+    Call Print_W8885
+End Sub
+
+Public Sub PrintW8885Sp()
+    TriggerForm = USW8885Spouse
+    TriggerField = USW8885Spouse.Print
+    Call Print_W8885Sp
+End Sub
+
+Public Sub Print8886()
+    TriggerForm = USF8886
+    TriggerField = USF8886.Print
+
+    Call Print_8886_1
+    Call Print_8886_2
+End Sub
+
+Public Sub Print8889()
+    TriggerForm = USF8889
+    TriggerField = USF8889.Print
+    Call Print_8889
+End Sub
+
+Public Sub Print8889Sp()
+    TriggerForm = USF8889Spouse
+    TriggerField = USF8889Spouse.Print
+    Call Print_8889Sp
+End Sub
+
+Public Sub Print8889Form()
+    TriggerForm = USF8889
+    Call Print_8889
+End Sub
+
+Public Sub Print8889SPForm()
+    TriggerForm = USF8889Spouse
+    Call Print_8889Sp
+End Sub
+
+Public Sub Print8896()
+    TriggerForm = USF8896
+    TriggerField = USF8896.Print
+    Call Print_8896
+End Sub
+
+Public Sub Print8900()
+    TriggerForm = USF8900
+    TriggerField = USF8900.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_8900
+End Sub
+
+Public Sub Print8906()
+    TriggerForm = USF8906
+    TriggerField = USF8906.Print
+    Call Print_8906
+End Sub
+
+Public Sub Print8908()
+    TriggerForm = USF8908
+    TriggerField = USF8908.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_8908
+End Sub
+
+Public Sub Print8910()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8910
+    TriggerField = USF8910.Print
+    Call Print_8910
+End Sub
+
+Public Sub Print8911()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8911
+    TriggerField = USF8911.Print
+    Call Print_8911
+End Sub
+
+Public Sub Print8915C()
+    TriggerForm = USF8915C
+    TriggerField = USF8915C.Print
+    Call Print_TP8915C1
+End Sub
+
+Public Sub Print8915CSp()
+    TriggerForm = USF8915CSpouse
+    TriggerField = USF8915CSpouse.Print
+    Call Print_SP8915C1
+End Sub
+
+Public Sub Print8915D()
+    TriggerForm = USF8915D
+    TriggerField = USF8915D.Print
+    Call Print_TP8915D1
+    Call Print_TP8915D2
+End Sub
+
+Public Sub Print8915DSp()
+    TriggerForm = USF8915DSpouse
+    TriggerField = USF8915DSpouse.Print
+    Call Print_SP8915D1
+    Call Print_SP8915D2
+End Sub
+
+Public Sub Print8915F()
+    TriggerForm = USF8915F
+    TriggerField = USF8915F.Print
+    Call Print_TP8915F1
+    Call Print_TP8915F2
+    Call Print_TP8915F3
+    Call Print_TP8915F4
+    Call Print8915FPart1
+    Call Print8915Fwks1
+    Call Print8915Fwks2
+End Sub
+
+Public Sub Print8915FPart1()
+    TriggerForm = USF8915F
+    TriggerField = USF8915F.Table1Ck
+    Call Print_8915FPart1
+End Sub
+
+Public Sub Print8915Fwks1()
+    TriggerForm = USF8915F
+    TriggerField = USF8915F.Number2
+    Call Print_8915Fwks1
+End Sub
+
+Public Sub Print8915Fwks2()
+    TriggerForm = USF8915F
+    TriggerField = USF8915F.Number3
+    Call Print_8915Fwks2
+End Sub
+
+Public Sub Print8915FSp()
+    TriggerForm = USF8915FSpouse
+    TriggerField = USF8915FSpouse.Print
+    Call Print_SP8915F1
+    Call Print_SP8915F2
+    Call Print_SP8915F3
+    Call Print_SP8915F4
+    Call Print8915FSpPart1
+    Call Print8915FSPwks1
+    Call Print8915FSPwks2
+End Sub
+
+Public Sub Print8915FSpPart1()
+    TriggerForm = USF8915FSpouse
+    TriggerField = USF8915FSpouse.Table1Ck
+    Call Print_8915FSpPart1
+End Sub
+
+Public Sub Print8915FSPwks1()
+    TriggerForm = USF8915FSpouse
+    TriggerField = USF8915FSpouse.Number2
+    Call Print_8915FSPwks1
+End Sub
+
+Public Sub Print8915FSPwks2()
+    TriggerForm = USF8915FSpouse
+    TriggerField = USF8915FSpouse.Number3
+    Call Print_8915FSPwks2
+End Sub
+
+Public Sub Print8828()
+    TriggerForm = USF8828
+    TriggerField = USF8828.Print
+    Call Print_8828
+End Sub
+
+Public Sub Print8919()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8919
+    TriggerField = USF8919.Print
+    Call Print_8919
+End Sub
+Public Sub Print8919Sp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8919Spouse
+    TriggerField = USF8919Spouse.Print
+    Call Print_8919Sp
+End Sub
+Public Sub Print8919Wks()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW8919
+    Call Print_8919Wks
+End Sub
+
+Public Sub Print8923()
+    TriggerForm = USF8923
+    TriggerField = USF8923.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_8923
+End Sub
+
+Public Sub Print8932()
+    TriggerForm = USF8932
+    TriggerField = USF8932.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_8932
+End Sub
+
+Public Sub Print8933()
+    TriggerForm = USF8933
+    TriggerField = USF8933.Print
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    Call Print_8933_1
+    Call Print_8933_2
+End Sub
+
+Public Sub Print8990()
+    TriggerForm = USF8990
+    TriggerField = USF8990.PrintMe
+    Call Print_89901
+    Call Print_89902
+End Sub
+Public Sub Print8990p3()
+    TriggerForm = USF8990
+    TriggerField = USF8990.PrintMe
+    Call Print_89903
+End Sub
+
+Public Sub Print8990A()
+    TriggerForm = USF8990A
+    TriggerField = USF8990A.PrintMe
+    Call Print_8990A
+    Call Print8990A2
+End Sub
+
+Public Sub Print8990A2()
+    TriggerForm = USF8990A
+    TriggerField = USF8990A.PrintMe2
+    Call Print_8990A2
+End Sub
+
+Public Sub Print8990B()
+    TriggerForm = USF8990B
+    TriggerField = USF8990B.PrintMe
+    Call Print_8990B
+End Sub
+
+Public Sub Print8936()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8936
+    TriggerField = USF8936.Print
+    Call Print_89361
+    Call Print_89362
+End Sub
+
+Public Sub Print8941()
+    TriggerForm = USF8941
+    TriggerField = USF8941.Print
+    Call Print_89411
+End Sub
+
+Public Sub Print8944()
+    TriggerForm = USF8944
+    Call Print_8944
+End Sub
+
+Public Sub Print8948()
+    TriggerForm = USF8948
+    TriggerField = USF8948.Print
+    Call Print_8948
+    Call PrintOptOut
+End Sub
+
+Public Sub PrintOptOut()
+    TriggerForm = USF8948
+    TriggerField = USF8948.PrintOptOut
+    Call PrintHTML("federal instructions/optoutletter.htm")
+End Sub
+
+Public Sub Print8938()
+    TriggerForm = USF8938
+    TriggerField = USF8938.Print
+    Call Print_8938P1
+    Call Print_8938P2
+    Call Print8938P3
+End Sub
+
+Public Sub Print8938P3()
+    TriggerForm = USW8938P3
+    Call Print_8938P3
+End Sub
+
+Public Sub Print8960()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8960
+    TriggerField = USF8960.Print
+    Call Print_8960
+End Sub
+Public Sub Print8960WS()
+    Call Print_8960WS1
+    Call Print_8960WS2
+End Sub
+Public Sub Print8962()
+    TriggerForm = USF8962
+    TriggerField = USF8962.Print
+    Call Print_8962_1
+    Call Print_8962_2
+End Sub
+
+Public Sub Print8997()
+    TriggerForm = USF8997
+    TriggerField = USF8997.Print
+    Call Print_8997_1
+    Call Print_8997_2
+    Call Print8997Over1
+    Call Print8997Over2
+End Sub
+
+Public Sub Print8997Over1()
+    TriggerForm = USF8997
+    TriggerField = USF8997.PrintOver1
+    Call Print_8997Over_1
+End Sub
+
+Public Sub Print8997Over2()
+    TriggerForm = USF8997
+    TriggerField = USF8997.PrintOver2
+    Call Print_8997Over_2
+End Sub
+
+Public Sub Print9325()
+    TriggerForm = USF9325
+    TriggerField = USF9325.Exist
+    Call Print_9325
+End Sub
+
+Public Sub Print9465()
+    TriggerForm = USF9465
+    TriggerField = USF9465.PrintMe
+    Call Print_94651
+    Call Print_94652
+End Sub
+
+Public Sub Print965A()
+    TriggerForm = USF965A
+    TriggerField = USF965A.Print
+    Call Print_965A_1
+    Call Print_965A_2
+    Call Print_965A_3
+End Sub
+
+Public Sub Print982()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+ 
+    TriggerForm = USF982
+    TriggerField = USF982.PrintMe
+    Call Print_982
+End Sub
+ 
+Public Sub PrintSchA()
+    TriggerForm = USSchA
+    TriggerField = USSchA.PrSchA
+    Call Print_A1
+    Call PrintSchAWks
+End Sub
+
+Public Sub PrintMortWS()
+    TriggerForm = USWMortStmt
+    TriggerField = USWMortStmt.PrMortWS
+    Call Print_MortWS
+End Sub
+
+Public Sub PrintSchAWks()
+    TriggerForm = USWSchAPrint
+    TriggerField = USWSchAPrint.PrLn28SeeAtt
+    Call Print_SchAWks
+End Sub
+ 
+Public Sub PrintSchAStdDed()
+    TriggerForm = USSchA
+    TriggerField = USSchA.PrSchADis
+    Call Print_A1StdDed
+End Sub
+
+Public Sub PrintSchB()
+    TriggerForm = USSchB
+    TriggerField = USSchB.PrintB
+    Call Print_6B1
+End Sub
+Public Sub PrintSchB2()
+    TriggerForm = USSchB
+    TriggerField = USSchB.PrintB
+    Call Print_6B1
+    Call PrintBPInt
+    Call PrintBPDiv
+    Call PrintTDFCtry
+End Sub
+
+Public Sub PrintNomCapGainStatement()
+    TriggerForm = USSchD
+    TriggerField = USSchD.YNomCapGain
+    Call Print_NomCapGainStatement
+End Sub
+
+Public Sub PrintSchC()
+    TriggerForm = USSchC
+    TriggerField = USSchC.PrSchC
+    Call Print_C1
+    Call PrintSchCp2
+End Sub
+
+Public Sub PrintSchCForm()
+    TriggerForm = USSchC
+    TriggerField = USSchC.PrSchC
+    Call Print_C1
+    Call Print_C2
+    Call PrintSchCExpStmt
+    Call PrintSchCVehStmt
+    Call PrintSchCVehStmt2
+End Sub
+
+Public Sub PrintSchCp2()
+    TriggerForm = USSchC
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchC.Page2
+    Call Print_C2
+    Call PrintSchCExpStmt
+    Call PrintSchCVehStmt
+    Call PrintSchCVehStmt2
+End Sub
+
+Public Sub PrintSchCExpStmt()
+    TriggerForm = USSchC
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchC.AddExpStmt
+    Call Print_C2ExpStmt
+End Sub
+
+Public Sub PrintSchCVehStmt()
+    TriggerForm = USSchC
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchC.AddVehStmt
+    Call Print_C2VehStmt
+End Sub
+
+Public Sub PrintSchCVehStmt2()
+    TriggerForm = USSchC
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchC.AddVehStmt2
+    Call Print_C2VehStmt2
+End Sub
+
+Public Sub PrintSchCStmt()
+    TriggerForm = USSchC
+    TriggerField = USSchC.Box7Trigger
+    Call Print_CStatement
+End Sub
+
+Public Sub PrintSchCElec()
+    TriggerForm = USSchC
+    TriggerField = USSchC.PrElection
+    Call Print_SchCElections
+End Sub
+
+Public Sub PrintSchCST()
+    TriggerForm = USSchCStEmp
+    TriggerField = USSchCStEmp.PrStat
+    Call Print_CST1
+    Call PrintSchCSTp2
+End Sub
+
+Public Sub PrintSchCSTp2()
+    TriggerForm = USSchCStEmp
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchCStEmp.Page2
+    Call Print_CST2
+    Call PrintSchCStExpStmt
+    Call PrintSchCStVehStmt
+    Call PrintSchCStVehStmt2
+End Sub
+
+Public Sub PrintSchCStExpStmt()
+    TriggerForm = USSchCStEmp
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchCStEmp.AddExpStmt
+    Call Print_C2StExpStmt
+End Sub
+
+Public Sub PrintSchCStVehStmt()
+    TriggerForm = USSchCStEmp
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchCStEmp.AddVehStmt
+    Call Print_C2StVehStmt
+End Sub
+
+Public Sub PrintSchCStVehStmt2()
+    TriggerForm = USSchCStEmp
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchCStEmp.AddVehStmt2
+    Call Print_C2StVehStmt2
+End Sub
+
+Public Sub PrintSchCStatElec()
+    TriggerForm = USSchCStEmp
+    TriggerField = USSchCStEmp.PrElection
+    Call Print_SchCStatElections
+End Sub
+
+Public Sub PrintSchD()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USSchD
+    TriggerField = USSchD.Print
+    Call Print_0D1
+    Call Print_0D2
+    Call Print8949STNC
+    Call Print8949STA
+    Call Print8949STB
+    Call Print8949STC
+    Call Print8949LTNC
+    Call Print8949LTA
+    Call Print8949LTB
+    Call Print8949LTC
+    Call PrintUSWCapLoss
+End Sub
+
+Public Sub Print8949()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8949
+    TriggerField = USF8949.Print
+    Call Print8949STNC
+    Call Print8949STA
+    Call Print8949STB
+    Call Print8949STC
+    Call Print8949LTNC
+    Call Print8949LTA
+    Call Print8949LTB
+    Call Print8949LTC
+    Call PrintUSWCapLoss
+End Sub
+
+Public Sub Print8949STNC()
+    TriggerForm = USF8949STNC
+    Call Print_8949STNC
+End Sub
+
+Public Sub Print8949STA()
+    TriggerForm = USF8949STA
+    Call Print_8949STA
+End Sub
+
+Public Sub Print8949STB()
+    TriggerForm = USF8949STB
+    Call Print_8949STB
+End Sub
+
+Public Sub Print8949STC()
+    TriggerForm = USF8949STC
+    Call Print_8949STC
+End Sub
+
+Public Sub Print8949LTNC()
+    TriggerForm = USF8949LTNC
+    Call Print_8949LTNC
+End Sub
+
+Public Sub Print8949LTA()
+    TriggerForm = USF8949LTA
+    Call Print_8949LTA
+End Sub
+
+Public Sub Print8949LTB()
+    TriggerForm = USF8949LTB
+    Call Print_8949LTB
+End Sub
+
+Public Sub Print8949LTC()
+    TriggerForm = USF8949LTC
+    Call Print_8949LTC
+End Sub
+
+Public Sub PrintUSWCapLoss()
+    TriggerForm = USWCapLoss
+    TriggerField = USWCapLoss.PrintMe
+    Call Print_USWCapLoss
+End Sub
+
+Public Sub PrintBadDebtStmt()
+    TriggerForm = USDCapGain
+    TriggerField = USDCapGain.BadDebtStmt
+    Call Print_BadDebtStmt
+End Sub
+
+Public Sub PrintSchEic()
+    TriggerForm = USSchEIC
+    TriggerField = USSchEIC.PrintMe
+    Call Print_EIC1
+End Sub
+
+Public Sub PrintSchE()
+    TriggerForm = USPrintEP1
+    TriggerField = USPrintEP1.CopyNumber(0)
+    Call Print_E1
+End Sub
+
+Public Sub PrintSchEP1()
+    TriggerForm = USPrintEP1
+    TriggerField = USPrintEP1.PrintMe
+    Call Print_E1
+End Sub
+
+Public Sub PrintSchEElec()
+    TriggerForm = USSchEP1
+    TriggerField = USSchEP1.PrElection
+    Call Print_SchEElections
+End Sub
+
+Public Sub PrintSchEP2()
+    TriggerForm = USSchEP2
+    TriggerField = USSchEP2.PrintMe
+    Call Print_E2
+    Call PrintF4562HomeSchK1
+End Sub
+
+Public Sub PrintF4562HomeSchK1()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW2106
+    TriggerField = USW2106.EFPart
+    Call Print_4562HomeSchK1
+End Sub
+
+Public Sub PrintSchF()
+    TriggerForm = USSchF
+    TriggerField = USSchF.PrSchF
+    Call Print_F1
+    Call PrintSchFp2
+    Call PrintF4562HomeSchF
+End Sub
+
+Public Sub PrintSchFp2()
+    TriggerForm = USSchF
+    TriggerCopy = CurrentCopy
+    TriggerField = USSchF.PrSchFpg2
+    Call Print_F2
+End Sub
+
+Public Sub PrintF4562HomeSchF()
+'     TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW2106
+    TriggerCopy = ChildCopies
+    TriggerField = USW2106.F4562Home
+    Call Print_4562HomeSchF
+End Sub
+
+Public Sub PrintFarmStmt()
+    TriggerForm = USWFarmStmt
+    TriggerField = USWFarmStmt.Print
+    Call Print_FarmStmt
+End Sub
+
+Public Sub PrintSchFElec()
+    TriggerForm = USSchF
+    TriggerField = USSchF.PrElection
+    Call Print_SchFElections
+End Sub
+
+Public Sub PrintSch4835Elec()
+    TriggerForm = USF4835
+    TriggerField = USF4835.PrElection
+    Call Print_Sch4835Elections
+End Sub
+
+Public Sub PrintSchH()
+    TriggerForm = USSchH
+    TriggerField = USSchH.PrPage1
+    Call Print_2H1
+End Sub
+
+Public Sub PrintSchHp2()
+    TriggerForm = USSchH
+    TriggerField = USSchH.PrPage2
+    Call Print_2H2
+End Sub
+
+Public Sub PrintSchJ()
+    TriggerForm = USSchJ
+    TriggerField = USSchJ.Print
+    Call Print_3J1
+    Call Print_3J2
+End Sub
+
+Public Sub PrintSchLEP()
+    TriggerForm = USSchLEP
+    TriggerField = USSchLEP.Print
+    Call Print_LEP
+End Sub
+
+Public Sub PrintSchR()
+    TriggerForm = USSchR
+    TriggerField = USSchR.SchR
+    Call Print_R1
+    Call Print_R2
+End Sub
+
+Public Sub PrintSchSE1()
+    TriggerForm = USSchSE
+    TriggerField = USSchSE.Page1
+    Call Print_SE1
+End Sub
+
+Public Sub PrintSchSESp1()
+    TriggerForm = USSchSESpouse
+    TriggerField = USSchSESpouse.Page1
+    Call Print_SESp1
+End Sub
+
+Public Sub PrintEF8453()
+    TriggerForm = USF8453Prep
+    Call PRINT8453_EF
+End Sub
+
+Public Sub Print2210()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2210
+    TriggerField = USF2210.Print
+    Call Print_22101
+End Sub
+
+Public Sub Print2210P2()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2210
+    TriggerField = USF2210.printpg2
+    Call Print_22102
+
+End Sub
+
+Public Sub Print2210P3()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2210
+    TriggerField = USF2210.PrintPg3
+    Call Print_22103
+    Call Print2210AISE2
+End Sub
+
+Public Sub Print2210AI()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2210
+    Call Print_22103
+    Call Print2210AISE2
+End Sub
+
+Public Sub Print2210AISE2()
+    TriggerForm = USSchAI
+    TriggerField = USSchAI.PPartIISp
+    Call Print_2210AISE2
+End Sub
+
+Public Sub Print2210F()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF2210F
+    TriggerField = USF2210F.File
+    Call Print_2210F
+End Sub
+
+Public Sub Print8453()
+    TriggerForm = USF8453Prep
+    TriggerField = USF8453Prep.AnyBoxes
+    Call Print_84531
+End Sub
+
+Public Sub PRINT8453_EF()
+    TriggerForm = USF8453Prep
+    TriggerField = USF8453Prep.AnyBoxes
+    Call Print_84531
+End Sub
+
+Public Sub PRINT1040V()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = Usf1040v
+    TriggerField = USF1040V.Pr1040V
+    Call Print_31040V1
+End Sub
+
+Public Sub Print1040V965()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF1040
+    TriggerField = USF1040.Sec965
+    Call Print_F1040V965
+End Sub
+
+Public Sub PrintBPInt()
+    TriggerForm = USWBPInt
+    TriggerField = USWBPInt.Print
+    Call Print_OFBINT
+End Sub
+
+Public Sub PrintBPDiv()
+    TriggerForm = USWBPDiv
+    TriggerField = USWBPDiv.Print
+    Call Print_OFBDIV
+End Sub
+
+Public Sub PrintTDFCtry()
+    TriggerForm = USSchB
+    TriggerField = USSchB.TDFOver
+    Call Print_TDFCtryStmt
+End Sub
+
+Public Sub PrintSchEP1OthExp()
+    TriggerForm = USPrintEP1
+    TriggerField = USPrintEP1.PrintStmt
+    Call Print_EP1OthExpAtt
+End Sub
+
+Public Sub PrintPartSumm()
+    TriggerForm = USWPartK1Summ
+    TriggerField = USWPartK1Summ.PrintMe
+    Call Print_PartSumm
+End Sub
+Public Sub PrintSCorpSumm()
+    TriggerForm = USWScorpSumm
+    TriggerField = USWScorpSumm.PrintMe
+    Call Print_SCorpSumm
+End Sub
+Public Sub PrintTPClergyExp()
+    TriggerForm = USWClergy
+    TriggerField = USWClergy.PrintTP
+    Call Print_TPClergyExp
+End Sub
+Public Sub PrintSPClergyExp()
+    TriggerForm = USWClergy
+    TriggerField = USWClergy.PrintSP
+    Call Print_SPClergyExp
+End Sub
+Public Sub PrintClergyWkshts()
+    TriggerForm = USWClergyWkshts
+    TriggerField = USWClergyWkshts.Print
+    Call Print_USWClergyWSp1
+    Call Print_USWClergyWSp2
+End Sub
+Public Sub PrintEstSumm()
+    TriggerForm = USWEstK1Summ
+    TriggerField = USWEstK1Summ.PrintMe
+    Call Print_EstSumm
+End Sub
+Public Sub PrintRemic()
+    TriggerForm = USWREMICSumm
+    TriggerField = USWREMICSumm.PrintMe
+    Call Print_ERemicCont
+End Sub
+Public Sub Print2441AddInfo()
+    TriggerForm = USW2441AddInfo
+    TriggerField = USW2441AddInfo.Print
+    Call Print_2441AddInfo1
+End Sub
+Public Sub Print2441AddInfo2()
+    TriggerForm = USW2441AddInfo
+    TriggerField = USW2441AddInfo.Print2
+    Call Print_2441AddInfo2
+End Sub
+Public Sub Print2441Prior()
+    TriggerForm = USW2441Prior
+    TriggerField = USW2441Prior.Print
+    Call Print_2441Prior
+End Sub
+Public Sub PrintUSWOthCred()
+    TriggerForm = USWOthCred
+    Call Print_USWOthCred
+End Sub
+Public Sub Print8586PassThru()
+    TriggerForm = USW8586PassThru
+    TriggerField = USW8586PassThru.Print
+    Call Print_USW8586PassThru
+End Sub
+Public Sub Print4797PI()
+    TriggerForm = USW4797PI
+    TriggerField = USW4797PI.Print
+    Call Print_74797C1
+End Sub
+
+Public Sub Print4797PII()
+    TriggerForm = USW4797PII
+    TriggerField = USW4797PII.Print
+    Call Print_74797C2
+End Sub
+
+Public Sub Print6252Statement()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USF6252
+    TriggerField = USF6252.EFStmt
+    Call Print_6252Statement
+End Sub
+
+Public Sub Print1045AStatement()
+    TriggerForm = USF1045A
+    TriggerField = USF1045A.PrintStmt
+    Call Print_1045AStatement
+End Sub
+
+Public Sub Print6781PI()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW6781PI
+    TriggerField = USW6781PI.Print
+    Call Print_6781PI
+End Sub
+
+Public Sub Print6781PIB()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW6781PIB
+    TriggerField = USW6781PIB.Print
+    Call Print_6781PIB
+End Sub
+
+Public Sub Print6781PIISecA()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW6781PIISecA
+    TriggerField = USW6781PIISecA.Print
+    Call Print_6781PIISecA
+End Sub
+
+Public Sub Print6781PIISecB()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW6781PIISecB
+    TriggerField = USW6781PIISecB.Print
+    Call Print_6781PIISecB
+End Sub
+
+Public Sub Print6781PIII()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW6781PIII
+    TriggerField = USW6781PIII.Print
+    Call Print_6781PIII
+End Sub
+
+Public Sub Print6781Statement()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW6781Stmt
+    TriggerField = USW6781Stmt.Print
+    Call Print_6781Statement
+    Call Print_6781Statement2
+End Sub
+
+Public Sub Print8582Wks1to5()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210    
+    TriggerForm = USF8582
+    TriggerField = USF8582.Print8582p2
+    Call Print8582Wks3
+    Call Print8582Wks4
+    Call Print8582Wks5
+    Call Print8582Wks6
+End Sub
+
+Public Sub Print8582Wks1()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW8582Wks1
+    Call Print_8582Wks1
+End Sub
+
+Public Sub Print8582Wks3()
+    TriggerForm = USW8582Wks3
+    Call Print_8582Wks3
+End Sub
+
+Public Sub Print8582Wks4()
+    TriggerForm = USW8582Wks4
+    Call Print_8582Wks4
+End Sub
+
+Public Sub Print8582Wks5()
+    TriggerForm = USW8582Wks5
+    Call Print_8582Wks5
+End Sub
+
+Public Sub Print8582Wks6()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USF8582
+    Call Print8582Wks6A
+End Sub
+
+Public Sub Print8582Wks6A()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210    
+    TriggerForm = USW8582Wks6
+    Call Print_8582Wks6
+End Sub
+
+Public Sub Print8582Wks7()
+   'TriggerForm = USWTaxpayer
+   'TriggerField = USWTaxpayer.Print2210    
+    TriggerForm = USW8582Wks7
+    TriggerField = USW8582Wks7.PrintOver
+    Call Print_8582Wks7
+End Sub
+
+Public Sub PrintPartK1PTPWksht()
+    TriggerForm = USWPartK1PTP
+    TriggerField = USWPartK1PTP.Print
+    Call Print_PartK1PTPWksht
+End Sub
+
+Public Sub PrintOneAddDep()
+    TriggerForm = USWAddDep
+    Call PrintAddDep1040
+End Sub
+
+Public Sub PrintAddDep1040()
+    TriggerForm = USWAddDep
+    TriggerField = USWAddDep.Print
+    Call Print_AddDepWS
+End Sub
+
+Public Sub PrintAddDepWS1040SS()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USWAddDep
+    TriggerField = USWAddDep.Print
+    Call Print_AddDepWS
+End Sub
+
+Public Sub PrintAddOthDepWS1040SS()
+    TriggerForm = USF1040SS
+    TriggerField = USF1040SS.NumQual
+    Call Print_AddOthDepWS1040SS
+End Sub
+
+Public Sub PrintTaxSSB1()
+    TriggerForm = USWSSB
+    Call Print_TaxSSBWS11040
+End Sub
+
+Public Sub PrintTaxSSB2()
+    TriggerForm = USWSSBLumpDetail
+    Call Print_TaxSSBWS21040
+End Sub
+
+Public Sub PrintTaxSSB4()
+    TriggerForm = USWSSBLump
+    Call Print_TaxSSBWS41040
+End Sub
+
+Public Sub PrintOtherInc()
+    TriggerForm = USWOthInc
+    TriggerField = USWOthInc.Trigger
+    Call Print_USWOthInc
+End Sub
+
+Public Sub PrintOtherIncNR()
+    TriggerForm = USWOthIncNR
+    TriggerField = USWOthIncNR.Trigger
+    Call Print_USWOthIncNR
+End Sub
+
+Public Sub PrintSchOIStmt()
+    Call PrintSchOIStmtNR
+End Sub
+
+Public Sub PrintSchOIStmtNR()
+    TriggerForm = USSchOI
+    TriggerField = USSchOI.PrintWS
+    Call Print_USSchOIStmtNR
+End Sub
+
+Public Sub Print1040NRExclStmt()
+    TriggerForm = USWStatementsNR
+    TriggerField = USWStatementsNR.FileExcl
+    Call Print_1040NRExclStmt
+End Sub
+
+Public Sub Print1040NRTermStmt()
+    TriggerForm = USWStatementsNR
+    TriggerField = USWStatementsNR.FileTerm
+    Call Print_1040NRTermStmt
+End Sub
+
+Public Sub Print1040NRRevStmt()
+    TriggerForm = USWStatementsNR
+    TriggerField = USWStatementsNR.FileRev
+    Call Print_1040NRRevStmt
+End Sub
+
+Public Sub Print1040NRXXVStmt()
+    TriggerForm = USWStatementsNR
+    TriggerField = USWStatementsNR.UseXXV
+    Call Print_1040NRXXVStmt
+End Sub
+
+Public Sub Print8606Inherited()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USW8606
+    TriggerField = USW8606.Print
+    Call Print_8606Inherited
+End Sub
+
+Public Sub Print8606InheritedSp()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+    
+    TriggerForm = USW8606Spouse
+    TriggerField = USW8606Spouse.Print
+    Call Print_8606InheritedSp
+End Sub
+
+Public Sub PrintW8606()
+    TriggerForm = USF8606
+    TriggerField = USF8606.Print2
+    Call Print_RothRoll
+End Sub
+
+Public Sub PrintW8606Sp()
+    TriggerForm = USF8606Spouse
+    TriggerField = USF8606spouse.Print2
+    Call Print_RothRollSp
+End Sub
+
+Public Sub PrintAlimPd()
+    TriggerForm = USWAlimPd
+    TriggerField = USWAlimPd.Print
+    Call Print_AlimPdWS1040
+End Sub
+
+Public Sub PrintOtherAdj()
+    TriggerForm = USWOthAdj
+    Call Print_USWOthAdj
+End Sub
+
+Public Sub PrintOtherAdjNR()
+    TriggerForm = USWOthAdjNR
+    Call Print_USWOthAdjNR
+End Sub
+
+Public Sub PrintOtherTax()
+    TriggerForm = USWOthTax
+    TriggerField = USWOthTax.Print
+    Call Print_USWOthTax
+End Sub
+
+Public Sub PrintIRATrad()
+    TriggerForm = USWIRATrad
+    Call Print_IRADedWS10401
+    Call Print_IRADedWS10402
+End Sub
+
+Public Sub PrintSSBIRAMAGI()
+    TriggerForm = USWSSBIRAMAGI
+    Call Print_USWSSBIRAMAGI
+End Sub
+
+Public Sub PrintSSBIRADed()
+    TriggerForm = USWSSBIRADed
+    Call Print_USWSSBIRADed
+End Sub
+
+Public Sub PrintSSBIRATaxSSB()
+    TriggerForm = USWSSBIRATaxSSB
+    Call Print_USWSSBIRATaxSSB
+End Sub
+
+Public Sub PrintWPenalty()
+    'TriggerForm = USWTaxpayer
+    'TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USWPenalty
+    TriggerField = USWPenalty.PrintCon
+    Call Print_WPenalty
+End Sub
+
+Public Sub PrintWStatements1()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USWStatements
+    TriggerField = USWStatements.Print
+    Call Print_Statements1
+End Sub
+
+Public Sub PrintWStatements2()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USWStatements
+    TriggerField = USWStatements.Print2
+    Call Print_Statements2
+End Sub
+
+Public Sub PrintWStatements3()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+
+    TriggerForm = USWStatements
+    TriggerField = USWStatements.Print3
+    Call Print_Statements3
+End Sub
+
+Public Sub PrintEFNotes()
+    TriggerForm = USWEFWkSht2
+    TriggerField = USWEFWkSht2.EFNotesTrig
+    Call Print_EFNotes1
+    Call Print_EFNotes2
+End Sub
+
+Public Sub Print2MonthExt()
+    TriggerForm = USWEFWkSht2
+    TriggerField = USWEFWkSht2.ExtExplTrig
+    Call Print_2MonthExtStatement
+End Sub
+
+Public Sub PrintSummary179()
+'     TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USWSummary179
+    TriggerField = USWSummary179.PrintAtt
+    Call Print_4562Summary179Detail
+End Sub
+
+Public Sub Print4562Amort()
+'    TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USW4562Am
+    TriggerField = USW4562Am.PrintMe
+    Call Print_4562AmortOver
+End Sub
+
+Public Sub PrintSummaryAmort()
+'     TriggerForm = USWTaxpayer
+'    TriggerField = USWTaxpayer.Print2210
+    TriggerForm = USWSummaryAmort
+    TriggerField = USWSummaryAmort.PrintHere
+    Call Print_4562AmortExpend
+End Sub
+
+
+Public Sub PrintW4()
+    TriggerForm = USDW4
+    Call Print_USDW4Page1
+    Call Print_USDW4Page2
+    Call Print_USDW4Page3
+End Sub
+
+Public Sub PrintUSWFAFSA()
+    TriggerForm = USWFAFSAIntro
+    Call Print_FAFSASummary
+    Call Print_FAFSAWorksheetABC
+End Sub
+
+Public Sub PrintNo30BonusDepr()
+    TriggerForm = USWDeprSum
+    TriggerField = USWDeprSum.Statement30
+    Call Print_No30BonusDepr
+End Sub
+
+Public Sub PrintNo40BonusDepr()
+    TriggerForm = USWDeprSum
+    TriggerField = USWDeprSum.Statement40
+    Call Print_No40BonusDepr
+End Sub
+
+Public Sub PrintNo50BonusDepr()
+    TriggerForm = USWDeprSum
+    TriggerField = USWDeprSum.Statement50
+    Call Print_No50BonusDepr
+End Sub
+
+Public Sub PrintNo100BonusDepr()
+    TriggerForm = USWDeprSum
+    TriggerField = USWDeprSum.Statement100
+    Call Print_No100BonusDepr
+End Sub
+
+Public Sub PrintReal179()
+    TriggerForm = USWSummary179
+    TriggerField = USWSummary179.PrintElect
+    Call Print_Real179
+End Sub
+
+Public Sub PrintPrepOrg1()
+    CustomPrintSub = True
+    Call PrintOrg1
+End Sub
+Public Sub PrintPrepOrg2()
+    CustomPrintSub = True
+    Call PrintOrg2
+End Sub
+Public Sub PrintPrepOrg4()
+    CustomPrintSub = True
+    Call PrintOrg4
+End Sub
+Public Sub PrintPrepOrg7()
+    CustomPrintSub = True
+    Call PrintOrg7
+End Sub
+Public Sub PrintPrepOrg8()
+    CustomPrintSub = True
+    Call PrintOrg8
+End Sub
+Public Sub PrintPrepOrg9()
+    CustomPrintSub = True
+    Call PrintOrg9
+End Sub
+Public Sub PrintPrepOrg10()
+    CustomPrintSub = True
+    Call PrintOrg10
+End Sub
+Public Sub PrintPrepOrg11()
+    CustomPrintSub = True
+    Call PrintOrg11
+End Sub
+Public Sub PrintPrepOrg12()
+    CustomPrintSub = True
+    Call PrintOrg12
+End Sub
+Public Sub PrintPrepOrgCredits()
+    CustomPrintSub = True
+    Call PrintOrgCredits
+End Sub
+Public Sub PrintPrepOrg1Blank()
+    CustomPrintSub = True
+    Call PrintOrg1Blank
+End Sub
+Public Sub PrintPrepOrg2Blank()
+    CustomPrintSub = True
+    Call PrintOrg2Blank
+End Sub
+Public Sub PrintPrepOrg4Blank()
+    CustomPrintSub = True
+    Call PrintOrg4Blank
+End Sub
+Public Sub PrintPrepOrg7Blank()
+    CustomPrintSub = True
+    Call PrintOrg7Blank
+End Sub
+Public Sub PrintPrepOrg8Blank()
+    CustomPrintSub = True
+    Call PrintOrg8Blank
+End Sub
+Public Sub PrintPrepOrg9Blank()
+    CustomPrintSub = True
+    Call PrintOrg9Blank
+End Sub
+Public Sub PrintPrepOrg10Blank()
+    CustomPrintSub = True
+    Call PrintOrg10Blank
+End Sub
+Public Sub PrintPrepOrg11Blank()
+    CustomPrintSub = True
+    Call PrintOrg11Blank
+End Sub
+Public Sub PrintPrepOrg12Blank()
+    CustomPrintSub = True
+    Call PrintOrg12Blank
+End Sub
+Public Sub PrintPrepOrgCreditsBlank()
+    CustomPrintSub = True
+    Call PrintOrgCreditsBlank
+End Sub
+Public Sub PrintOrg1()
+    TriggerForm = USWPrepOrg
+    Call PrintPrepOrgEnv
+    Call PrintPrepOrgNLCO
+    Call PrintPrepOrgStd
+End Sub
+
+Public Sub PrintPrepOrgEnv()
+    TriggerForm = USWPrepOrg
+    TriggerField = USWPrepOrg.PrepOrg1Env
+    Call Print_PrepOrg1Env
+End Sub
+
+Public Sub PrintPrepOrgNLCO()
+    TriggerForm = USWPrepOrg
+    TriggerField = USWPrepOrg.PrepOrg1NLCO
+    Call Print_PrepOrg1NLCO
+End Sub
+Public Sub PrintPrepOrgStd()
+    TriggerForm = USWPrepOrg
+    TriggerField = USWPrepOrg.PrepOrg1Std
+    Call Print_PrepOrg1Std
+End Sub
+Public Sub PrintOrg2()
+    TriggerForm = USWPrepOrg
+    TriggerField = USWPrepOrg.PrepOrg2
+    Call Print_PrepOrg2
+    Call Print_PrepOrg2a
+End Sub
+Public Sub PrintOrg4()
+    TriggerForm = USWPrepOrg
+    TriggerField = USWPrepOrg.PrepOrg4
+    Call Print_PrepOrg4
+End Sub
+Public Sub PrintOrg7()
+    TriggerForm = USWSchC
+    Call Print_PrepOrg7
+End Sub
+Public Sub PrintOrg8()
+    TriggerForm = USWSchF
+    Call Print_PrepOrg8
+End Sub
+Public Sub PrintOrg9()
+    TriggerForm = USSchEP1
+    Call Print_PrepOrg9
+End Sub
+Public Sub PrintOrg10()
+    TriggerForm = USF4835
+    Call Print_PrepOrg10
+End Sub
+Public Sub PrintOrg11()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg11
+End Sub
+Public Sub PrintOrg12()
+    TriggerForm = USWPrepOrg
+    TriggerField = USWPrepOrg.PrepOrg12
+    Call Print_PrepOrg12p1
+    Call Print_PrepOrg12p2
+End Sub
+Public Sub PrintOrgCredits()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrgCredits
+End Sub
+Public Sub PrintOrg1Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg1Std
+End Sub
+Public Sub PrintOrg2Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg2
+    Call Print_PrepOrg2a
+End Sub
+Public Sub PrintOrg4Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg4
+End Sub
+Public Sub PrintOrg7Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg7Blank
+End Sub
+Public Sub PrintOrg8Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg8Blank
+End Sub
+Public Sub PrintOrg9Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg9Blank
+End Sub
+Public Sub PrintOrg10Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg10Blank
+End Sub
+Public Sub PrintOrg11Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg11
+End Sub
+Public Sub PrintOrg12Blank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrg12p1
+    Call Print_PrepOrg12p2
+End Sub
+Public Sub PrintOrgCreditsBlank()
+    TriggerForm = USWPrepOrg
+    Call Print_PrepOrgCredits
+End Sub
+Public Sub PrintSchAAZ()
+    CustomPrintSub = True
+    TriggerForm = USSchA
+    Call Print_A1
+End Sub
+Public Sub PrintMortWSAZ()
+    CustomPrintSub = True
+    TriggerForm = USWMortStmt
+    Call PrintVBForm
+End Sub
+Public Sub Print8833()
+    TriggerForm = USF8833
+    TriggerField = USF8833.Print
+    Call Print_8833
+End Sub
+
+Public Sub PrintRepublicESign()
+' Description:  Republic Disclosure and Consent to Receive Documents Electronically
+    CustomPrintSub = True
+    Call Print_RepublicConsentDisclose
+End Sub
+
+Public Sub PrintBankConsumerApp()
+' Description:  Republic Bank Consumer Application - NTK sheet, Bank Application, Privacy Notice
+    CustomPrintSub = True
+    Call Print_BankConsumerApp1
+    Call Print_BankConsumerApp2
+    Call Print_BankConsumerApp3
+    Call Print_BankConsumerApp4
+    Call Print_BankConsumerApp5
+    Call Print_BankConsumerApp6
+    Call Print_RepublicPrivacyNotice1
+    Call Print_RepublicPrivacyNotice2
+    Call PrintConILDisclosure
+    Call PrintConMEDisclosure
+    Call PrintConMDDisclosure    
+    Call PrintConMNDisclosure
+End Sub
+
+Public Sub PrintConILDisclosure()
+' Description:  Republic Consumer Illinois State Disclosure
+    TriggerForm = USWBankProd
+    TriggerField = USWBankProd.PrintIL
+    Call Print_ConILDisclosure
+End Sub
+
+Public Sub PrintConMEDisclosure()
+' Description:  Republic Consumer Maine State Disclosure
+    TriggerForm = USWBankProd
+    TriggerField = USWBankProd.PrintME
+    Call Print_ConMEDisclosure
+End Sub
+
+Public Sub PrintConMDDisclosure()
+' Description:  Republic Consumer Maryland State Disclosure
+    TriggerForm = USWBankProd
+    TriggerField = USWBankProd.PrintMD
+    Call Print_ConMDDisclosure
+End Sub
+
+Public Sub PrintConMNDisclosure()
+' Description:  Republic Consumer Minnesota State Disclosure
+    TriggerForm = USWBankProd
+    TriggerField = USWBankProd.PrintMN
+    Call Print_ConMNDisclosure
+End Sub
+
+Public Sub PrintRepublic7216Use()
+' Description:  Republic Prep Consent to Use of Tax Return Information
+    CustomPrintSub = True
+    Call Print_RepublicConsentUsePrep
+End Sub
+
+Public Sub PrintRepublic7216Disclose()
+' Description:  Republic Prep Consent to Disclouse of Tax Return Information
+    CustomPrintSub = True
+    Call Print_RepublicConsentDisclosePrep
+End Sub
+
+Public Sub PrintTPG7216Use()
+' Description:  TPG Prep Consent to Use of Tax Return Information
+    CustomPrintSub = True
+    Call Print_TPGConsentUsePrep
+End Sub
+
+Public Sub PrintTPG7216Disclose()
+' Description:  TPG Prep Consent to Disclouse of Tax Return Information
+    CustomPrintSub = True
+    Call Print_TPGConsentDisclosePrep
+End Sub
+
+Public Sub PrintRALApp()
+    TriggerForm = USWRALApp
+    Call PrintRepublicPrepApp
+    Call PrintTPGPrepApp
+End Sub
+
+Public Sub PrintRepublicPrepApp()
+' Description:  Republic Bank Application - NTK sheet, call to Bank Application prints, State Disclosure prints
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.Republic
+    Call PrintRepublicEAInfoPageBasic
+	Call PrintRepublicEAInfoPageBasicFee
+    Call PrintRepublicEAInfoPagePlus
+    Call PrintRepublicEAInfoPageStandard
+    Call PrintRepublicRegBankApp
+    Call PrintRepublicStDisclBankApp
+    Call Print_RepublicPrivacyNotice1
+    Call Print_RepublicPrivacyNotice2
+'RT Disclosures
+    Call PrintRepILDisclosure
+    Call PrintRepMEDisclosure
+    Call PrintRepMDDisclosure
+    Call PrintRepMNDisclosure
+    Call PrintRepNYDisclosure
+    Call PrintRepILDisclosureSP
+    Call PrintRepMEDisclosureSP
+    Call PrintRepMDDisclosureSP
+    Call PrintRepMNDisclosureSP
+    Call PrintRepNYDisclosureSP
+'EA Disclosures
+    Call PrintRepEACTDisclosure
+    Call PrintRepEAILDisclosureFee
+    Call PrintRepEAMEDisclosure
+    Call PrintRepEAMDDisclosure
+    Call PrintRepEAMNDisclosure
+    Call PrintRepEANJDisclosure
+    Call PrintRepEANYDisclosure
+    Call PrintRepNYCEADisclosure
+    Call PrintRepEANCDisclosure
+    Call PrintRepEAWIDisclosure
+    Call PrintRepEACTDisclosureSP
+    Call PrintRepEAILDisclosureFeeSP
+    Call PrintRepEAMEDisclosureSP
+    Call PrintRepEAMDDisclosureSP
+    Call PrintRepEAMNDisclosureSP
+    Call PrintRepEANJDisclosureSP
+    Call PrintRepEANYDisclosureSP
+    Call PrintRepNYCEADisclosureSP
+    Call PrintRepEANCDisclosureSP
+    Call PrintRepEAWIDisclosureSP
+    
+End Sub
+
+Public Sub PrintRepublicEAInfoPageBasic()
+' Description:  Republic Easy Advance Information Page and TILA - Basic
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEABasic
+    Call Print_RepublicEAInfoBasic
+End Sub
+
+Public Sub PrintRepublicEAInfoPageBasicFee()
+' Description:  Republic Easy Advance Information Page and TILA - Basic + Fee
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEABasicTP
+    Call Print_RepublicEAInfoBasicFee
+    Call Print_RepublicEATILA
+    Call Do_RepTILABarcode
+End Sub
+
+Public Sub PrintRepublicEAInfoPagePlus()
+' Description:  Republic Easy Advance Information Page and TILA - Plus
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEAPlus
+    Call Print_RepublicEAInfoPlus
+    Call Print_RepublicEATILA
+    Call Do_RepTILABarcode
+End Sub
+
+Public Sub PrintRepublicEAInfoPageStandard()
+' Description:  Republic Easy Advance Information Page and TILA - Standard
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEAStandard
+    Call Print_RepublicEAInfoStandard
+    Call Print_RepublicEATILA
+    Call Do_RepTILABarcode
+End Sub
+
+Public Sub Do_RepTILABarcode()
+    Call PrintBarcode(39, 34, BarcodeTypeDataMatrix_BarcodeFlag)
+    BarcodeWidth = 1.5
+    Call Print_RepTILABarcode
+End Sub
+
+Public Sub PrintRepublicRegBankApp()
+' Description:  Regular Republic Bank Application - NTK sheet, Bank Application
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintRepBankApp
+    Call PrintRepublicNTK
+    Call Print_RepublicBankApp1
+    Call Do_RepBarcode
+    Call Print_RepublicBankApp2
+    Call Print_RepublicBankApp3
+    Call Print_RepublicBankApp4
+    Call Print_RepublicBankApp5
+    Call Print_RepublicBankApp6
+End Sub
+
+Public Sub PrintRepublicStDisclBankApp()
+' Description:  State Disclosure Republic Bank Application - NTK sheet, Bank Application
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintStDiscBA
+    Call PrintRepublicNTK
+    Call Print_RepublicStDisclBankApp1
+    Call Do_RepBarcode
+    Call Print_RepublicStDisclBankApp2
+    Call Print_RepublicStDisclBankApp3
+    Call Print_RepublicStDisclBankApp4
+    Call Print_RepublicStDisclBankApp5
+    Call Print_RepublicStDisclBankApp6
+End Sub
+
+
+Public Sub PrintRepublicNTK()
+' Description:  Republic NTK Page
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintNTK
+    Call Print_RepublicNTK
+End Sub
+
+Public Sub Do_RepBarcode()
+    Call PrintBarcode(3, 63, BarcodeTypeDataMatrix_BarcodeFlag)
+    BarcodeWidth = 1.5
+    Call Print_RepBarcode
+End Sub
+
+Public Sub PrintRepILDisclosure()
+' Description:  Republic Illinois State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintIL
+    Call Print_RepILDisclosure
+End Sub
+
+Public Sub PrintRepILDisclosureSP()
+' Description:  Republic Illinois State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintSpIL
+    Call Print_RepILDisclosureSP
+End Sub
+
+Public Sub PrintRepMEDisclosure()
+' Description:  Republic Maine State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintME
+    Call Print_RepMEDisclosure
+End Sub
+
+Public Sub PrintRepMEDisclosureSP()
+' Description:  Republic Maine State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintSpME
+    Call Print_RepMEDisclosureSP
+End Sub
+
+Public Sub PrintRepMDDisclosure()
+' Description:  Republic Maryland State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintMD
+    Call Print_RepMDDisclosure
+End Sub
+
+Public Sub PrintRepMDDisclosureSP()
+' Description:  Republic Maryland State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintSpMD
+    Call Print_RepMDDisclosureSP
+End Sub
+
+Public Sub PrintRepMNDisclosure()
+' Description:  Republic Minnesota State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintMN
+    Call Print_RepMNDisclosure
+End Sub
+
+Public Sub PrintRepMNDisclosureSP()
+' Description:  Republic Minnesota State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintSpMN
+    Call Print_RepMNDisclosureSP
+End Sub
+
+Public Sub PrintRepNYDisclosure()
+' Description:  Republic New York State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintNY
+    Call Print_RepNYDisclosure
+End Sub
+
+Public Sub PrintRepNYDisclosureSP()
+' Description:  Republic New York State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintSpNY
+    Call Print_RepNYDisclosureSP
+End Sub
+
+Public Sub PrintRepEACTDisclosure()
+' Description:  Republic EA Connecticut State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEACT
+    Call Print_RepCTEADisclosure
+End Sub
+
+Public Sub PrintRepEACTDisclosureSP()
+' Description:  Republic EA Connecticut State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpCT
+    Call Print_RepCTEADisclosureSP
+End Sub
+
+Public Sub PrintRepEAILDisclosureFee()
+' Description:  Republic EA Illinois State Disclosure Fee - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEAIL
+    Call Print_RepILEADisclosure
+End Sub
+
+Public Sub PrintRepEAILDisclosureFeeSP()
+' Description:  Republic EA Illinois State Disclosure Fee - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpIL
+    Call Print_RepILEADisclosureSP
+End Sub
+
+Public Sub PrintRepEAMEDisclosure()
+' Description:  Republic EA Maine State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEAME
+    Call Print_RepMEEADisclosure
+End Sub
+
+Public Sub PrintRepEAMEDisclosureSP()
+' Description:  Republic EA Maine State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpME
+    Call Print_RepMEEADisclosureSP
+End Sub
+
+Public Sub PrintRepEAMDDisclosure()
+' Description:  Republic EA Maryland State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEAMD
+    Call Print_RepMDEADisclosure
+End Sub
+
+Public Sub PrintRepEAMDDisclosureSP()
+' Description:  Republic EA Maryland State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpMD
+    Call Print_RepMDEADisclosureSP
+End Sub
+
+Public Sub PrintRepEAMNDisclosure()
+' Description:  Republic EA Minnesota State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEAMN
+    Call Print_RepMNEADisclosure
+End Sub
+
+Public Sub PrintRepEAMNDisclosureSP()
+' Description:  Republic EA Minnesota State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpMN
+    Call Print_RepMNEADisclosureSP
+End Sub
+
+Public Sub PrintRepEANJDisclosure()
+' Description:  Republic EA New Jersey State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEANJ
+    Call Print_RepNJEADisclosure
+End Sub
+
+Public Sub PrintRepEANJDisclosureSP()
+' Description:  Republic EA New Jersey State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpNJ
+    Call Print_RepNJEADisclosureSP
+End Sub
+
+Public Sub PrintRepEANYDisclosure()
+' Description:  Republic EA New York State/City Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEANY
+    Call Print_RepNYEADisclosure
+End Sub
+
+Public Sub PrintRepNYCEADisclosure()
+' Description:  Republic EA New York City Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEANYC
+    Call Print_RepNYCEADisclosure
+End Sub
+
+Public Sub PrintRepEANYDisclosureSP()
+' Description:  Republic EA New York State/City Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpNY
+    Call Print_RepNYEADisclosureSP
+End Sub
+
+Public Sub PrintRepNYCEADisclosureSP()
+' Description:  Republic EA New York State/City Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpNYC
+    Call Print_RepNYCEADisclosureSP
+End Sub
+
+Public Sub PrintRepEANCDisclosure()
+' Description:  Republic EA North Carolina State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEANC
+    Call Print_RepNCEADisclosure
+End Sub
+
+Public Sub PrintRepEANCDisclosureSP()
+' Description:  Republic EA North Carolina State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpNC
+    Call Print_RepNCEADisclosureSP
+End Sub
+
+Public Sub PrintRepEAWIDisclosure()
+' Description:  Republic EA Wisconsin State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEAWI
+    Call Print_RepWIEADisclosure
+End Sub
+
+Public Sub PrintRepEAWIDisclosureSP()
+' Description:  Republic EA Wisconsin State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintEASpWI
+    Call Print_RepWIEADisclosureSP
+End Sub
+
+Public Sub PrintTPGPrepApp()
+' Description: TPG Application - FCA documents, state disclosures, RT documents
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.TPG
+    Call PrintTPGFCA
+    Call PrintTPGFCANoRT
+    Call PrintTPGRT
+End Sub
+
+Public Sub PrintTPGFCA()
+' Description:  TPG FCA Application
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCA
+    Call PrintARMDDisclosure
+    Call PrintILDisclosure
+    Call PrintChicagoDisclosure
+    Call PrintMIDisclosure
+    Call PrintMNDisclosure
+    Call PrintCACTLAMENVORTXDisclosure
+    Call PrintNJDisclosure
+    Call PrintNYDisclosure
+    Call PrintNYCDisclosure
+    Call PrintNCDisclosure
+    Call Print_TPGFCA1
+    Call Print_TPGFCA2
+    Call Print_TPGFCA3
+    Call Print_TPGFCA4
+    Call Print_TPGFCA5
+    Call Print_TPGFCA6
+    Call Print_TPGFCA7
+    Call Print_TPGFCA8
+    Call Print_TPGFCA9
+    Call Print_TPGFCA10
+    Call Print_TPGFCA11
+    Call Print_TPGFCA12
+    Call Print_TPGFCA13
+    Call Print_TPGFCA14
+    Call Print_TPGFCA15
+    Call Print_TPGFCA16
+    Call Print_TPGFCA17
+    Call Print_TPGFCA18
+    Call Print_TPGFCA19
+End Sub
+
+Public Sub PrintARMDDisclosure()
+' Description:  TPG FCA AR MD
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCAARMD
+    Call Print_TPGARMDDisclosure1
+    Call Print_TPGARMDDisclosure2
+End Sub
+
+Public Sub PrintILDisclosure()
+' Description:  TPG FCA IL
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCAIL
+    Call Print_TPGILDisclosure1
+    Call Print_TPGILDisclosure2
+    Call Print_TPGILDisclosure3
+End Sub
+
+Public Sub PrintChicagoDisclosure()
+' Description:  TPG FCA Chicago
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCAChicago
+    Call Print_TPGChicagoDisclosure1
+    Call Print_TPGChicagoDisclosure2
+End Sub
+
+Public Sub PrintMIDisclosure()
+' Description:  TPG FCA MI
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCAMI
+    Call Print_TPGMIDisclosure1
+    Call Print_TPGMIDisclosure2
+End Sub
+
+Public Sub PrintMNDisclosure()
+' Description:  TPG FCA MN
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCAMN
+    Call Print_TPGMNDisclosure2
+    Call Print_TPGMNDisclosure1
+End Sub
+
+Public Sub PrintTNVAWADisclosure()
+' Description:  TPG FCA TN VA WA
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCATNVAWA
+    Call Print_TPGTNVAWADisclosure1
+    Call Print_TPGTNVAWADisclosure2
+End Sub
+
+Public Sub PrintCACTLAMENVORTXDisclosure()
+' Description:  TPG FCA CA CT LA ME NV OR TX
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCACACTLAMENVORTX
+    Call Print_TPGCACTLAMENVORTXDisclosure1
+    Call Print_TPGCACTLAMENVORTXDisclosure2
+End Sub
+
+Public Sub PrintNJDisclosure()
+' Description:  TPG FCA NJ
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCANJ
+    Call Print_TPGNJDisclosure1
+    Call Print_TPGNJDisclosure2
+End Sub
+
+Public Sub PrintNYDisclosure()
+' Description:  TPG FCA NY
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCANY
+    Call Print_TPGNYDisclosure1
+    Call Print_TPGNYDisclosure2
+End Sub
+
+Public Sub PrintNYCDisclosure()
+' Description:  TPG FCA NYC
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCANYC
+    Call Print_TPGNYCDisclosure1
+    Call Print_TPGNYCDisclosure2
+    Call Print_TPGNYCDisclosure3
+End Sub
+
+Public Sub PrintNCDisclosure()
+' Description:  TPG FCA NC
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCANC
+    Call Print_TPGNCDisclosure1
+    Call Print_TPGNCDisclosure2
+End Sub
+
+Public Sub PrintTPGFCANoRT()
+' Description:  TPG FCA Application No RT
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintFCANoRT
+    Call Print_TPGFCANoRT1
+    Call Print_TPGFCANoRT2
+    Call Print_TPGFCANoRT3
+    Call Print_TPGFCANoRT4
+    Call Print_TPGFCANoRT5
+    Call Print_TPGFCANoRT6
+    Call Print_TPGFCANoRT7
+    Call Print_TPGFCANoRT8
+    Call Print_TPGFCANoRT9
+End Sub
+
+Public Sub PrintTPGRT()
+' Description:  TPG RT Application
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.TPGRT
+    Call Print_TPGFee1
+    Call Print_TPGFee2
+    Call Print_TPGRT1
+    Call Print_TPGRT2
+    Call Print_TPGRT3
+    Call Print_TPGRT4
+    Call Print_TPGRT5
+    Call Print_TPGRT6
+    Call Print_TPGRT7
+    Call Print_TPGRT8
+    Call Print_TPGRT9
+    Call Print_TPGRT10
+End Sub
+
+Public Sub PrintTPGILDisclosure()
+' Description:  TPG Illinois State Disclosure - English
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintIL
+    Call Print_TPGILDisclosure
+End Sub
+
+Public Sub PrintTPGILDisclosureSP()
+' Description:  TPG Illinois State Disclosure - Spanish
+    TriggerForm = USWRALApp
+    TriggerField = USWRALApp.PrintSpIL
+    Call Print_TPGILDisclosureSP
+End Sub
+
+Public Sub PrintTAD7216Use()
+' Description:  Protection Plus Consent to Use of Tax Return Information
+    CustomPrintSub = True
+    Call Print_TAD7216Use
+End Sub
+Public Sub PrintTAD7216Disclose()
+' Description:  Protection Plus Consent to Disclouse of Tax Return Information
+    CustomPrintSub = True
+    Call Print_TAD7216Disclose
+End Sub
+
+Public Sub PrintVPS7216Use()
+' Description:  VPS Consent to Use of Tax Return Information
+    CustomPrintSub = True
+    Call Print_VPS7216Use
+End Sub
+Public Sub PrintVPS7216Disclose()
+' Description:  VPS Consent to Disclouse of Tax Return Information
+    CustomPrintSub = True
+    Call Print_VPS7216Disclose
+End Sub
+
+Public Sub PrintPrepAuditAgreement()
+' Description:  Protection Plus Membership Agreement
+    CustomPrintSub = True
+    Call Print_PrepAuditAgreement1
+    Call Print_PrepAuditAgreement2
+    Call Print_PrepAuditAgreement3
+    Call Print_PrepAuditAgreement4
+    Call Print_PrepAuditAgreement5
+End Sub
+
+Public Sub PrintPrepAuditUserAgreement()
+' Description:  Protection Plus User Agreement
+    CustomPrintSub = True
+    Call Print_PrepAuditUserAgreement1
+    Call Print_PrepAuditUserAgreement2
+    Call Print_PrepAuditUserAgreement3
+End Sub
+
+Public Sub PrintPrepWMConsent()
+' Description: Wealth Management Consent
+    CustomPrintSub = True
+    Call Print_PrepWMConsent1
+    Call Print_PrepWMConsent2
+    Call Print_PrepWMConsent3
+    Call Print_PrepWMConsent4
+End Sub

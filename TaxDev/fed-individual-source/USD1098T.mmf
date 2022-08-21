@@ -1,0 +1,5683 @@
+FormFieldList = FirstName|StudSSN|Text7|Text6|Text5|Check8|Check7|Check6|Check5|Check4|Mode|QuickEntryY|QuickEntryN|CNum|GradStud|HalfStud|NYTuit|PayerPhone|Text4|Text3|Text2|Text1|Extra2|Extra3|Extra4|Scholar|Exist|Exit|Zip|PayerEin|Description|PayRecd|Add|Rec|City|PYAdj|Reimb|PYScholar|PayerCity|Acct|PayerName|PayerAdd|PayerZip|PayerForeignProvince|PayerForeignPC|ForeignProvince|ForeignPC|MobReview|PayerState|PayerForCtry|StateAbb|ForCtry|
+VERSION 1.0
+Begin MM.Form USD1098T
+	Locked	 = True
+	FormName	 = "USD1098T"
+	FormHeight	 = 1500
+	FormWidth	 = 620
+	FormListLongDesc	 = "Tuition Statement"
+	TabSequence	 = True
+	SignatureField	 = "Description"
+	ProSignatureField	 = "PayerName"
+	FormPennies	 = STORE_PENNIES
+	FreeToPrint	 = False
+	BeginProperty CreateForm
+		Create	 = CreateChild(USDStudent.CrT(0), 1)
+		Create	 = CreateChild(USDStudent.CrT(1), 2)
+		Create	 = CreateChild(USDStudent.CrT(2), 3)
+		Create	 = CreateChild(USDStudent.CrT(3), 4)
+	EndProperty
+	BeginProperty FormType
+		FormType	 = Normal
+	EndProperty
+	BeginProperty FormListFolder
+		FormListFolder	 = Documents
+	EndProperty
+	BeginProperty FormListNumber
+		FormListNumber	 = 20
+	EndProperty
+	BeginProperty FormListShortDesc
+		FormListShortDesc	 = " Form 1098-T"
+	EndProperty
+	BeginProperty MaxCopies
+		MaxCopies	 = 50
+	EndProperty
+	BeginProperty NewScript
+		NewScript	 = ""
+	EndProperty
+	BeginProperty ReviewScript
+		ReviewScript	 = "IV_USEducation_Q1"
+	EndProperty
+	BeginProperty HelpTopic
+		HelpTopic	 = "Form 1098-T"
+	EndProperty
+	BeginProperty TaxTutor
+		TaxTutor	 = "Education Tax Credits"
+	EndProperty
+	Begin MM.TextBox FirstName
+		FieldName	 = "FirstName"
+		DisplayFieldName	 = "FirstName"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 51
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 792
+		Left	 = 432
+		Height	 = 17
+		Width	 = 158
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox StudSSN
+		FieldName	 = "StudSSN"
+		DisplayFieldName	 = "StudSSN"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 11
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 230
+		Left	 = 160
+		Height	 = 17
+		Width	 = 129
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+			Spawn	 = Spawn(USDStudent.StudSSN)
+		EndProperty
+	End
+	Begin MM.TextBox Text7
+		FieldName	 = "Text7"
+		DisplayFieldName	 = "Extra2"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 50
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 936
+		Left	 = 56
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Text6
+		FieldName	 = "Text6"
+		DisplayFieldName	 = "Extra1"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 49
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 960
+		Left	 = 56
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Text5
+		FieldName	 = "Text5"
+		DisplayFieldName	 = "Extra2"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 48
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 864
+		Left	 = 216
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.CheckBox Check8
+		FieldName	 = "Check8"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = ""
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 47
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 864
+		Left	 = 376
+		Height	 = 17
+		Width	 = 86
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox Check7
+		FieldName	 = "Check7"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = ""
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 46
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 888
+		Left	 = 376
+		Height	 = 17
+		Width	 = 86
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox Check6
+		FieldName	 = "Check6"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = ""
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 45
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 912
+		Left	 = 376
+		Height	 = 17
+		Width	 = 86
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox Check5
+		FieldName	 = "Check5"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = ""
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 44
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 936
+		Left	 = 376
+		Height	 = 17
+		Width	 = 86
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox Check4
+		FieldName	 = "Check4"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = ""
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 43
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 960
+		Left	 = 376
+		Height	 = 17
+		Width	 = 86
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox Mode
+		FieldName	 = "Mode"
+		DisplayFieldName	 = "Mode"
+		FieldType	 = "Number"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 42
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 720
+		Left	 = 504
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.CheckBox QuickEntryY
+		FieldName	 = "QuickEntryY"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form W-2, Box 13"
+		Caption	 = "QuickEntryY"
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 41
+		DefaultVal	 = ""
+		QuickEntry	 = True
+		RadioTag	 = "QuickEntryN"
+		TempField	 = False
+		Top	 = 744
+		Left	 = 504
+		Height	 = 17
+		Width	 = 86
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox QuickEntryN
+		FieldName	 = "QuickEntryN"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form W-2, Box 13"
+		Caption	 = "QuickEntryN"
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 40
+		DefaultVal	 = ""
+		QuickEntry	 = True
+		RadioTag	 = "QuickEntryY"
+		TempField	 = False
+		Top	 = 768
+		Left	 = 504
+		Height	 = 17
+		Width	 = 86
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox CNum
+		FieldName	 = "CNum"
+		DisplayFieldName	 = "CNum"
+		FieldType	 = "Number"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 31
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 696
+		Left	 = 504
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.CheckBox GradStud
+		FieldName	 = "GradStud"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form 1098-T, Line 9"
+		Caption	 = ""
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 27
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 423
+		Left	 = 432
+		Height	 = 16
+		Width	 = 16
+		BeginProperty HelpLink
+			HelpLink	 = "Form 1098-T Box 9 - Graduate Student"
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox HalfStud
+		FieldName	 = "HalfStud"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form 1098-T, Line 8"
+		Caption	 = ""
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 26
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 384
+		Left	 = 488
+		Height	 = 16
+		Width	 = 16
+		BeginProperty HelpLink
+			HelpLink	 = "Form 1098-T Box 8 - At Least Half-time Student"
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.CheckBox NYTuit
+		FieldName	 = "NYTuit"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form 1098-T, Line 7"
+		Caption	 = ""
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 25
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 336
+		Left	 = 580
+		Height	 = 16
+		Width	 = 16
+		BeginProperty HelpLink
+			HelpLink	 = "Form 1098-T Box 7 - Amounts Received or Billed for Academic Period After Tax Year"
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox PayerPhone
+		FieldName	 = "PayerPhone"
+		DisplayFieldName	 = "PayerPhone"
+		FieldType	 = "Phone"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 9
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 183
+		Left	 = 16
+		Height	 = 17
+		Width	 = 270
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Text4
+		FieldName	 = "Text4"
+		DisplayFieldName	 = "Extra4"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 39
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 960
+		Left	 = 216
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Text3
+		FieldName	 = "Text3"
+		DisplayFieldName	 = "Extra3"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 38
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 936
+		Left	 = 216
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Text2
+		FieldName	 = "Text2"
+		DisplayFieldName	 = "Extra2"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 37
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 912
+		Left	 = 56
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Text1
+		FieldName	 = "Text1"
+		DisplayFieldName	 = "Extra1"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 36
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 888
+		Left	 = 56
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra2
+		FieldName	 = "Extra2"
+		DisplayFieldName	 = "Extra2"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 33
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 864
+		Left	 = 56
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra3
+		FieldName	 = "Extra3"
+		DisplayFieldName	 = "Extra3"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 34
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 888
+		Left	 = 216
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Extra4
+		FieldName	 = "Extra4"
+		DisplayFieldName	 = "Extra4"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 35
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 912
+		Left	 = 216
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Scholar
+		FieldName	 = "Scholar"
+		DisplayFieldName	 = "Scholar"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form 1098-T, Line 5"
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 23
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 256
+		Left	 = 464
+		Height	 = 17
+		Width	 = 134
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = "0"
+		MaxRange	 = "99999999@"
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = "Form 1098-T Box 5 - Scholarships or Grants Received"
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Exist
+		FieldName	 = "Exist"
+		DisplayFieldName	 = "Exist"
+		FieldType	 = "Number"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 32
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 672
+		Left	 = 504
+		Height	 = 17
+		Width	 = 86
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Exit
+		FieldName	 = "Exit"
+		DisplayFieldName	 = ""
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 29
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 577
+		Left	 = 267
+		Height	 = 41
+		Width	 = 73
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Zip
+		FieldName	 = "Zip"
+		DisplayFieldName	 = "Zip"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 14
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 327
+		Left	 = 216
+		Height	 = 17
+		Width	 = 70
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox PayerEin
+		FieldName	 = "PayerEin"
+		DisplayFieldName	 = "PayerEin"
+		FieldType	 = "EIN"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 10
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 231
+		Left	 = 16
+		Height	 = 17
+		Width	 = 129
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Description
+		FieldName	 = "Description"
+		DisplayFieldName	 = "Description"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 30
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 648
+		Left	 = 208
+		Height	 = 17
+		Width	 = 384
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox PayRecd
+		FieldName	 = "PayRecd"
+		DisplayFieldName	 = "PayRecd"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form 1098-T, Line 1"
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 21
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 144
+		Left	 = 304
+		Height	 = 17
+		Width	 = 150
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = "0"
+		MaxRange	 = "99999999@"
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = "Form 1098-T Box 1 - Payments Received For Qualified Tuition and Related Expenses"
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Add
+		FieldName	 = "Add"
+		DisplayFieldName	 = "Add"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 13
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 295
+		Left	 = 16
+		Height	 = 17
+		Width	 = 273
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Rec
+		FieldName	 = "Rec"
+		DisplayFieldName	 = "Rec"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 12
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 263
+		Left	 = 16
+		Height	 = 17
+		Width	 = 273
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+			Spawn	 = Spawn(USDStudent.Name)
+		EndProperty
+	End
+	Begin MM.TextBox City
+		FieldName	 = "City"
+		DisplayFieldName	 = "City"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 15
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 327
+		Left	 = 16
+		Height	 = 17
+		Width	 = 152
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox PYAdj
+		FieldName	 = "PYAdj"
+		DisplayFieldName	 = "PYAdj"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form 1098-T, Line 4"
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 22
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 256
+		Left	 = 304
+		Height	 = 17
+		Width	 = 150
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = "Form 1098-T Box 4 - Adjustments Made for Prior Year"
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Reimb
+		FieldName	 = "Reimb"
+		DisplayFieldName	 = "Reimb"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form 1098-T, Line 10"
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 28
+		FieldPennies	 = ""
+		MaxLength	 = "12"
+		SpawnLink	 = False
+		Top	 = 423
+		Left	 = 464
+		Height	 = 17
+		Width	 = 134
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = "0"
+		MaxRange	 = "99999999@"
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = "Form 1098-T Box 10 - Insurance Contract Reimbursement or Refund"
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox PYScholar
+		FieldName	 = "PYScholar"
+		DisplayFieldName	 = "PYScholar"
+		FieldType	 = "Currency"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = "Form 1098-T, Line 6"
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 24
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 352
+		Left	 = 304
+		Height	 = 17
+		Width	 = 150
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = "Form 1098-T Box 6 - Adjustments to Scholarships or Grants for a Prior Year"
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox PayerCity
+		FieldName	 = "PayerCity"
+		DisplayFieldName	 = "PayerCity"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 4
+		FieldPennies	 = ""
+		MaxLength	 = "33"
+		SpawnLink	 = False
+		Top	 = 87
+		Left	 = 16
+		Height	 = 17
+		Width	 = 152
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox Acct
+		FieldName	 = "Acct"
+		DisplayFieldName	 = "Acct"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = True
+		PI Description	 = "Payer account number"
+		TabSequence	 = 20
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 423
+		Left	 = 16
+		Height	 = 17
+		Width	 = 273
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox PayerName
+		FieldName	 = "PayerName"
+		DisplayFieldName	 = "PayerName"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 1
+		FieldPennies	 = ""
+		MaxLength	 = "33"
+		SpawnLink	 = False
+		Top	 = 23
+		Left	 = 16
+		Height	 = 17
+		Width	 = 273
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox PayerAdd
+		FieldName	 = "PayerAdd"
+		DisplayFieldName	 = "PayerAdd"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 2
+		FieldPennies	 = ""
+		MaxLength	 = "33"
+		SpawnLink	 = False
+		Top	 = 55
+		Left	 = 16
+		Height	 = 17
+		Width	 = 273
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "a. Veterans' education benefits (enter on Student Worksheet, Part IV, line 1)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 496
+		Left	 = 24
+		Height	 = 15
+		Width	 = 408
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "b. Employer-provided education benefits (enter on Student Worksheet, Part IV, line 2)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 512
+		Left	 = 24
+		Height	 = 15
+		Width	 = 460
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "c. Amounts also reported on Form W-2 as wages (enter on Form W-2)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 528
+		Left	 = 24
+		Height	 = 15
+		Width	 = 381
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "* Do not enter the following types of payments in box 5:"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 480
+		Left	 = 3
+		Height	 = 15
+		Width	 = 297
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 864
+		Left	 = 328
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "First name"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 792
+		Left	 = 8
+		Height	 = 16
+		Width	 = 62
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 888
+		Left	 = 328
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 912
+		Left	 = 328
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 936
+		Left	 = 328
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 960
+		Left	 = 328
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 936
+		Left	 = 8
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 960
+		Left	 = 8
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 864
+		Left	 = 168
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Quick entry No"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 768
+		Left	 = 8
+		Height	 = 16
+		Width	 = 87
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Go to summary"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 720
+		Left	 = 8
+		Height	 = 16
+		Width	 = 90
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Quick entry Yes"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 744
+		Left	 = 8
+		Height	 = 16
+		Width	 = 94
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "u"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 340
+		Left	 = 540
+		Height	 = 12
+		Width	 = 10
+		BeginProperty Font
+			Name	 = "Wingdings 3"
+			Size	 = 8
+			Charset	 = 2
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Copy number"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 696
+		Left	 = 8
+		Height	 = 16
+		Width	 = 77
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Ins. contract reimb/refund"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 408
+		Left	 = 472
+		Height	 = 14
+		Width	 = 124
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 600
+		Y1	 = 408
+		Y2	 = 408
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 296
+		Y1	 = 312
+		Y2	 = 312
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 600
+		Y1	 = 280
+		Y2	 = 280
+	End
+	Begin MM.Label Label1
+		Caption	 = "March <!year(1)>"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 340
+		Left	 = 476
+		Height	 = 14
+		Width	 = 57
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "beginning January -"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 328
+		Left	 = 476
+		Height	 = 14
+		Width	 = 95
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "amounts for an"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 304
+		Left	 = 476
+		Height	 = 14
+		Width	 = 73
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "academic period"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 316
+		Left	 = 476
+		Height	 = 14
+		Width	 = 79
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "for a prior year"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 304
+		Left	 = 312
+		Height	 = 14
+		Width	 = 73
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "scholarships or grants"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 292
+		Left	 = 312
+		Height	 = 14
+		Width	 = 109
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 600
+		Y1	 = 376
+		Y2	 = 376
+	End
+	Begin MM.Label Label1
+		Caption	 = "prior year"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 212
+		Left	 = 312
+		Height	 = 14
+		Width	 = 47
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 600
+		Y1	 = 200
+		Y2	 = 200
+	End
+	Begin MM.Label Label1
+		Caption	 = "2"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 88
+		Left	 = 464
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "1"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 88
+		Left	 = 300
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "related expenses"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 112
+		Left	 = 312
+		Height	 = 14
+		Width	 = 84
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "qualified tuition and"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 100
+		Left	 = 312
+		Height	 = 14
+		Width	 = 92
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "FILER'S telephone number"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 168
+		Left	 = 16
+		Height	 = 14
+		Width	 = 125
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 888
+		Left	 = 8
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 912
+		Left	 = 8
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 936
+		Left	 = 168
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 960
+		Left	 = 168
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Checked if a"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 408
+		Left	 = 312
+		Height	 = 14
+		Width	 = 60
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "9"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 408
+		Left	 = 300
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "graduate student"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 424
+		Left	 = 312
+		Height	 = 14
+		Width	 = 82
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "8"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 384
+		Left	 = 300
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 296
+		X2	 = 600
+		Y1	 = 168
+		Y2	 = 168
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 912
+		Left	 = 168
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 888
+		Left	 = 168
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Extra"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 864
+		Left	 = 8
+		Height	 = 16
+		Width	 = 31
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "FILER'S city                                   State     ZIP code"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 72
+		Left	 = 16
+		Height	 = 14
+		Width	 = 243
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "5"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 464
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Scholarships or grants*"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 476
+		Height	 = 14
+		Width	 = 114
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Exist"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 672
+		Left	 = 8
+		Height	 = 16
+		Width	 = 30
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 464
+		Y2	 = 464
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 456
+		X2	 = 456
+		Y1	 = 200
+		Y2	 = 376
+	End
+	Begin MM.Label Label1
+		Caption	 = "1098-T"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 441
+		Left	 = 34
+		Height	 = 19
+		Width	 = 51
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 12
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Form"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 445
+		Left	 = 8
+		Height	 = 14
+		Width	 = 24
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 456
+		X2	 = 456
+		Y1	 = 88
+		Y2	 = 168
+	End
+	Begin MM.Label Label1
+		Caption	 = "Description"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 648
+		Left	 = 8
+		Height	 = 16
+		Width	 = 65
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Bottom
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = True
+		X1	 = 0
+		X2	 = 608
+		Y1	 = 640
+		Y2	 = 640
+	End
+	Begin MM.Label Label1
+		Caption	 = "Check if at least half-time student"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 384
+		Left	 = 312
+		Height	 = 14
+		Width	 = 160
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Adjustments made for a"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 312
+		Height	 = 14
+		Width	 = 115
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Adjustments to"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 280
+		Left	 = 312
+		Height	 = 14
+		Width	 = 72
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "STUDENT'S name"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 248
+		Left	 = 16
+		Height	 = 14
+		Width	 = 84
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "ZIP Code"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 312
+		Left	 = 216
+		Height	 = 14
+		Width	 = 43
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "City"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 312
+		Left	 = 16
+		Height	 = 14
+		Width	 = 18
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "State"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 312
+		Left	 = 176
+		Height	 = 14
+		Width	 = 25
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Street address (including apt. no.)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 280
+		Left	 = 16
+		Height	 = 14
+		Width	 = 164
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "STUDENT'S  TIN"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 160
+		Height	 = 14
+		Width	 = 76
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 152
+		X2	 = 152
+		Y1	 = 200
+		Y2	 = 248
+	End
+	Begin MM.Label Label1
+		Caption	 = "in box 1 includes"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 292
+		Left	 = 476
+		Height	 = 14
+		Width	 = 81
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 600
+		Y1	 = 440
+		Y2	 = 440
+	End
+	Begin MM.Label Label1
+		Caption	 = "6"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 280
+		Left	 = 300
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Checked if the amount"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 280
+		Left	 = 476
+		Height	 = 14
+		Width	 = 107
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 296
+		X2	 = 600
+		Y1	 = 88
+		Y2	 = 88
+	End
+	Begin MM.Label Label1
+		Caption	 = "Form 1098-T Tuition Statement"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 68
+		Left	 = 364
+		Height	 = 19
+		Width	 = 233
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 12
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "7"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 280
+		Left	 = 464
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "4"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 300
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "10"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 408
+		Left	 = 458
+		Height	 = 14
+		Width	 = 12
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "3"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 168
+		Left	 = 300
+		Height	 = 14
+		Width	 = 6
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "identification number"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 212
+		Left	 = 16
+		Height	 = 14
+		Width	 = 99
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 296
+		Y1	 = 248
+		Y2	 = 248
+	End
+	Begin MM.Label Label1
+		Caption	 = "FILER'S street address"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 40
+		Left	 = 16
+		Height	 = 14
+		Width	 = 110
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Payments received for"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 88
+		Left	 = 312
+		Height	 = 14
+		Width	 = 109
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 456
+		X2	 = 456
+		Y1	 = 408
+		Y2	 = 440
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 296
+		X2	 = 296
+		Y1	 = 8
+		Y2	 = 440
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 600
+		Y1	 = 8
+		Y2	 = 8
+	End
+	Begin MM.Label Label1
+		Caption	 = "FILER'S federal"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 200
+		Left	 = 16
+		Height	 = 14
+		Width	 = 73
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "Service Provider/Acct. No."
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 408
+		Left	 = 16
+		Height	 = 14
+		Width	 = 128
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "FILER'S name"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 8
+		Left	 = 16
+		Height	 = 14
+		Width	 = 65
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "<!year>"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 60
+		Left	 = 304
+		Height	 = 29
+		Width	 = 52
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 18
+			Charset	 = 0
+			Weight	 = 700
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label1
+		Caption	 = "OMB No.1545-1574"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 56
+		Left	 = 504
+		Height	 = 14
+		Width	 = 94
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 600
+		X2	 = 600
+		Y1	 = 8
+		Y2	 = 440
+	End
+	Begin MM.Label Label1
+		Caption	 = "Department of the Treasury - Internal Revenue Service"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 441
+		Left	 = 336
+		Height	 = 14
+		Width	 = 264
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line1
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 8
+		Y1	 = 8
+		Y2	 = 440
+	End
+	Begin MM.TextBox PayerZip
+		FieldName	 = "PayerZip"
+		DisplayFieldName	 = "PayerZip"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 3
+		FieldPennies	 = ""
+		MaxLength	 = ""
+		SpawnLink	 = False
+		Top	 = 87
+		Left	 = 216
+		Height	 = 17
+		Width	 = 70
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.Label Label14
+		Caption	 = "Foreign country"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 104
+		Left	 = 16
+		Height	 = 14
+		Width	 = 76
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label12
+		Caption	 = "Foreign province/county"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 136
+		Left	 = 16
+		Height	 = 14
+		Width	 = 117
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox PayerForeignProvince
+		FieldName	 = "PayerForeignProvince"
+		DisplayFieldName	 = "PayerForeignProvince"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 7
+		FieldPennies	 = ""
+		MaxLength	 = "17"
+		SpawnLink	 = False
+		Top	 = 151
+		Left	 = 16
+		Height	 = 17
+		Width	 = 186
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox PayerForeignPC
+		FieldName	 = "PayerForeignPC"
+		DisplayFieldName	 = "PayerForeignPC"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 8
+		FieldPennies	 = ""
+		MaxLength	 = "16"
+		SpawnLink	 = False
+		Top	 = 151
+		Left	 = 208
+		Height	 = 17
+		Width	 = 78
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.Label Label13
+		Caption	 = "Postal code"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 136
+		Left	 = 208
+		Height	 = 14
+		Width	 = 56
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label17
+		Caption	 = "Foreign country"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 344
+		Left	 = 16
+		Height	 = 14
+		Width	 = 76
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label15
+		Caption	 = "Foreign province/county"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 376
+		Left	 = 16
+		Height	 = 14
+		Width	 = 117
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.TextBox ForeignProvince
+		FieldName	 = "ForeignProvince"
+		DisplayFieldName	 = "ForeignProvince"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 18
+		FieldPennies	 = ""
+		MaxLength	 = "17"
+		SpawnLink	 = False
+		Top	 = 391
+		Left	 = 16
+		Height	 = 17
+		Width	 = 183
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.TextBox ForeignPC
+		FieldName	 = "ForeignPC"
+		DisplayFieldName	 = "ForeignPC"
+		FieldType	 = "String"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		DefaultVal	 = ""
+		DefaultYear	 = ""
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 19
+		FieldPennies	 = ""
+		MaxLength	 = "16"
+		SpawnLink	 = False
+		Top	 = 391
+		Left	 = 208
+		Height	 = 17
+		Width	 = 78
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		StringSubType	 = ""
+		NoStrings	 = False
+		MinRange	 = ""
+		MaxRange	 = ""
+		TempField	 = False
+		EFileDetails	 = False
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+		BeginProperty SpawnForms
+		EndProperty
+	End
+	Begin MM.Label Label16
+		Caption	 = "Postal code"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 376
+		Left	 = 208
+		Height	 = 14
+		Width	 = 56
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Line Line2
+		LineColor	 = 0x00000000
+		LineWidth	 = 1
+		BottomLine	 = False
+		X1	 = 8
+		X2	 = 296
+		Y1	 = 344
+		Y2	 = 344
+	End
+	Begin MM.CheckBox MobReview
+		FieldName	 = "MobReview"
+		FieldType	 = "CheckBox"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		Caption	 = "MobReview"
+		Alignment	 = "Left Justify"
+		BackgroundColor	 = 0x0000ffff
+		BoxOutline	 = "3D"
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 52
+		DefaultVal	 = ""
+		QuickEntry	 = False
+		RadioTag	 = ""
+		TempField	 = False
+		Top	 = 816
+		Left	 = 504
+		Height	 = 17
+		Width	 = 86
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = False
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label2
+		Caption	 = "Quick topics for mobile"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 816
+		Left	 = 8
+		Height	 = 15
+		Width	 = 125
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.ComboBox PayerState
+		FieldName	 = "PayerState"
+		DisplayFieldName	 = "PayerState"
+		FieldType	 = "PickList"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 5
+		PickList	 = "StatesList"
+		DynaPickList	 = ""
+		DefaultVal	 = ""
+		TempField	 = False
+		Top	 = 87
+		Left	 = 176
+		Height	 = 17
+		Width	 = 40
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.ComboBox PayerForCtry
+		FieldName	 = "PayerForCtry"
+		DisplayFieldName	 = "PayerForCtry"
+		FieldType	 = "PickList"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 6
+		PickList	 = "ForeignCountryList"
+		DynaPickList	 = ""
+		DefaultVal	 = ""
+		TempField	 = False
+		Top	 = 119
+		Left	 = 16
+		Height	 = 17
+		Width	 = 264
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.ComboBox StateAbb
+		FieldName	 = "StateAbb"
+		DisplayFieldName	 = "StateAbb"
+		FieldType	 = "PickList"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 16
+		PickList	 = "StatesList"
+		DynaPickList	 = ""
+		DefaultVal	 = ""
+		TempField	 = False
+		Top	 = 327
+		Left	 = 176
+		Height	 = 17
+		Width	 = 40
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.ComboBox ForCtry
+		FieldName	 = "ForCtry"
+		DisplayFieldName	 = "ForCtry"
+		FieldType	 = "PickList"
+		FieldVersion	 = ""
+		Index	 = ""
+		VirtualArraySize	 = ""
+		FieldDesc	 = ""
+		BackgroundColor	 = 0x0000ffff
+		FontColor	 = 0x00000000
+		PI Indicator	 = False
+		PI Description	 = ""
+		TabSequence	 = 17
+		PickList	 = "ForeignCountryList"
+		DynaPickList	 = ""
+		DefaultVal	 = ""
+		TempField	 = False
+		Top	 = 357
+		Left	 = 16
+		Height	 = 17
+		Width	 = 264
+		BeginProperty HelpLink
+			HelpLink	 = ""
+		EndProperty
+		BeginProperty PYImport
+			PYImport	 = ""
+		EndProperty
+		BeginProperty PYStandardImport
+			PYStandardImport	 = ""
+		EndProperty
+		BeginProperty DefaultCalc
+			DefaultCalc	 = True
+		EndProperty
+		BeginProperty Protected
+			Protected	 = False
+		EndProperty
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 8
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+	Begin MM.Label Label4
+		Caption	 = "d. Amounts also reported on Form 1042-S (enter on Student Worksheet, Part IV, line 5)"
+		BackgroundColor	 = 0x00ffffff
+		FontColor	 = 0x00000000
+		Alignment	 = "Left Justify"
+		Ellipses	 = ""
+		AutoSize	 = True
+		Top	 = 544
+		Left	 = 24
+		Height	 = 15
+		Width	 = 470
+		BeginProperty Font
+			Name	 = "Arial"
+			Size	 = 9
+			Charset	 = 0
+			Weight	 = 400
+			Underline	 = False
+			Italic	 = False
+			Strikethrough	 = False
+		EndProperty
+	End
+EndForm
+
+Private Sub Add_Calculation()
+    If GetString(USWBasicInfo.Apt) <> "" Then
+        ReturnVal = GetString(USWBasicInfo.Street) & "  Apt. " & GetString(USWBasicInfo.Apt)
+    Else
+        ReturnVal = GetString(USWBasicInfo.Street)
+    End If
+End Sub
+
+Private Sub City_Calculation()
+    ReturnVal = GetString(USWBasicInfo.City)
+End Sub
+
+Private Sub CNum_Calculation()
+    ReturnVal = GetCopy()
+End Sub
+
+Private Sub Description_Calculation()
+    Dim Dash As String
+        
+    If GetString(USD1098T.PayerName) = "" Then
+        Dash = ""
+    Else
+        Dash = " - "
+    End If
+
+    If GetString(USD1098T.StudSSN) <> "" Then
+        If GetStatus(UserModifiedStatus) Then
+            ReturnVal = GetString(USD1098T.FirstName) & Dash & GetString(USD1098T.PayerName) & " - " & CStr(GetCurrency(USD1098T.PayRecd))
+        Else
+            ReturnVal = GetString(USD1098T.FirstName) & Dash & GetString(USD1098T.PayerName) & " - NEEDS REVIEW"
+        End If
+    Else
+        ReturnVal = GetString(USWBasicInfo.Common)
+    End If
+End Sub
+
+Private Sub Exist_Calculation()
+    ReturnVal = 1
+End Sub
+
+Private Sub FirstName_Calculation()
+    ReturnVal = GetString(USDStudent.FirstName, ParentCopy())
+End Sub
+
+Private Sub ForCtry_Calculation()
+    ReturnVal = GetString(USWBasicInfo.ForeignCtry)
+End Sub
+
+Private Sub ForeignPC_Calculation()
+    ReturnVal = GetString(USWBasicInfo.ForeignPC)
+End Sub
+
+Private Sub ForeignProvince_Calculation()
+    ReturnVal = GetString(USWBasicInfo.ForeignProvince)
+End Sub
+
+Private Sub PayerAdd_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolAdd(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolAdd(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolAdd(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolAdd(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolAdd(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolAdd(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolAdd(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolAdd(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolAdd(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolAdd(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolAdd(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolAdd(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolAdd(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolAdd(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub PayerCity_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCity(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCity(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCity(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCity(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCity(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolCity(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolCity(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolCity(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolCity(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCity(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolCity(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolCity(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolCity(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCity(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub PayerEin_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolID(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolID(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolID(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolID(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolID(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolID(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolID(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolID(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolID(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolID(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolID(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolID(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolID(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolID(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub PayerForCtry_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCountry(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCountry(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCountry(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCountry(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCountry(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolCountry(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolCountry(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolCountry(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolCountry(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCountry(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolCountry(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolCountry(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolCountry(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolCountry(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub PayerForeignPC_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolPC(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolPC(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolPC(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolPC(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolPC(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolPC(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolPC(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolPC(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolPC(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolPC(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolPC(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolPC(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolPC(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolPC(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub PayerForeignProvince_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolProv(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolProv(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolProv(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolProv(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolProv(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolProv(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolProv(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolProv(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolProv(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolProv(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolProv(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolProv(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolProv(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolProv(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub PayerName_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolName(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolName(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolName(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolName(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolName(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolName(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolName(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolName(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolName(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolName(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolName(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolName(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolName(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolName(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub PayerState_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolState(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolState(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolState(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolState(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolState(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolState(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolState(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolState(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolState(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolState(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolState(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolState(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolState(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolState(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub PayerZip_Calculation()
+    Dim count As Long
+    Dim Copy As String
+    Dim CopyStr As String
+    Dim One As Long
+    Dim Two As Long
+    Dim Three As Long
+    Dim Four As Long
+    Dim CurFormY0 As Boolean
+    Dim CurFormY1 As Boolean
+    Dim CurFormY2 As Boolean
+    Dim CurFormY3 As Boolean
+    
+    count = 1
+    Copy = ""
+    CopyStr = ""
+    
+    Do While count <= GetAllCopies(USD1098T)
+        If GetString(USD1098T.StudSSN, count) = GetString(USDStudent.StudSSN, ParentCopy()) Then
+            Copy = CStr(count)
+            Do While Len(Copy) < 2
+                Copy = Copy + " "
+            Loop
+            CopyStr = CopyStr + Copy
+        End If
+        count = count + 1
+    Loop
+    
+    One = CLng(Mid(CopyStr, 1, 2))
+    Two = CLng(Mid(CopyStr, 3, 2))
+    Three = CLng(Mid(CopyStr, 5, 2))
+    Four = CLng(Mid(CopyStr, 7, 2))
+    
+    CurFormY0 = GetBool(USDStudent.CurFormY(0), ParentCopy())
+    CurFormY1 = GetBool(USDStudent.CurFormY(1), ParentCopy())
+    CurFormY2 = GetBool(USDStudent.CurFormY(2), ParentCopy())
+    CurFormY3 = GetBool(USDStudent.CurFormY(3), ParentCopy())
+    
+    If GetCopy() = One Then
+        If CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolZip(0), ParentCopy())
+        ElseIf CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolZip(1), ParentCopy())
+        ElseIf CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolZip(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            ReturnVal = GetString(USDStudent.SchoolZip(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Two Then
+        If CurFormY1 = True And CurFormY0 = True Then
+            ReturnVal = GetString(USDStudent.SchoolZip(1), ParentCopy())
+        ElseIf CurFormY2 = True And (CurFormY0 = True Or CurFormY1 = True) Then
+            ReturnVal = GetString(USDStudent.SchoolZip(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And (CurFormY1 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolZip(3), ParentCopy())
+            ElseIf CurFormY1 = True And (CurFormY0 = False And CurFormY2 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolZip(3), ParentCopy())
+            ElseIf CurFormY2 = True And (CurFormY0 = False And CurFormY1 = False) Then
+                ReturnVal = GetString(USDStudent.SchoolZip(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Three Then
+        If CurFormY2 = True And CurFormY0 = True And CurFormY1 = True Then
+            ReturnVal = GetString(USDStudent.SchoolZip(2), ParentCopy())
+        ElseIf CurFormY3 = True Then
+            If CurFormY0 = True And CurFormY1 = True And CurFormY2 = False Then
+                ReturnVal = GetString(USDStudent.SchoolZip(3), ParentCopy())
+            ElseIf CurFormY0 = True And CurFormY2 = True And CurFormY1 = False Then
+                ReturnVal = GetString(USDStudent.SchoolZip(3), ParentCopy())
+            ElseIf CurFormY1 = True And CurFormY2 = True And CurFormY0 = False Then
+                ReturnVal = GetString(USDStudent.SchoolZip(3), ParentCopy())
+            Else
+                ReturnVal = ""
+            End If
+        Else
+            ReturnVal = ""
+        End If
+    ElseIf GetCopy() = Four Then
+        If CurFormY3 = True And CurFormY0 = True And CurFormY1 = True And CurFormY2 = True Then
+            ReturnVal = GetString(USDStudent.SchoolZip(3), ParentCopy())
+        Else
+            ReturnVal = ""
+        End If
+    Else
+        ReturnVal = ""
+    End If
+End Sub
+
+Private Sub Rec_Calculation()
+    ReturnVal = GetString(USDStudent.FirstName, ParentCopy()) + " " + GetString(USDStudent.LastName, ParentCopy())
+End Sub
+
+Private Sub StateAbb_Calculation()
+    ReturnVal = GetString(USWBasicInfo.StateAbb)
+End Sub
+
+Private Sub StudSSN_Calculation()
+    ReturnVal = GetString(USDStudent.StudSSN, ParentCopy())
+End Sub
+
+Private Sub Zip_Calculation()
+    ReturnVal = GetString(USWBasicInfo.ZipCode)
+End Sub

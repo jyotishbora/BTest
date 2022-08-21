@@ -1,0 +1,17 @@
+syntax = "proto3";
+package tax;
+
+message TaxRefundRequest {
+    string firstname = 1;
+    string lastname = 2;
+    string state = 3;
+    float annual_income = 4;
+}
+message TaxRefundResponse{
+    float refund =1 ;
+}
+
+service Tax {
+    rpc CalculateTaxReturn(TaxRefundRequest) returns (TaxRefundResponse){};
+}
+

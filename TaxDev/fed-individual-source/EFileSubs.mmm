@@ -1,0 +1,186 @@
+
+Public Sub EFile_TPGAppR()
+    EFFixedFormat = True
+
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag, 1, 1, "R") 'Record Type
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag, 2, 1, USWRALApp.TPGSubType) 'Record Sub-Type
+    Call EFileField(SSN_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 3, 9, USWRALApp.SSN) 'Primary SSN
+    Call EFileField(SSN_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 4, 9, USWRALApp.SpSSN) 'Secondary SSN
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 5, 6, "000000") 'Master EFIN
+    Call EFileField(NumberUnsigned_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 6, 6, USWRALApp.FedBankEFIN) 'EFIN
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 7, 5, "00000") 'Office IDENT
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 8, 1, USWEFData.FilingStatus) 'Filing Status
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 9, 16, USWBasicInfo.FirstName) 'Primary First Name
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 10, 1, USWBasicInfo.TPInit) 'Primary Middle Initial
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 11, 16, USWBasicInfo.LastName) 'Primary Last Name
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 12, 16, USWBasicInfo.SpJtFName) 'Secondary First Name
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 13, 1, USWBasicInfo.SpJtMI) 'Secondary Middle Initial
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 14, 16, USWBasicInfo.SpJtLName) 'Secondary Last Name
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 15, 35, USWRALApp.DiffMailAddress) 'Primary Mailing Address
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 16, 22, USWRALApp.DiffMailCity) 'Primary Mailing City
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 17, 2, USWRALApp.DiffMailState) 'Primary Mailing State
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 18, 9, USWRALApp.DiffMailZip) 'Primary Mailing Zip Code
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 19, 10, USWRALApp.Phone) 'Home Telephone Number
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 20, 10, USWRALApp.Phone1) 'Work Telephone Number
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 21, 8, USWRALApp.StateRefundAmount) 'State Refund Amount
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 22, 2, USWRALApp.StateAbbreviationCode) 'State Filed
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 23, 8, USWRALApp.TPGACKDate) 'IRS ACK Date
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 24, 1, " ") 'Debt Indicator
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 25, 8, USWBasicInfo.Refund) 'ACK Refund Amount
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 26, 6, USWRALApp.TPGTransFee) 'Transmitter EF Fee
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 27, 6, USWRALApp.TPGEFINFee) 'Master EFIN EF Fee
+    Call EFileText(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 28, 6, "000000") 'Site EF Fee
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 29, 6, USWRALApp.TPGPrepFee) 'Site PREP Fee
+    Call EFileText(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 30, 6, "000000") 'Site RT Fee
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 31, 6, USWRALApp.POSFee1) 'POS Fees 1
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 32, 6, USWRALApp.POSFee2) 'POS Fees 2
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 33, 6, USWRALApp.POSFee3) 'POS Fees 3
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 34, 10, USWRALApp.MobilePhone) 'Cell Phone Number
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 35, 1, USWRALApp.EFTPGTextMessages) 'SMS Opt In
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 36, 1, USWRALApp.EFTPGEmailMarketing) 'TPEmailMarketConsent
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 37, 1, USWRALApp.TPGEFDisburse) 'Disbursement Method
+    Call EFileField(TextNumber_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 38, 9, USWRALApp.EFRTN) 'TP RTN
+    Call EFileField(TextNumber_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 39, 17, USWRALApp.EFAcctNum) 'TP DAN
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 40, 1, USWRALApp.ERDAcctType) 'TP ACCT Type
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 41, 13, "             ") 'Instant Issue ID
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 42, 1, USWRALApp.FCAOnly) 'Advance Only Indicator
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 44, 1, " ") 'Internal Use I
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 44, 1, " ") 'Internal Use I
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 45, 6, USF1040.Eic) 'EIC Amount
+    Call EFileSetChars("@.!@#$%^&*?")
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 46, 50, USWRALApp.Email) 'Taxpayer Email Address
+    Call EFileSetChars("")
+    Call EFileField(TextNumber_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 47, 2, USWRALApp.TPGNumSubmit) 'Number Times Return Transmitted
+    Call EFileField(DateYYYYMMDD_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 48, 8, USWRALApp.DOB) 'Primary Date of Birth
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 49, 6, "      ") 'TPG Internal Use B
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 50, 3, "   ") 'Filler
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 51, 16, USWRALApp.POSCd1) 'POS Product Code 1
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 52, 16, USWRALApp.POSCd2) 'POS Product Code 2
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 53, 16, USWRALApp.POSCd3) 'POS Product Code 3
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 54, 32, USWRALApp.TPGTransmitterGUID) 'Transmitter GUID
+    Call EFileField(DateYYYYMMDD_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 55, 8, USWRALApp.SpDOB) 'Spouse Date of Birth
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 56, 2, "  ") 'ERO State Location Special Handling Indicator
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 57, 2, "  ") 'Filler
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 58, 1, USWRALApp.TPGDeceased) 'Deceased Indicator
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 59, 6, USWRALApp.TPGStTaxProd) 'State Tax on Product
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 60, 6, USWRALApp.TPGStTaxPOS) 'State Tax on POS Sales
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 61, 1, " ") 'Fee Collect Program Indicator
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 62, 1, USWRALApp.EFTPGPYPermission) 'PY TP Fed Funding Status
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 63, 1, USWRALApp.TPGStateReturnOnlyInd) 'State-Only Indicator
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 64, 1, USWRALApp.TPGAcceptCd) 'IRS Acceptance Code
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 65, 1, " ") 'Reg B Opt Out
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 66, 1, USWRALApp.TPGRRC) 'Recovery Rebate Credit Indicator
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 67, 1, USWRALApp.TPGProCommPref) 'Communication Preference
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 68, 1, " ") 'Due Diligence Indicator
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 69, 1, " ") 'Checkless Indicator
+    
+End Sub
+    
+Public Sub EFile_TPGAppR2()
+    EFFixedFormat = True
+
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag, 1, 1, "R") 'Record Type
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag, 2, 1, "2") 'Record Sub-Type
+    Call EFileField(SSN_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 3, 9, USWRALApp.SSN) 'Primary SSN
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 4, 50, "                                                  ") 'IP Address of Taxpayer (Per Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 5, 16, "                ") 'Card Number for Fees (Pro Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 6, 9, "         ") 'Billing Zip Code (Pro Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 7, 6, "      ") ' Expiration Month/Year (Pro Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 8, 6, "      ") 'Card Code Validation (CCV) (Pro Only)
+    Call EFileText(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 9, 8, "00000000") 'Split Disbursement Amount
+    Call EFileText(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 10, 8, "00000000") 'ERO POS Fee 1
+    Call EFileText(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 11, 8, "00000000") 'ERO POS Fee 2
+    Call EFileText(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 12, 8, "00000000") 'ERO POS Fee 3
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 13, 4, USWRALApp.TPGProdCd) 'Partner Product Code
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 14, 4, "    ") 'Filler
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 15, 9, "         ") 'TPG Internal Use E
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 16, 1, " ") 'TPG Internal Use F
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 17, 8, "        ") 'TPG Internal Use E
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 18, 8, "        ") 'TPG Internal Use E
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 19, 9, "         ") 'TPG Internal Use E
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 20, 1, " ") 'Card Brand Indicator (Pro Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 21, 1, " ") ' TPG Internal Use E
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 22, 25, "                         ") 'Transmitter Filing ID
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 23, 8, "00000000") 'Advance Amount Requested (Per Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 24, 8, "00000000") 'TPG Internal Use E
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 25, 1, " ") 'TPG Internal Use E
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 26, 8, "00000000") 'Additional Amount Requested
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 27, 36, "                                    ") 'BaaS Card Account Identifer (Per Only)
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 28, 9, USWRALApp.TPGIncorrectSSN) 'FCA Incorrect Primary SSN
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 29, 9, USWRALApp.TPGIncorrectSPSSN) 'FCA Incorrect Secondary SSN
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 30, 6, "000000") 'Super Service Bureau EFIN
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 31, 7, "       ") 'Filler
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 32, 3, "   ") 'Filler
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 33, 10, "          ") 'RT Application ID
+    Call EFileText(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 34, 6, "000000") 'RT Fee Fed
+    Call EFileText(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 35, 6, "000000") 'RT Fee State
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 36, 14, USWRALApp.SendTPGFCAAgreeDate) 'Taxpayer FCA Agreement Date/Time
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 37, 16, "                ") 'Card Reference ID (Per Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 38, 1, " ") 'Additional Advance Indicator (Pro Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 39, 14, "              ") 'Additional Advance Agreement Date/Time (Pro Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 40, 40, "                                        ") 'Device ID of Taxpayer (Per Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 41, 8, "        ") 'TPG Internal Use I 10
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 42, 1, USWRALApp.TPGPreAckAdv) 'Pre-Ack Advance Indicator
+    Call EFileField(TextNumber_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 43, 14, USWRALApp.TPGAppFPrint) 'TP First Print (Pro Only)
+    Call EFileField(TextNumber_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 44, 14, USWRALApp.TPGAppLPrint) 'TP Last Print (Pro Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 45, 1, " ") 'Filler
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 46, 2, "  ") 'Filler
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 47, 1, " ") 'TPG Internal Use I 11
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 48, 1, " ") 'TPG Internal Use I 12
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 49, 8, USWRALApp.TPGPYAntRefund) 'PY TP Fed Anticipated Refund Amount
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 50, 8, USWRALApp.TPGPYActRefund) 'PY TP Fed Actual Refund Amount
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 51, 6, USWRALApp.TPGCheckAdminFee) 'Check Admin Fee
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 52, 14, USWRALApp.SendTPGFCAAppStart) 'FCA Application Start (Pro Only)
+    Call EFileSetChars("-:")
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 53, 25, USWRALApp.TPGTaxReturnTs) 'Tax Return ReturnTs (Pro Only)
+    Call EFileSetChars("")
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 54, 6, USWRALApp.TPGProcessFee) 'Processing Fee (Pro Only)
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 55, 1, " ") 'Product Code
+    
+End Sub
+    
+Public Sub EFile_TPGAppO()
+    EFFixedFormat = True
+
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag, 1, 1, "O") 'Record Type
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag, 2, 1, " ") 'Record Sub-Type
+    Call EFileField(SSN_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 3, 9, USWRALApp.SSN) 'Primary SSN
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 4, 35, USWRALApp.SecDiffMailAddress) 'Secondary Mailing Address
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 5, 22, USWRALApp.SecDiffMailCity) 'Secondary Mailing City
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 6, 2, USWRALApp.SecDiffMailState) 'Secondary Mailing State
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 7, 9, USWRALApp.SecDiffMailZip) 'Secondary Mailing Zip Code
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 8, 35, USWRALApp.Address) 'Primary Phyiscal Address
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 9, 22, USWRALApp.City) 'Primary Physical State
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 10, 2, USWRALApp.State) 'Primary Physcial State
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 11, 9, USWRALApp.Zip) 'Primary Phyiscal Zip Code
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 12, 35, USWRALApp.SecAddress) 'Secondary Phyiscal Address
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 13, 22, USWRALApp.SecCity) 'Secondary Physical City
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 14, 2, USWRALApp.SecState) 'Secondary Phyiscal State
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 15, 9, USWRALApp.SecZip) 'Secondary Phyiscal Zip Code
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 16, 20, USWRALApp.IDType) 'Primary ID Description
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 17, 20, USWRALApp.IDNumber) 'Primary ID Number
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 18, 20, USWRALApp.SPIDType) 'Secondary ID Description
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 19, 20, USWRALApp.SPIDNumber) 'Secondary ID Number
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 20, 2, USWRALApp.StateFiled1) 'State Filed 1
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 21, 8, USWRALApp.StateRefund1) 'State Refund Amount 1
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 22, 2, USWRALApp.StateFiled2) 'State Filed 2
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 23, 8, USWRALApp.StateRefund2) 'State Refund Amount 2
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 24, 2, USWRALApp.StateFiled2) 'State Filed 3
+    Call EFileField(Dollar_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 25, 8, USWRALApp.StateRefund2) 'State Refund Amount 3
+    Call EFileField(TextNumber_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 26, 9, USWEFWkSht2.DirDepRTN) 'RTN From 1040
+    Call EFileField(NumberUnsigned_EFileType, ForceValue_EFileFlag + ZeroFill_EFileFlag, 27, 6, USWRALApp.FedBankEFIN) 'EFIN
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 28, 5, "     ") 'Filler
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 29, 32, USWRALApp.TPGTransmitterGUID) 'Transmitter GUID
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 30, 20, USWRALApp.TPGIssueAuthTP) 'Issuing Authority 1
+    Call EFileField(DateYYYYMMDD_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 31, 8, USWRALApp.IDDate) 'Issuing Date 1
+    Call EFileField(DateYYYYMMDD_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 32, 8, USWRALApp.IDExp) 'Expiration Date 1
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 33, 20, USWRALApp.TPGIssueAuthSP) 'Issuing Authority 2
+    Call EFileField(DateYYYYMMDD_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 34, 8, USWRALApp.SPIDDate) 'Issuing Date 2
+    Call EFileField(DateYYYYMMDD_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 35, 8, USWRALApp.SPIDExp) 'Expiration Date 2
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 36, 1, USWRALApp.TPGCitizenTP) 'Taxpayer Citizenship
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 37, 20, USWRALApp.TPCtryCitizen) 'Taxpayer Country of Citizenship
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 38, 1, USWRALApp.TPGCitizenSP) 'Spouse Citizenship
+    Call EFileField(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 39, 20, USWRALApp.SPCtryCitizen) 'Spouse Country of Citizenship
+    Call EFileField(TextNumber_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 40, 17, USWEFWkSht2.DirDepDan) 'DAN From 1040
+    Call EFileText(Text_EFileType, ForceValue_EFileFlag + SpaceFill_EFileFlag, 41, 4, "    ") 'Filler
+End Sub
