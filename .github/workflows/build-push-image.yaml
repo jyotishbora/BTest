@@ -21,14 +21,13 @@ jobs:
       - uses: actions/checkout@v2
       
       - uses: azure/docker-login@v1
-     
+        name: 'Publish Image'
         with:
           login-server: lab49.azurecr.io
           username: lab49
           password: D6km1MA5T9/yPJquDHPFbOx51tYKtjnH
 
-      - run:
-          name: 'Push webapi image'
-          |
+      - run: |
+          echo 'Publishing'
           docker build ./BlucoraAPI -f BlucoraAPI/Dockerfile.webapi -t lab49.azurecr.io/webapi:${{ github.sha }}
           docker push lab49.azurecr.io/webapi:${{ github.sha }}
