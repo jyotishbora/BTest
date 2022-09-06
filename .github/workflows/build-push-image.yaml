@@ -7,22 +7,13 @@ on:
       - completed
     branches: [jyotish/**]
 jobs:
-  deploy-to-acr:
-    name: 'deploy-to-acr'
+  on-success:
     runs-on: ubuntu-latest
-    env:
-      acrname: lab49
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - uses: actions/checkout@v2
-      
-      - uses: azure/docker-login@v1
-        name: 'Publish Image'
-        with:
-          login-server: lab49.azurecr.io
-          username: lab49
-          password: D6km1MA5T9/yPJquDHPFbOx51tYKtjnH
-
-      - run: |
-          'Publishing'
-          docker build ./BlucoraAPI -f BlucoraAPI/Dockerfile.webapi -t lab49.azurecr.io/webapi:${{ github.sha }}
-          docker push lab49.azurecr.io/webapi:${{ github.sha }}
+      - run: echo 'The triggering workflow passed'
+  on-failure:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    steps:
+      - run: echo 'The triggering workflow failed'
