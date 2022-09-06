@@ -1,23 +1,12 @@
 name: Build a Docker image and Push it to ACR
 
 on:
-  #push:
-   # branches: 
-    #  - 'main'
-    # - 'jyotish/**'
-  #pull_request:
-   # branches: 
-    #  - 'main'
-on:
-  push:
-    branches: [main]
-      
-    workflow_run:
-      workflows: [workflow1]
-      types:
-        - completed
+  workflow_run:
+    workflows: [workflow1]
+    types:
+      - completed
 
-  workflow_dispatch:
+workflow_dispatch:
 
 jobs:
   deploy-to-acr:
