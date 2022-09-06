@@ -1,0 +1,13 @@
+name: workflow1
+
+on:
+  push:
+    branches: [ master ]
+
+
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "test"
