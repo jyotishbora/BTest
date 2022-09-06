@@ -11,11 +11,11 @@ on:
 on:
   push:
     branches: [main]
-      -
-  workflow_run:
-    workflows: [workflow1]
-    types:
-      - completed
+      
+    workflow_run:
+      workflows: [workflow1]
+      types:
+        - completed
 
   workflow_dispatch:
 
