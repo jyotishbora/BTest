@@ -28,4 +28,6 @@ $ curl localhost:8000/taxreturn/
 
 ```
 
+ # echo ${${GITHUB_REF#refs/heads/} != ${github.event.repository.default_branch}}
+          # echo ${{ (GITHUB_REF#refs/heads/) != github.event.repository.default_branch }
 
